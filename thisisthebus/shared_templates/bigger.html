@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<body>
+    <div id="banner" class="banner">
+        <h1>This</h1>
+        <h2>is the bus</h2>
+        <a href="/"><h3 class="brandLabel">this is the bus</h3></a>
+        <img id="banner-image" src="/apps/internal/img/banner.JPG"/>
+    </div>
+    {% block main %}{% endblock %}
+</body>
+{% endblock %}

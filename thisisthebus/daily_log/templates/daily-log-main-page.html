@@ -1,0 +1,27 @@
+{% extends 'slicey.html' %}
+
+{% block main %}
+<div id="main" class="underSlice">
+    <div class="blackMainInfo dailyLog">
+        {% for day, day_meta in days %}
+            <div class="dayContainer">
+                <h3>{{day}}</h3>
+                <h4 class="bigDate"></h4>
+                <div class="left">
+                    {% with day_meta.place as place %}
+                        <div class="locationContainer">{% include 'single-place.html' %}</div>
+                    {% endwith %}
+                </div>
+                <div class="right">
+                    <div class="daySummary">{{day_meta.summary.text|safe|truncatechars:140}}</div>
+                    <div class="iotdsContainer">
+                        {% for iotd in day_meta.iotds %}
+                            {% include "iotd-instance.html" %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

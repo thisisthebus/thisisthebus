@@ -1,0 +1,29 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <script src="/apps/internal/js/jquery-3.1.1.min.js"
+          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+          crossorigin="anonymous"></script>
+    <script src="/apps/internal/js/handlebars.runtime.min.js"></script>
+    <script src="/apps/internal/templates/head.handlebars"></script>
+    <script type="text/javascript">
+        var head_html = Handlebars.templates.head();
+        $("head").append(head_html);
+    </script>
+</head>
+
+<body>
+    <div id="bannerSlice" class="banner">
+        <h2>Image(s) of the Day</h2>
+        <img id="banner-image" src="/img/banner-slice.JPG"/>
+    </div>
+    <div id="main">
+
+        <div id="iotd" class="but-centered">
+            <h4 id="iotd-date"></h4>
+            <div id="iotd-container"></div>
+        </div>
+    </div>
+</body>
+</html>

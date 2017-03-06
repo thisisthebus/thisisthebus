@@ -1,0 +1,226 @@
+body {
+    background-color: #fcc65c;
+    font-family: 'Kreon', serif;
+}
+
+h1 {
+    font-size:10em;
+}
+
+h2 {
+   font-size:4em;
+}
+
+h3 {
+    font-size:3em;
+}
+
+h1, h2, h3, .cabin {
+	font-family: 'Cabin Sketch', cursive;
+	text-shadow: 3px 6px 2px #000;
+	font-weight: 200;
+	color: #e7ca8d;
+	z-index:100;
+}
+
+
+#banner {
+    height:392px;
+}
+
+.banner {
+	width: 1200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 133px;
+}
+
+#banner-image, .banner h1, .banner h2 {
+	position: absolute;
+	margin-top: 0;
+	margin-bottom: 0;
+	left: 0;
+}
+
+#banner h1 {
+    top:-26px;
+}
+
+#banner h2 {
+    top:104px;
+    left:13px;
+}
+
+#banner-image {
+    z-index: 10;
+    top: 0;
+}
+
+#banner h1, #banner h2 {
+    z-index:100;
+}
+
+#banner-slice {
+    height:133px;
+}
+
+#bannerSlice .brandLabel {
+	position: absolute;
+	right: 0;
+	z-index: 20;
+	bottom: 0;
+	margin: 0;
+}
+
+#navBar {
+	z-index: 20;
+	position: absolute;
+	left: 979px;
+	top: 0;
+}
+
+#navBar h3 {
+    margin:0;
+}
+
+#navBar a{
+    text-decoration: none;
+}
+
+#currentLocation {
+	position: absolute;
+	top: 172px;
+	left: 0;
+	z-index: 20;
+}
+
+.dailyLog .locationContainer {
+    float:left;
+}
+
+.dailyLog .daySummary {
+    float:right;
+    width: 500px;
+}
+
+.dayContainer {
+	float: left;
+	margin-top: 6px;
+	border-bottom: 2px dashed #fcc65c;
+	padding-bottom: 15px;
+	width: 100%;
+}
+
+.locationContainer {
+    width: 280px;
+    height: 220px;
+}
+
+.locationContainer .locationNameCaption div {
+	color: #fcc65c;
+	text-align: center;
+	font-size: 1.2em;
+	text-shadow: 2px 2px 1px black;
+}
+
+.locationContainer .locationNameCaption {
+	width: 280px;
+	z-index: 25;
+	margin-top: -50px;
+	position:relative;
+}
+
+.locationContainer .locationNameMask {
+	width: 280px;
+	height: 46px;
+	background-color: black;
+	z-index: 15;
+	opacity: .4;
+	margin-top: -75px;
+}
+
+.locationContainer a {
+    text-decoration: none;
+}
+
+#main.underSlice {
+	position: absolute;
+	top: 133px;
+}
+
+.blackMainInfo {
+	background-color: black;
+	box-shadow: 0px 0px 14px 7px black;
+	float: left;
+	width: 820px;
+	margin-top: 45px;
+	margin-left: 20px;
+	color: white;
+	text-align: center;
+}
+
+.blackMainInfo h3 {
+    color: #8dc1e7;
+	margin: 0;
+}
+
+.blackMainInfo h4 {
+	margin: 0;
+	font-size: 1.3em;
+}
+
+#iotd-container a {
+	margin: 5px;
+	background-color: black;
+	width:400px;
+}
+
+#iotd-container a img {
+    max-width:400px;
+}
+
+.iotd-instance .caption {
+	color: white;
+	text-align: center;
+	width: 100%;
+}
+
+.dayContainer .left {
+    float:left;
+    width:300px;
+}
+
+.dayContainer .right {
+    float:right;
+    width:520px;
+}
+
+.dayContainer .iotdsContainer {
+    margin: auto;
+}
+
+.dayContainer .iotd-instance {
+	width: 150px;
+	margin: auto;
+	margin-left: 10px;
+}
+
+.dayContainer .iotd-instance img {
+    width:150px;
+    margin: auto;
+
+}
+
+.dayContainer .iotd-instance .caption {
+font-size: 10px;
+}
+
+.iotd-instance {
+    width:400px;
+    margin: auto;
+}
+
+.but-centered {
+    margin: auto;
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <script src="/apps/internal/js/jquery-3.1.1.min.js"
+          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+          crossorigin="anonymous"></script>
+
+    <meta charset="utf-8">
+
+    <title>this is the bus.</title>
+
+    <meta name="description" content="this is the bus">
+    <meta name="author" content="Chelsea Kaye and Justin Myles">
+
+    <link rel="stylesheet" href="/apps/internal/css/styles.css?v=1.0">
+    <link href="/apps/internal/css/fonts.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+
+    {% if include_swipebox %}
+        <link rel="stylesheet" href="/apps/swipebox/css/swipebox.min.css">
+        <script src="/apps/swipebox/js/swipebox-pr298.js"></script>
+        <script type="text/javascript">
+        $( document ).ready(function() {
+            console.log( "ready!" );
+            $( '.swipebox' ).swipebox();
+        });
+        </script>
+    {% endif %}
+
+</head>
+
+{% block body %}{% endblock %}
