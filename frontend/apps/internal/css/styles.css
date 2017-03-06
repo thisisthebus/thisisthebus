@@ -88,6 +88,43 @@ h1, h2, h3, .cabin {
     text-decoration: none;
 }
 
+
+#main.underSlice {
+	margin-top: 133px;
+	float: left;
+}
+
+
+.blackMainInfo {
+	background-color: black;
+	box-shadow: 0px 0px 14px 7px black;
+	float: left;
+	width: 820px;
+	margin-top: 45px;
+	margin-left: 20px;
+	color: white;
+	text-align: center;
+}
+
+.blackMainInfo h3 {
+    color: #8dc1e7;
+	margin: 0;
+}
+
+.blackMainInfo h4 {
+	margin: 0;
+	font-size: 1.3em;
+}
+
+/* Main */
+
+#footer {
+	float: left;
+	clear: left;
+	margin-top: 35px;
+	margin-left: 100px;
+}
+
 #currentLocation {
 	position: absolute;
 	top: 172px;
@@ -142,32 +179,6 @@ h1, h2, h3, .cabin {
 
 .locationContainer a {
     text-decoration: none;
-}
-
-#main.underSlice {
-	position: absolute;
-	top: 133px;
-}
-
-.blackMainInfo {
-	background-color: black;
-	box-shadow: 0px 0px 14px 7px black;
-	float: left;
-	width: 820px;
-	margin-top: 45px;
-	margin-left: 20px;
-	color: white;
-	text-align: center;
-}
-
-.blackMainInfo h3 {
-    color: #8dc1e7;
-	margin: 0;
-}
-
-.blackMainInfo h4 {
-	margin: 0;
-	font-size: 1.3em;
 }
 
 #iotd-container a {
