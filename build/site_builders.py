@@ -8,6 +8,7 @@ import json
 
 from checksumdir import dirhash
 import os
+import datetime
 
 from django.template.loader import get_template
 
@@ -72,11 +73,11 @@ def complete_build(django_setup=False):
     latest_location_date = latest_location['day']
     latest_location_place = places[latest_location['place']]
 
-    build_daily_log(summaries, locations, iotds, places)
-    build_page("index", root=True, context={'place': latest_location_place, 'update_date': latest_location_date})
-    build_page("about", root=True, slicey=True)
-
     hashes = get_hashes()
+    build_time = datetime.datetime.now()
+    build_daily_log(summaries, locations, iotds, places)
+    build_page("index", root=True, context={'place': latest_location_place, 'update_date': latest_location_date, 'build_hashes': hashes, 'build_time': build_time})
+    build_page("about", root=True, slicey=True)
 
     with open("%s/last_build.json" % BUILD_PATH, "w") as f:
         f.write(json.dumps(hashes))

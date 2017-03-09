@@ -177,6 +177,12 @@ margin-right:60px;
 	margin-left: 100px;
 }
 
+#footer .verySmall{
+    font-size: 10px;
+    list-style: none;
+    float: right;
+}
+
 .banner #currentLocation {
 	position: absolute;
 	top: 172px;
