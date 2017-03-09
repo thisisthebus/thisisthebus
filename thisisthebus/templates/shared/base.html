@@ -17,7 +17,6 @@
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
-
     {% if include_swipebox %}
         <link rel="stylesheet" href="/apps/swipebox/css/swipebox.min.css">
         <script src="/apps/swipebox/js/swipebox-pr298.js"></script>
@@ -28,13 +27,23 @@
         });
         </script>
     {% endif %}
-
 </head>
 
-{% block body %}{% endblock %}
+{% block body %}
+<body>
+    {% block banner %}{% endblock %}
 
-<div id="footer">
-    <a href="https://www.netlify.com">
-      <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg"/>
-    </a>
-</div>
+    {% block rest-of-page %}
+        {% block main %}{% endblock %}
+    {% endblock %}
+
+    {% block footer %}
+    <div id="footer">
+        <a href="https://www.netlify.com">
+          <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg"/>
+        </a>
+    </div>
+    {% endblock %}
+
+</body>
+{% endblock %}

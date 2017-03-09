@@ -4,6 +4,7 @@ import os
 from thisisthebus.settings.constants import DATA_DIR
 from thisisthebus.where.models import Place
 
+PLACES_DIR = "%s/authored/places" % DATA_DIR
 
 def process_locations():
     locations_dir_listing = os.walk("%s/compiled/locations" % DATA_DIR)
@@ -23,16 +24,25 @@ def process_locations():
     return locations
 
 
-def process_places():
-    authored_places_dir = os.walk("%s/authored/places" % DATA_DIR)
+def process_places(wait_at_end=False):
+    print("Processing Places from %s" % PLACES_DIR)
+    authored_places_dir = os.walk(PLACES_DIR)
 
     places = {}
+    new_places = 0
 
     for yaml_file in list(authored_places_dir)[0][2]:
         place = Place.from_authored_yaml(yaml_file)
-        place_meta = place.compile()
+        place_meta, created = place.compile()
+        if created:
+            new_places += 1
         place_name = yaml_file.replace('.yaml', '')
         places[place_name] = place_meta
+
+    print("Processed %s Places" % new_places)
+
+    if wait_at_end:
+        input()
 
     return places
 

@@ -1,11 +1,19 @@
+from ensure_build_path import add_project_dir_to_path, BUILD_PATH
+
+from thisisthebus.pages.build import build_page
+
+add_project_dir_to_path()
+
+import json
+
+from checksumdir import dirhash
 import os
 
-import yaml
 from django.template.loader import get_template
 
 from thisisthebus.daily_log.build import process_summaries
 from thisisthebus.iotd.build import process_iotds
-from thisisthebus.settings.constants import FRONTEND_DIR, DATA_DIR
+from thisisthebus.settings.constants import FRONTEND_DIR, DATA_DIR, APP_DIR
 from thisisthebus.where.build import process_locations, process_places
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'settings.default_django_settings')
@@ -29,22 +37,27 @@ def build_daily_log(summaries, locations, iotds, places):
             this_day_meta['place'] = places[locations[day_nice]['place']]
 
     t = get_template('daily-log-main-page.html')
-    d = {"days": days, "include_swipebox": True}
+    d = {"days": days, "include_swipebox": True, "slicey": True, "page_name": "Our Travels"}
     daily_log_html = t.render(d)
 
-    with open("%s/pages/daily-log/index.html" % FRONTEND_DIR, "w+") as f:
+    with open("%s/travels.html" % FRONTEND_DIR, "w+") as f:
         f.write(daily_log_html)
 
 
-def build_front_page():
-    t = get_template('bigger.html')
-    html = t.render({})
+def get_hashes():
+    data_hash = dirhash(DATA_DIR, 'md5')
+    app_hash = dirhash(APP_DIR, 'md5')
+    hashes = {"data": data_hash,
+              "app": app_hash}
 
-    with open("%s/index.html" % FRONTEND_DIR, "w+") as f:
-        f.write(html)
+    return hashes
 
 
-def complete_build():
+def complete_build(django_setup=False):
+    if django_setup:
+        import django
+        django.setup()
+
     print("Building site...")
     summaries = process_summaries()
     places = process_places()
@@ -55,14 +68,24 @@ def complete_build():
     #     timeframes = yaml.load(f)
     # timeframes
 
+    latest_location = locations[max(locations.keys())]
+    latest_location_date = latest_location['day']
+    latest_location_place = places[latest_location['place']]
+
     build_daily_log(summaries, locations, iotds, places)
-    build_front_page()
+    build_page("index", root=True, context={'place': latest_location_place, 'update_date': latest_location_date})
+    build_page("about", root=True, slicey=True)
+
+    hashes = get_hashes()
+
+    with open("%s/last_build.json" % BUILD_PATH, "w") as f:
+        f.write(json.dumps(hashes))
 
     print("Done building site.")
-
+    print("Data: %s" % hashes['data'])
+    print("App: %s" % hashes['app'])
+    input("....continue.")
 
 
 if __name__ == "__main__":
-    import django
-    django.setup()
-    complete_build()
+    complete_build(django_setup=True)

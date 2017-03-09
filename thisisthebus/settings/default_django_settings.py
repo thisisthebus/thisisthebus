@@ -1,9 +1,8 @@
 
 import os
 
+from thisisthebus.settings.constants import PROJECT_DIR
 from thisisthebus.settings.secrets import SECRET_KEY
-
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 DEBUG = True
 
@@ -36,7 +35,7 @@ ROOT_URLCONF = 'nothing.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['thisisthebus/shared_templates'],
+        'DIRS': ['%s/thisisthebus/templates' % PROJECT_DIR],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -58,7 +57,7 @@ WSGI_APPLICATION = 'nothing.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(PROJECT_DIR, 'db.sqlite3'),
     }
 }
 

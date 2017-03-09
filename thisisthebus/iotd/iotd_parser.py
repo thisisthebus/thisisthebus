@@ -1,9 +1,9 @@
-from PIL import Image, ExifTags
 import datetime
-import sys
 import json
+import sys
 
-from site_builders import complete_build
+from PIL import Image, ExifTags
+
 from thisisthebus.settings.constants import DATA_DIR, FRONTEND_DIR
 
 MAX_SIZE = 1600.0
@@ -139,10 +139,4 @@ def parse_iotd(image_filename):
     thumb.save((FRONTEND_DIR + thumb_filename), "JPEG")
     print("====================================\n")
     input("done!")
-
-
-    # import django
-    #
-    # django.setup()
-    # complete_build()
 

@@ -23,7 +23,6 @@ h1, h2, h3, .cabin {
 	z-index:100;
 }
 
-
 #banner {
     height:392px;
 }
@@ -37,13 +36,12 @@ h1, h2, h3, .cabin {
 }
 
 #banner-image, .banner h1, .banner h2 {
-	position: absolute;
 	margin-top: 0;
 	margin-bottom: 0;
 	left: 0;
 }
 
-#banner h1 {
+h1#pageName {
     top:-26px;
 }
 
@@ -57,7 +55,8 @@ h1, h2, h3, .cabin {
     top: 0;
 }
 
-#banner h1, #banner h2 {
+.atopBanner {
+    position: absolute;
     z-index:100;
 }
 
@@ -73,19 +72,70 @@ h1, h2, h3, .cabin {
 	margin: 0;
 }
 
-#navBar {
-	z-index: 20;
-	position: absolute;
-	left: 979px;
-	top: 0;
+#updateDate {
+	margin-left: 0;
+	font-size: 24px;
+	margin-top: -6px;
+	height: 100px;
+	background-color: #7a7f83;
+	width: 280px;
+	height: 27px;
+	text-align: center;
+	color: white;
+	border-radius: 0 0 20px 20px;
+	box-shadow: 0px 1px 23px black;
 }
 
-#navBar h3 {
-    margin:0;
+/* nav */
+
+nav {
+	bottom: 0;
+	text-align:center;
 }
 
-#navBar a{
+.banner nav {
+    left: 250px;
+}
+
+.banner nav li {
+	font-family: 'Cabin Sketch', cursive;
+	text-shadow: 3px 4px 2px black, 0px 0px 19px black;
+	font-weight: 200;
+	color: #e7ca8d;
+	margin: 0;
+	list-style: none;
+	float: left;
+	font-size: 3em;
+	margin-left: 30px;
+	border: 1px solid #fcc65c;
+	padding: 10px;
+	border-bottom: none;
+}
+
+.banner nav li:hover {
+    background-color: #fcc65c;
+}
+
+nav a {
     text-decoration: none;
+}
+
+#between {
+    width: 1200px;
+}
+
+#between.underFullBanner {
+    margin:0;
+    margin-top: 400px;
+}
+
+#between nav img {
+    margin: auto;
+    width: 120px;
+}
+
+#between nav a {
+margin-right:60px;
 }
 
 
@@ -104,11 +154,13 @@ h1, h2, h3, .cabin {
 	margin-left: 20px;
 	color: white;
 	text-align: center;
+	padding: 0 50px 0 50px;
 }
 
 .blackMainInfo h3 {
-    color: #8dc1e7;
+	color: #848b95;
 	margin: 0;
+	text-align: center;
 }
 
 .blackMainInfo h4 {
@@ -125,7 +177,7 @@ h1, h2, h3, .cabin {
 	margin-left: 100px;
 }
 
-#currentLocation {
+.banner #currentLocation {
 	position: absolute;
 	top: 172px;
 	left: 0;
@@ -195,6 +247,10 @@ h1, h2, h3, .cabin {
 	color: white;
 	text-align: center;
 	width: 100%;
+}
+
+.text.left {
+    text-align: left;
 }
 
 .dayContainer .left {

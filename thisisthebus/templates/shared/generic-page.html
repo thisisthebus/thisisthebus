@@ -1,0 +1,22 @@
+{% extends "shared/base.html" %}
+
+{% block banner %}
+    {% if slicey %}
+        {% include "shared/slicey.html" %}
+    {% else %}
+        {% include "shared/bigger-banner.html" %}
+    {% endif %}
+{% endblock %}
+
+{% block rest-of-page %}
+    {% block between %}{% endblock %}
+    {% block main %}
+    <div id="main" class="{% if slicey %}underSlice{% endif %}">
+        <div class="blackMainInfo">
+            <div class="text left">
+                {{body_text|safe}}
+            </div>
+         </div>
+    </div>
+    {% endblock %}
+{% endblock %}

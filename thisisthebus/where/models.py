@@ -8,7 +8,7 @@ import yaml
 from thisisthebus.settings.constants import DATA_DIR
 
 from thisisthebus.settings.secrets import MAPBOX_ACCESS_KEY
-from thisisthebus.utils.files import get_apps_dir
+from thisisthebus.utils.files import get_frontend_apps_dir
 
 
 class Place(object):
@@ -70,8 +70,10 @@ class Place(object):
                 if checksum == self.yaml_checksum:
                     return json_representation
                 else:
+                    print("%s - %s is out of date." % (self.small_name, self.big_name))
                     return False
         except FileNotFoundError:
+            print("New Place: %s. - %s" % (self.small_name, self.big_name))
             return False
 
     def compile(self):
@@ -80,7 +82,10 @@ class Place(object):
        '''
         current_place_meta = self.compiled_is_current()
         if current_place_meta:
-            return current_place_meta
+            return current_place_meta, False
+        else:
+            print("Compiling %s - %s" % (self.small_name, self.big_name))
+
         # service = Static(access_token=MAPBOX_ACCESS_KEY)
 
         thumb_uri = "https://api.mapbox.com/styles/v1/mapbox/{style}/static/pin-s-bus({lon},{lat}/{lon},{lat},{zoom}/{width}x{height}?access_token={access_token}".format(
@@ -120,10 +125,10 @@ class Place(object):
         if self.yaml_checksum:
             place_meta['yaml_checksum'] = self.yaml_checksum
 
-        with open('%s/places/img/%s' % (get_apps_dir(), self.thumb_image_filename), 'wb') as output:
+        with open('%s/places/img/%s' % (get_frontend_apps_dir(), self.thumb_image_filename), 'wb') as output:
             output.write(response.content)
 
         with open(self.filename(), 'w') as f:
             f.write(json.dumps(place_meta))
 
-        return place_meta
+        return place_meta, True
