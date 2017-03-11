@@ -24,7 +24,8 @@ h1, h2, h3, .cabin {
 }
 
 #banner {
-    height:392px;
+	height: 392px;
+	box-shadow: 0px 1px 15px black;
 }
 
 .banner {
@@ -89,7 +90,7 @@ h1#pageName {
 /* nav */
 
 nav {
-	bottom: 0;
+	bottom: -4px;
 	text-align:center;
 }
 
@@ -113,7 +114,7 @@ nav {
 }
 
 .banner nav li:hover {
-    background-color: #fcc65c;
+    background: linear-gradient( 0deg, gray, #fcc65c 20px);
 }
 
 nav a {
