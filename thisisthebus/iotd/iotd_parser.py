@@ -1,8 +1,11 @@
 import datetime
 import json
+import shutil
 import sys
+import hashlib
 
 from PIL import Image, ExifTags
+from django.utils.text import slugify
 
 from thisisthebus.settings.constants import DATA_DIR, FRONTEND_DIR
 
@@ -101,9 +104,18 @@ def parse_iotd(image_filename):
     while not new_iotd['caption']:
         new_iotd['caption'] = ask_for_caption()
 
-    full_filename = '/apps/iotd/img/%s!%s.jpg' % (day, new_iotd['caption'].replace(' ', '-'))
-    thumb_filename = '/apps/iotd/img/%s!%s!thumb.jpg' % (day, new_iotd['caption'].replace(' ', '-'))
+    with open(image_filename, "rb") as f:
+        image_bytes = f.read(1024)
+        image_checksum = hashlib.md5(image_bytes).hexdigest()[:8]
 
+    file_detail = slugify(new_iotd['caption'][:30]) + "__" + image_checksum
+    extension = image_filename.split('.')[-1]
+
+    unchanged_filename = '/apps/iotd/img/unchanged/%s____%s.%s' % (img.filename.split('/')[-1], file_detail, extension)
+    full_filename = '/apps/iotd/img/%s____%s.%s' % (day, file_detail, extension)
+    thumb_filename = '/apps/iotd/img/thumbs/%s____%s.%s' % (day, file_detail, extension)
+
+    new_iotd['unchanged_url'] = unchanged_filename
     new_iotd['full_url'] = full_filename
     new_iotd['thumb_url'] = thumb_filename
 
@@ -112,8 +124,8 @@ def parse_iotd(image_filename):
     full_resize_ratio = min(MAX_SIZE / w, MAX_SIZE / h)
     thumb_resize_ratio = min(THUMB_SIZE / w, THUMB_SIZE / h)
 
-    full_size = w * full_resize_ratio, h * full_resize_ratio
-    thumb_size = w * thumb_resize_ratio, h * thumb_resize_ratio
+    full_size = h * full_resize_ratio, w * full_resize_ratio
+    thumb_size = h * thumb_resize_ratio, w * thumb_resize_ratio
 
     try:
         with open(get_filename_for_day(day), 'r') as f:
@@ -125,11 +137,14 @@ def parse_iotd(image_filename):
 
     write_to_file(filename=get_filename_for_day(day), payload=json.dumps(this_day_meta, indent=2))
 
+    print("Saving original (%s, %s)" % (w, h))
+    shutil.copyfile(image_filename, FRONTEND_DIR + unchanged_filename)
+
     print("full: resizing from (%s, %s) to %s" % (w, h, full_size))
     if orientation:
         img = autorotate(img, orientation)
     img.thumbnail(full_size, Image.ANTIALIAS)
-    img.save(FRONTEND_DIR + full_filename, "JPEG")
+    img.save(FRONTEND_DIR + full_filename, "JPEG", quality=60, optimize=True, progressive=True)
     print("------------------------------------")
     print("thumb: resizing from (%s, %s) to %s" % (w, h, thumb_size))
     thumb = Image.open(image_filename)

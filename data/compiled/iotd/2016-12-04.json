@@ -1,17 +1,32 @@
 [
   {
-    "full_url": "/apps/iotd/img/2016-12-04!Baby-gator..jpg",
-    "thumb_url": "/apps/iotd/img/2016-12-04!Baby-gator.!thumb.jpg",
-    "caption": "Baby gator."
+    "full_url": "/apps/iotd/img/2016-12-04____baby-gator.jpg",
+    "unchanged_url": "/apps/iotd/img/unchanged/IMG_4903.JPG____baby-gator.jpg",
+    "caption": "Baby gator.",
+    "thumb_url": "/apps/iotd/img/thumbs/2016-12-04____baby-gator.jpg"
   },
   {
-    "full_url": "/apps/iotd/img/2016-12-04!Notch,-leading-the-way-as-usual,-into-the-Skidaway-Island-wilderness.jpg",
-    "thumb_url": "/apps/iotd/img/2016-12-04!Notch,-leading-the-way-as-usual,-into-the-Skidaway-Island-wilderness!thumb.jpg",
-    "caption": "Notch, leading the way as usual, into the Skidaway Island wilderness"
+    "full_url": "/apps/iotd/img/2016-12-04____fibonacci-ventures-through-the-skidaway.jpg",
+    "unchanged_url": "/apps/iotd/img/unchanged/IMG_4907.JPG____fibonacci-ventures-through-the-skidaway.jpg",
+    "caption": "Fibonacci ventures through the Skidaway Island nature trail.",
+    "thumb_url": "/apps/iotd/img/thumbs/2016-12-04____fibonacci-ventures-through-the-skidaway.jpg"
   },
   {
-    "full_url": "/apps/iotd/img/2016-12-04!-.jpg",
-    "thumb_url": "/apps/iotd/img/2016-12-04!-!thumb.jpg",
-    "caption": " "
+    "full_url": "/apps/iotd/img/2016-12-04____follow-the-bambino.jpg",
+    "unchanged_url": "/apps/iotd/img/unchanged/IMG_4912.JPG____follow-the-bambino.jpg",
+    "caption": "Follow the bambino.",
+    "thumb_url": "/apps/iotd/img/thumbs/2016-12-04____follow-the-bambino.jpg"
+  },
+  {
+    "full_url": "/apps/iotd/img/2016-12-04____.jpg",
+    "thumb_url": "/apps/iotd/img/thumbs/2016-12-04____.jpg",
+    "caption": " ",
+    "unchanged_url": "/apps/iotd/img/unchanged/IMG_4915.JPG____.jpg"
+  },
+  {
+    "full_url": "/apps/iotd/img/2016-12-04____.jpg",
+    "thumb_url": "/apps/iotd/img/thumbs/2016-12-04____.jpg",
+    "caption": " ",
+    "unchanged_url": "/apps/iotd/img/unchanged/IMG_4920.JPG____.jpg"
   }
 ]

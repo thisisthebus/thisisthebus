@@ -7,7 +7,7 @@ add_project_dir_to_path()
 import json
 
 from checksumdir import dirhash
-import os
+import os, sys
 import maya
 
 from django.template.loader import get_template
@@ -17,7 +17,7 @@ from thisisthebus.iotd.build import process_iotds
 from thisisthebus.settings.constants import FRONTEND_DIR, DATA_DIR, APP_DIR
 from thisisthebus.where.build import process_locations, process_places
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'settings.default_django_settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'thisisthebus.settings.default_django_settings')
 
 SUMMARY_PREVIEW_LENGTH = 140
 
@@ -31,7 +31,7 @@ def build_daily_log(summaries, locations, iotds, places):
         day_nice = day.replace('.md', "")
         this_day_meta = {}
         days.append((day_nice, this_day_meta))
-        this_day_meta['summary'] = summaries.get(day)
+        this_day_meta['summary'] = summaries.get(day, "")
         if iotds.get(day_nice):
             this_day_meta['iotds'] = iotds[day_nice]
         if locations.get(day_nice):
@@ -55,6 +55,7 @@ def get_hashes():
 
 
 def complete_build(django_setup=False):
+
     if django_setup:
         import django
         django.setup()
