@@ -59,6 +59,36 @@ def which_day(exif_date):
     return day
 
 
+def what_time(exif_date):
+    print("What time?")
+    if exif_date:
+        print("1) The time it was taken (%s)" % exif_date)
+    else:
+        print("(This image is from an unknown date.)")
+    print("2) Midnight")
+    print("3) Some other time")
+
+    response = input("Enter 1-3: ")
+
+    try:
+        response = int(response)
+    except ValueError:
+        return
+
+    if response == 1:
+        if not exif_date:
+            print("I told you - we don't know when the image was taken.  Try again.")
+            time = None
+        else:
+            time = exif_date
+    elif response == 2:
+        time = "00:00:00"
+    elif response == 3:
+        time = str(input("Enter hh:mm:ss\n"))
+    else:
+        return
+    return time
+
 def ask_for_caption():
     return str(input("Enter a caption - say, 140 chars or so: "))
 
@@ -83,6 +113,7 @@ def parse_iotd(image_filename):
             'ApertureValue', 'DateTime', 'Flash', 'FocalLength', 'GPSInfo', 'Model', 'Orientation', 'ShutterSpeedValue')}
 
         day_image_was_taken = abridged_exif['DateTime'].split()[0].replace(':', "-")
+        time_image_was_taken = abridged_exif['DateTime'].split()[1]
 
     except AttributeError:
         # We apparently don't have exif data.
@@ -99,25 +130,29 @@ def parse_iotd(image_filename):
     while not day:
         day = which_day(day_image_was_taken)
 
-    # Keep asking for a caption until we get a caption.
-    new_iotd = {'caption': None}
-    while not new_iotd['caption']:
-        new_iotd['caption'] = ask_for_caption()
+    time = None
+    while not time:
+        time = what_time(time_image_was_taken)
+
+    # Start our new meta dict by asking for a caption.
+    new_iotd = {'caption': ask_for_caption()}
 
     with open(image_filename, "rb") as f:
         image_bytes = f.read(1024)
         image_checksum = hashlib.md5(image_bytes).hexdigest()[:8]
 
-    file_detail = slugify(new_iotd['caption'][:30]) + "__" + image_checksum
+    file_detail = slugify(new_iotd['caption'][:30]) + "__" if new_iotd['caption'] else ""
+    file_detail += image_checksum
     extension = image_filename.split('.')[-1]
 
-    unchanged_filename = '/apps/iotd/img/unchanged/%s____%s.%s' % (img.filename.split('/')[-1], file_detail, extension)
-    full_filename = '/apps/iotd/img/%s____%s.%s' % (day, file_detail, extension)
-    thumb_filename = '/apps/iotd/img/thumbs/%s____%s.%s' % (day, file_detail, extension)
+    unchanged_filename = '/apps/iotd/img/unchanged/%s__%s.%s' % (img.filename.split('/')[-1], file_detail, extension)
+    full_filename = '/apps/iotd/img/%s__%s.%s' % (day, file_detail, extension)
+    thumb_filename = '/apps/iotd/img/thumbs/%s__%s.%s' % (day, file_detail, extension)
 
     new_iotd['unchanged_url'] = unchanged_filename
     new_iotd['full_url'] = full_filename
     new_iotd['thumb_url'] = thumb_filename
+    new_iotd['time'] = time
 
     h = float(img.size[0])
     w = float(img.size[1])

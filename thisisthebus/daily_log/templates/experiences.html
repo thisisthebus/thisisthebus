@@ -1,0 +1,11 @@
+{% extends 'shared/generic-page.html' %}
+
+{% block main %}
+<div id="main" class="underSlice">
+    <div class="blackMainInfo experiences">
+        {% for experience in experiences %}
+            {% include 'single-experience.html' %}
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

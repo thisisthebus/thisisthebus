@@ -1,3 +1,4 @@
+import yaml
 from ensure_build_path import add_project_dir_to_path, BUILD_PATH
 
 from thisisthebus.pages.build import build_page
@@ -17,7 +18,6 @@ from thisisthebus.iotd.build import process_iotds
 from thisisthebus.settings.constants import FRONTEND_DIR, DATA_DIR, APP_DIR
 from thisisthebus.where.build import process_locations, process_places
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'thisisthebus.settings.default_django_settings')
 
 SUMMARY_PREVIEW_LENGTH = 140
 
@@ -43,6 +43,48 @@ def build_daily_log(summaries, locations, iotds, places):
 
     with open("%s/travels.html" % FRONTEND_DIR, "w+") as f:
         f.write(daily_log_html)
+
+
+def build_experiences(summaries, locations, iotds, places):
+    experience_dir = "%s/authored/experiences" % DATA_DIR
+    experience_dir_listing = os.walk(experience_dir)
+    experience_files = list(experience_dir_listing)[0][2]
+    experiences = []
+    for experience_file in experience_files:
+        with open('%s/%s' % (experience_dir, experience_file), 'r') as f:
+            experience = yaml.load(f.read())
+            experience['start_day'] = experience['start'].split('T')[0]
+            experience['end_day'] = experience['end'].split('T')[0]
+            start_maya = maya.parse(experience['start'])
+            end_maya = maya.parse(experience['end'])
+
+            #images
+            experience['images'] = []
+            for day, iotd_list in iotds.items():
+                for iotd in iotd_list:
+                    iotd_maya = maya.parse(day + "T" + iotd['time'] + "-05")
+                    if start_maya < iotd_maya and iotd_maya < end_maya:
+                        experience['images'].append(iotd)
+
+            # locations
+            experience['locations'] = {}
+            for day, location in locations.items():
+                location_maya = maya.parse(day)
+                if start_maya < location_maya and location_maya < end_maya:
+                    # This location qualifies!  We'll make this a 2-tuple with the place as the first item and any dates as the second.
+                    if not location['place'] in experience['locations'].keys():
+                        experience['locations'][location['place']] = {'place_meta': places[location['place']], 'days': []}
+                    experience['locations'][location['place']]['days'].append(day)
+
+            # summaries
+            experience['summaries'] = {}
+            for day, summary in summaries.items():
+                summary_maya = maya.parse(day)
+                if start_maya < summary_maya and summary_maya < end_maya:
+                    experience['summaries'][day] = summary
+
+            experiences.append(experience)
+    return experiences
 
 
 def get_hashes():
@@ -76,6 +118,16 @@ def complete_build(django_setup=False):
 
     hashes = get_hashes()
     build_time = maya.now().datetime(to_timezone='US/Eastern', naive=True)
+
+    experiences = build_experiences(summaries, locations, iotds, places)
+    t = get_template('experiences.html')
+    d = {"experiences": experiences, "include_swipebox": True, "slicey": True, "page_name": "Our Travels"}
+    experiences_html = t.render(d)
+
+    with open("%s/travels-by-experience.html" % FRONTEND_DIR, "w+") as f:
+        f.write(experiences_html)
+
+
     build_daily_log(summaries, locations, iotds, places)
     build_page("index", root=True, context={'place': latest_location_place, 'update_date': latest_location_date, 'build_hashes': hashes, 'build_time': build_time})
     build_page("about", root=True, slicey=True)

@@ -1,0 +1,27 @@
+<div class="experienceContainer">
+    <h3>{{experience.name}}</h3>
+    <h4 class="bigDate">{{experience.start_day}} through {{experience.end_day}}</h4>
+    <div class="contentSection flex">
+        {% for location in experience.locations.values %}
+            {% with location.place_meta as place %}
+              <div class="locationContainer">{% include 'single-place.html' %}</div>
+            {% endwith %}
+        {% endfor %}
+    </div>
+
+    <div class="contentSection">
+        {{experience.description}}
+    </div>
+
+    <div class="contentSection imageGrid">
+        {% for day, summary in experience.summaries.items %}
+            {{day}} - {{summary}}
+        {% endfor %}
+        <div class="daySummary">{{day_meta.summary|safe}}</div>
+        <div class="iotdsContainer">
+            {% for iotd in experience.images %}
+                {% include "iotd-instance.html" %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

@@ -6,7 +6,6 @@
         {% for day, day_meta in days %}
             <div class="dayContainer">
                 <h3>{{day}}</h3>
-                <h4 class="bigDate"></h4>
                 <div class="left">
                     {% with day_meta.place as place %}
                         <div class="locationContainer">{% include 'single-place.html' %}</div>

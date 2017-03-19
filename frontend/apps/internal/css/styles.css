@@ -1,4 +1,4 @@
-body {
+  body {
     background-color: #fcc65c;
     font-family: 'Kreon', serif;
 }
@@ -145,17 +145,15 @@ margin-right:60px;
 	float: left;
 }
 
-
 .blackMainInfo {
 	background-color: black;
 	box-shadow: 0px 0px 14px 7px black;
 	float: left;
-	width: 820px;
+	width: 920px;
 	margin-top: 45px;
 	margin-left: 20px;
 	color: white;
 	text-align: center;
-	padding: 0 50px 0 50px;
 }
 
 .blackMainInfo h3 {
@@ -168,6 +166,30 @@ margin-right:60px;
 	margin: 0;
 	font-size: 1.3em;
 	color: #848b95;
+}
+
+.contentSection {
+    float:left;
+    clear:left;
+    width: 820px;
+    padding: 10px 50px 0 50px;
+}
+
+.contentSection.flex {
+    display:flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    padding: 0;
+    width: 920px;
+}
+
+.flex .locationContainer img {
+    flex: 1;
+}
+
+.imageGrid img {
+    height: 140px;
+    margin: 10px;
 }
 
 /* Main */
@@ -195,6 +217,11 @@ margin-right:60px;
 .dailyLog .locationContainer {
     float:left;
 }
+
+.experiences .locationContainer {
+    margin:auto;
+}
+
 
 .dailyLog .daySummary {
     float:right;
