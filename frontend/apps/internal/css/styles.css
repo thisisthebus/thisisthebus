@@ -1,6 +1,17 @@
-  body {
+body {
     background-color: #fcc65c;
     font-family: 'Kreon', serif;
+}
+
+/* generic */
+.left {
+    float: left;
+    clear: left;
+}
+
+.right {
+    float: right;
+    clear: right;
 }
 
 h1 {
@@ -117,6 +128,14 @@ nav {
     background: linear-gradient( 0deg, gray, #fcc65c 20px);
 }
 
+#bannerSlice nav {
+    left: 0;
+}
+
+#bannerSlice nav li {
+    font-size: 2em;
+}
+
 nav a {
     text-decoration: none;
 }
@@ -172,7 +191,7 @@ margin-right:60px;
     float:left;
     clear:left;
     width: 820px;
-    padding: 10px 50px 0 50px;
+    padding: 10px 50px 0 18px;
 }
 
 .contentSection.flex {
@@ -181,6 +200,7 @@ margin-right:60px;
     align-items: stretch;
     padding: 0;
     width: 920px;
+    margin-bottom: 10px;
 }
 
 .flex .locationContainer img {
@@ -190,6 +210,10 @@ margin-right:60px;
 .imageGrid img {
     height: 140px;
     margin: 10px;
+}
+
+.iotdsContainer.right.imageGrid {
+    width: 550px;
 }
 
 /* Main */
@@ -216,6 +240,7 @@ margin-right:60px;
 
 .dailyLog .locationContainer {
     float:left;
+    display: inline-table;
 }
 
 .experiences .locationContainer {
@@ -236,9 +261,12 @@ margin-right:60px;
 	width: 100%;
 }
 
+.dayContainer h4 {
+    margin-top: 25px;
+}
+
 .locationContainer {
-    width: 280px;
-    height: 220px;
+    width: 280px !important;
 }
 
 .locationContainer .locationNameCaption div {
@@ -289,12 +317,10 @@ margin-right:60px;
 }
 
 .dayContainer .left {
-    float:left;
     width:300px;
 }
 
 .dayContainer .right {
-    float:right;
     width:520px;
 }
 

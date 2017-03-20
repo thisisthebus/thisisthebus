@@ -3,18 +3,16 @@ import os
 from thisisthebus.settings.constants import DATA_DIR
 import json
 
+image_data_dir = "%s/compiled/images" % DATA_DIR
 
-def process_iotds():
-    iotd_dir = os.walk("%s/compiled/iotd" % DATA_DIR)
-    iotd_files = list(iotd_dir)[0][2]
+
+def process_images():
+    print("Processing Images.")
 
     iotds = {}
-    for iotd_file in iotd_files:
+    for iotd_file in os.listdir(image_data_dir):
         day = iotd_file.strip(".json")
-        with open("%s/compiled/iotd/%s" % (DATA_DIR, iotd_file), 'r') as f:
-            try:
-                iotds[day] = json.loads(f.read())
-            except json.decoder.JSONDecodeError as e:
-                print("Had a problem with %s: %s" % (iotd_file, e))
+        with open("%s/compiled/images/%s" % (DATA_DIR, iotd_file), 'r') as f:
+            iotds[day] = json.loads(f.read())
 
     return iotds

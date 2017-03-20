@@ -2,7 +2,7 @@
     <h3>{{experience.name}}</h3>
     <h4 class="bigDate">{{experience.start_day}} through {{experience.end_day}}</h4>
     <div class="contentSection flex">
-        {% for location in experience.locations.values %}
+        {% for location in experience.locations %}
             {% with location.place_meta as place %}
               <div class="locationContainer">{% include 'single-place.html' %}</div>
             {% endwith %}
@@ -10,7 +10,7 @@
     </div>
 
     <div class="contentSection">
-        {{experience.description}}
+        {{experience.description|safe}}
     </div>
 
     <div class="contentSection imageGrid">

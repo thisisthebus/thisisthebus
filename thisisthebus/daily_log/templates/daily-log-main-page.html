@@ -1,6 +1,8 @@
 {% extends 'shared/generic-page.html' %}
 
 {% block main %}
+By Day
+By Experience
 <div id="main" class="underSlice">
     <div class="blackMainInfo dailyLog">
         {% for day, day_meta in days %}
@@ -14,7 +16,7 @@
                 <div class="right">
                     <div class="daySummary">{{day_meta.summary|safe}}</div>
                     <div class="iotdsContainer">
-                        {% for iotd in day_meta.iotds %}
+                        {% for iotd in day_meta.images %}
                             {% include "iotd-instance.html" %}
                         {% endfor %}
                     </div>

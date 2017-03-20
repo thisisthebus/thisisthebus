@@ -5,6 +5,7 @@ from markdown import markdown
 import yaml
 
 def process_summaries():
+    print("Processing Summaries.")
     summaries_dir = "%s/authored/daily-log-summaries" % DATA_DIR
     summary_files = os.listdir(summaries_dir)
     summary_files.sort()

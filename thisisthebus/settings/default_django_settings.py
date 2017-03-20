@@ -18,6 +18,7 @@ INSTALLED_APPS = [
     'thisisthebus.where',
     'thisisthebus.daily_log',
     'thisisthebus.iotd',
+    'thisisthebus.experiences',
 ]
 
 MIDDLEWARE = [

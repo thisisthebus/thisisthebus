@@ -2,10 +2,14 @@
 
 {% block main %}
 <div id="main" class="underSlice">
-    <div class="blackMainInfo experiences">
-        {% for experience in experiences %}
-            {% include 'single-experience.html' %}
-        {% endfor %}
-    </div>
+    {% for experience in experiences %}
+        <div class="blackMainInfo experiences">
+            {% if experience.display == "by-location" %}
+                {% include 'single-experience-by-place.html' %}
+            {% else %}
+                {% include 'single-experience.html' %}
+            {% endif %}
+        </div>
+    {% endfor %}
 </div>
 {% endblock %}

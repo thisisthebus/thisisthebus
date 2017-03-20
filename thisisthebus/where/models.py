@@ -5,10 +5,9 @@ import json
 
 import requests
 import yaml
-from thisisthebus.settings.constants import DATA_DIR
+from thisisthebus.settings.constants import DATA_DIR, FRONTEND_APPS_DIR
 
 from thisisthebus.settings.secrets import MAPBOX_ACCESS_KEY
-from thisisthebus.utils.files import get_frontend_apps_dir
 
 
 class Place(object):
@@ -30,7 +29,7 @@ class Place(object):
         self.use_both_names_for_slug = use_both_names_for_slug
 
     @staticmethod
-    def from_authored_yaml(place_name):
+    def from_yaml(place_name):
         with open("%s/authored/places/%s" % (DATA_DIR, place_name), "r") as f:
             authored_place = yaml.load(f)
             f.seek(0)
@@ -125,7 +124,7 @@ class Place(object):
         if self.yaml_checksum:
             place_meta['yaml_checksum'] = self.yaml_checksum
 
-        with open('%s/places/img/%s' % (get_frontend_apps_dir(), self.thumb_image_filename), 'wb') as output:
+        with open('%s/places/img/%s' % (FRONTEND_APPS_DIR, self.thumb_image_filename), 'wb') as output:
             output.write(response.content)
 
         with open(self.filename(), 'w') as f:

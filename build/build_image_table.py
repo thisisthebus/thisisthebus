@@ -37,7 +37,7 @@ if __name__ == "__main__":
 
     t = get_template('iotd-table.html')
     sorted_iotds = OrderedDict(sorted(iotds_dict.items(), key=lambda i: i[0]))
-    iotd_table_html = t.render({'iotds': sorted_iotds})
+    iotd_table_html = t.render({'images': sorted_iotds})
 
     with open("%s/apps/iotd/image-table.html" % FRONTEND_DIR, "w+") as f:
         f.write(iotd_table_html)
