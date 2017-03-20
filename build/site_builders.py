@@ -69,7 +69,8 @@ def complete_build(django_setup=False):
     # timeframes
 
     latest_location_date, latest_location_dict = max(locations.items())
-    latest_location_time, latest_location_place = max(latest_location_dict.items())
+    latest_location_time, latest_location = max(latest_location_dict.items())
+    latest_place = places[latest_location]
 
     hashes = get_hashes()
     build_time = maya.now().datetime(to_timezone='US/Eastern', naive=True)
@@ -86,7 +87,7 @@ def complete_build(django_setup=False):
 
     build_daily_log(summaries, locations, images, places)
     build_page("index", root=True,
-               context={'place': latest_location_place, 'update_date': latest_location_date, 'build_hashes': hashes,
+               context={'place': latest_place, 'update_date': latest_location_date, 'build_hashes': hashes,
                         'build_time': build_time})
     build_page("about", root=True, slicey=True)
 
