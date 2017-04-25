@@ -1,12 +1,12 @@
 <div id="bannerSlice" class="banner">
-    <h2 id="pageName" class="atopBanner">{{page_name}}</h2>
+    <h2 id="pageName" class="atopBanner">{{title}}</h2>
     <a href="/"><h3 class="brandLabel">this is the bus</h3></a>
     <img id="banner-image" src="/apps/internal/img/banner-slice.JPG"/>
     {% if sub_nav %}
     <nav class="atopBanner">
         <ul>
-        {% for url, name in sub_nav %}
-            <a href="{{url}}"><li class="item">{{name}}</li></a>
+        {% for url, name, highlight in sub_nav %}
+            <a href="{{url}}"><li class="item {% if highlight %}highlight{% endif %}">{{name}}</li></a>
         {% endfor %}
         </ul>
     </nav>

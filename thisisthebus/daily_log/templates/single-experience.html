@@ -1,6 +1,6 @@
 <div class="experienceContainer">
     <h3>{{experience.name}}</h3>
-    <h4 class="bigDate">{{experience.start_day}} through {{experience.end_day}}</h4>
+    <h4 class="bigDate">{{experience.start_maya.slang_date}} - {{experience.end_maya.slang_date}}</h4>
     <div class="contentSection flex">
         {% for location in experience.locations %}
             {% with location.place_meta as place %}

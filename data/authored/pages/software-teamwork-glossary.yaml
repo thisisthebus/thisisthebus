@@ -1,0 +1,39 @@
+
+body_text: >
+
+  * Integration Flow
+
+  The process by which an idea becomes part of your product.
+
+  * Task Regulation:  The practice of sheparding encapsulated tasks from creation to a conclusory disposition, such as 'closed', 'duplicate', or 'wontfix'.
+
+  * Phases of deployment
+  * Task Encapsulation:
+
+
+  * Conclusory Dispositions:
+
+         The input for ideas for your team is obvious - they come from the world around you.
+
+         You put them in your integration flow, and as a result, any number of things may happen - there are many ways to conclude work on an idea.
+
+         Conclusory Dispotions are the ends-of-the-roads that you assign to ideas once they enter the integration flow.  Your goal is to shephard every idea to a conclusory disposition.
+
+         The three most common are "merged," "duplicate," and "wontfix."
+
+         It's important to choose culturally-relevant possibilities as conclusory dispositions.  In some scientific fields, "wontfix" might not be a fit,
+         and you might instead opt for a non-conclusory disposition, such as, "field-not-ready-yet."
+
+
+
+  *
+
+  ** Staging
+
+  ** Production
+
+  * Version Control:  The process by which discrete implementations of ideas are added ('merged') or subtracted ('deprecated') from your *product*, *documentation*, *test suite*, or *build protocol*.
+
+  * Resources:
+    ** "Metal": The word "metal" is sometimes used to describe any piece of hardware on which execution of any portion of your product takes place.
+      The term "bare metal" is used to describe servers that are in a naive configuration before the experiences fo your integration flow.

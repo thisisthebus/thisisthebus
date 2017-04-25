@@ -2,7 +2,7 @@ import maya
 import yaml
 from django.db import models
 from markdown import markdown
-
+import datetime
 from thisisthebus import experiences
 from thisisthebus.settings.constants import EXPERIENCE_DATA_DIR
 from build.built_fundamentals import locations, images, summaries, places
@@ -25,10 +25,18 @@ class Experience(models.Model):
         experience_dict['description'] = markdown(experience_dict['description'])
         experience = Experience(**experience_dict)
 
-        experience.start_day = experience.start.split('T')[0]
-        experience.end_day = experience.end.split('T')[0]
-        experience.start_maya = maya.parse(experience.start)
-        experience.end_maya = maya.parse(experience.end)
+        experience.start_day = experience.start.date()
+
+        if not experience.end:
+            experience.end = datetime.datetime.now()
+
+        try:
+            experience.end_day = experience.end.date()
+        except:
+            pass
+
+        experience.start_maya = maya.MayaDT.from_datetime(experience.start)
+        experience.end_maya = maya.MayaDT.from_datetime(experience.end)
 
         experience.all_images_with_location = []
         experience.all_summaries_with_location = []

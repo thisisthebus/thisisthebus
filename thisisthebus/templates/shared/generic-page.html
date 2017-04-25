@@ -11,7 +11,17 @@
 {% block rest-of-page %}
     {% block between %}{% endblock %}
     {% block main %}
-    <div id="main" class="{% if slicey %}underSlice{% endif %}">
+
+    <div id="main" class="page {% if slicey %}underSlice{% endif %}">
+        <div id="between">
+        {% if author %}
+            <div class="author">by {{author}}</div>
+        {% endif %}
+        {% if build_time %}
+            <div class="lastUpdate">last updated: {{build_time}}</div>
+        {% endif %}
+
+        </div>
         <div class="blackMainInfo">
             <div class="text left">
                 {{body_text|safe}}

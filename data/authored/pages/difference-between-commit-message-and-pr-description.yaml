@@ -1,0 +1,21 @@
+author: jMyles
+
+body_text: >
+
+  The rise of the Pull Request as the primary instrument of proposing changes to version-controlled
+  documents has undoubtedly changed the norms of communication surrounding codebases.
+
+  However, if you have "come of age" during the time period when Pull Requests have surged in popularity,
+  they may seem to you like "the new commit."  Remember, though, that the commit is still the fundamental
+  unit of contribution to a project; it's the smallest piece of media that combines an author, a time,
+  a changeset, and a description (the commit message).
+
+  The commit message remains a crucially important piece of communication for a functional team -
+  especially one that is growing and wants to be able to include developers of less experience.
+
+  Let's took at some of the fundamental differences between a commit message and a Pull Request:
+
+  | commit message              |  Pull Requesst                                                  |
+  | --------------              | ----------------                                                |
+  | Part of the VCS             | A github concept                                                |
+  | Forever part of the history | Can be removed or replaced when the project is forked or moved  |

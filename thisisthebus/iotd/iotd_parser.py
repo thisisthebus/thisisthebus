@@ -24,7 +24,7 @@ def autorotate(image_file, orientation):
 
 
 def get_filename_for_day(day):
-    return "%s/compiled/iotd/%s.json" % (DATA_DIR, day)
+    return "%s/compiled/images/%s.json" % (DATA_DIR, day)
 
 
 def which_day(exif_date):

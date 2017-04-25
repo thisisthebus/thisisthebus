@@ -1,0 +1,188 @@
+author: jMyles
+
+title: Our Tech Stack
+
+body_text: >
+
+  Our bus is our home, but it's also a teaching and engineering platform.
+
+  We have lots of wires and microcontrollers and antennae hanging everywhere; we don't use
+  conduit or construction to hide the reality that we live in a hack job.  :-)
+
+  <blockquote class="instagram-media" data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BOLzw9-AiKX/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by A slashRoute project (@thisisthebus)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-12-19T03:59:44+00:00">Dec 18, 2016 at 7:59pm PST</time></p></div></blockquote>
+  <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+
+  ### At a glance
+
+  Project                   |  We use it for....
+
+  ------------------------  |  -------------------
+
+  Raspberry Pi              |  Power monitoring, Internet gateway, Automation Server
+
+  6x Deep Cycle Batteries   |  Energy storage
+
+  DC-DC Converters          |  Supplying power to all devices
+
+  InfluxDB                  |  Time-series Database
+
+  Grafana                   |  Visualizing energy data
+
+  Neopixel RGBW LEDs        |  Illumination
+
+  WiPy                      |  Analog sensing, lighting control
+
+  Micropython               |  LED controller, sensor logic
+
+  Home Assistant            |  Automation Interface
+
+  [Brilliant.py](https://github.com/thisisthebus/brilliant.py)              |  Lighting effects
+
+  stray_electrons           |  Power shunt reading logic
+
+  composting toilet         |  Pooping
+
+
+
+
+  ## The Bus Chassis
+
+  By mass, the vast majority of the bus is reused and repurposed: nearly 12,000 pounds of steel,
+  aluminum and sheet metal, which once carried students to and from a school in Pennsylvania,
+  now constitute our home and engineering / teaching platform.
+
+  The Bus began as an International 3800 school bus with Thomas coachwork.  It has a Navistar T444E Diesel engine.
+  It is 38' long and has a 6' ceiling down the center.
+
+
+  ## Python
+
+  The Python tribe is a crucial cornerstone of our social support network.
+
+  We generally attend either PyCon.us or DjangoCon.us (or both) each year.
+
+  Our Python friends and their languages drive the bus project forward just as much as the engine.  We've been blessed to find Python folk across the country
+  who have offered us parking, power, and water.
+
+  We use a number of Python projects on our Raspberry Pi, as well as Micropython on our smaller microcontrollers.
+
+
+  ## Raspberry Pi
+
+  It's hard to imagine the bus without Raspberry Pi.
+
+  We have ours mounted on our "wonky jar shelf."
+
+  ![Raspberry Pi on wonky shelf](/apps/pages/img/rpi-wonky-shelf.jpeg)
+
+
+  #### The Pi is responsible for the following:
+
+
+  ##### Power consumption monitoring
+
+
+  We read from three different power shunts about six times per second:
+
+
+  * Our consumption (power going from the batteries to our devices)
+
+  * Solar power (from the charge controller to the batteries)
+
+  * "Petrochemical power" (from the alternator or plug-in charger to the batteries)
+
+
+  We also read the system voltage and solar array voltage at a similar interval.
+
+  Then, every 2 seconds, we average the values together and store the 2-second average in Influx DB.
+
+  From there, it's fairly easy to feed that data into Grafana so that we always have nice-looking
+  real-time charts depicting our energy situation:
+
+  ![Grafana Energy Chart](/apps/pages/img/energy-chart1.png)
+
+
+  ##### Internet Connection Gateway
+
+  We operate a LAN within the bus for many everyday tasks.  But of course, we still need to connect
+  to the corporate internet every day.
+
+  To accomplish this, we use a USB wifi device and a big honking TP-LINK antenna.
+
+  ![Wifi Antenna](/apps/iotd/img/2017-04-01__that-theres-a-wifi-antenna__9290b2d3.JPG)
+
+  The Raspberry Pi acts as our gateway, providing service to the LAN.
+
+
+  ##### Automation Interface
+
+  We use the Raspberry Pi Foundation 7" touchscreen along with [Home Assistant](https://home-assistant.io/),
+  an amazing project maintained by Python friends, to automate many aspects of our life on the bus,
+  including our lighting.
+
+  ## Neopixels!
+
+  We use NeoPixel RGBW strips for much of our lighting.
+
+  These LED strips have four diodes on each chip (and about 60 chips per meter).
+
+  One of the diodes provides a wide-spectrum, natural-feeling white color.  The other three are for
+  adding red, green, and blue as needed.
+
+  <blockquote class="instagram-media" data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BSTrpxsjdZu/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by A slashRoute project (@thisisthebus)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-03-31T15:28:21+00:00">Mar 31, 2017 at 8:28am PDT</time></p></div></blockquote>
+  <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+
+
+  ## Power
+
+  We have six flexible Solar Cynergy panels on the roof of our bus.
+
+  <blockquote class="instagram-media" data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BOKxSY-g_5i/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by A slashRoute project (@thisisthebus)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-12-18T18:18:51+00:00">Dec 18, 2016 at 10:18am PST</time></p></div></blockquote>
+  <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+
+  One thing that distinguishes our build from most that we see is that we don't use an inverter for everyday household operations.
+  We only turn our inverter on to use AC motors (coffee grinder, blender, juicer).  Other than that, we convert DC voltage
+  locally to the voltage our devices need.  Our house batteries are 12v, run in parallel, so we are able to use most 12v
+  devices without a converter or regulator.
+
+
+  Here are some DC devices we use and their voltages:
+
+
+  Device                     |  Voltage
+
+  -------------------------  |  -------
+
+  Dometic 94L Refridgerator  |  12v
+
+  USB Charging Stations  |  12v
+
+  Wi-Fi Acess Points  |  12v
+
+  Composting Toilet  |  12v
+
+  Computer  |  19.5v
+
+  Rasbperry Pi  |  5v
+
+  Neopixel strips  |  5v
+
+
+  In terms of energy efficiency, this kind of direct connection is great.  While inverters have become
+  more efficient over the years, the consumer-grade AC adapters that power many household devices
+  are not made with off-grid life in mind.
+
+
+  We have measured the comparative power consumption of a few devices by plugging them in through
+  their AC adapters into the inverter and then through a DC-DC converter.  In every case, we have
+  measured at least a 20% gain in efficiency.  Some devices are closer to 30%.
+
+  Here's a photo of our DC and AC distribution systems (notice the DC system is on a hinge for easy hacking):
+
+  <blockquote class="instagram-media" data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BSWhDGdDFLA/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by A slashRoute project (@thisisthebus)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-04-01T17:53:25+00:00">Apr 1, 2017 at 10:53am PDT</time></p></div></blockquote>
+  <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+
+
+
+  OK friends, that's all for now.  Peace and Persistence!
+

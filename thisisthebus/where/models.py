@@ -35,7 +35,7 @@ class Place(object):
             f.seek(0)
             checksum = hashlib.md5(bytes(f.read(), encoding='utf-8')).hexdigest()
 
-        return Place(
+        place = Place(
             small_name=authored_place['SMALL_NAME'],
             big_name=authored_place['BIG_NAME'],
             latitude=authored_place['LAT'],
@@ -46,6 +46,10 @@ class Place(object):
             yaml_checksum=checksum,
             use_both_names_for_slug=authored_place['USE_BOTH_NAMES_FOR_SLUG']
         )
+
+        place.small_link = authored_place.get('SMALL_LINK')
+
+        return place
 
     def to_slug(self):
         slug = self.small_name.replace(" ", "-").lower()
@@ -119,6 +123,7 @@ class Place(object):
             big_name=self.big_name,
             thumb=self.thumb_image_filename,
             map=self.map_uri,
+            small_link=self.small_link,
         )
 
         if self.yaml_checksum:

@@ -41,7 +41,7 @@ def build_daily_log(summaries, locations, iotds, places):
 
     t = get_template('daily-log-main-page.html')
     d = {"days": days, "include_swipebox": True, "slicey": True, "page_name": "Our Travels",
-         "sub_nav": [('/travels-by-experience.html', "By Experience"), ('/travels.html', "By Date")]}
+         "sub_nav": [('/travels-by-experience.html', "By Experience", False), ('/travels.html', "By Date", True)]}
     daily_log_html = t.render(d)
 
     with open("%s/travels.html" % FRONTEND_DIR, "w+") as f:
@@ -78,7 +78,7 @@ def complete_build(django_setup=False):
     experiences = build_experiences(summaries, locations, images, places)
     t = get_template('experiences.html')
     d = {"experiences": experiences, "include_swipebox": True, "slicey": True, "page_name": "Our Travels",
-         "sub_nav": [('/travels-by-experience.html', "By Experience"), ('/travels.html', "By Date")]
+         "sub_nav": [('/travels-by-experience.html', "By Experience", True), ('/travels.html', "By Date", False)]
          }
     experiences_html = t.render(d)
 
@@ -87,9 +87,14 @@ def complete_build(django_setup=False):
 
     build_daily_log(summaries, locations, images, places)
     build_page("index", root=True,
-               context={'place': latest_place, 'update_date': latest_location_date, 'build_hashes': hashes,
-                        'build_time': build_time})
+               context={'place': latest_place,
+                        'update_date': latest_location_date,
+                        'build_hashes': hashes,
+                        'build_time': build_time}
+               )
+
     build_page("about", root=True, slicey=True)
+    build_page("our-tech-stack", root=True, slicey=True)
 
     with open("%s/last_build.json" % BUILD_PATH, "w") as f:
         f.write(json.dumps(hashes))
