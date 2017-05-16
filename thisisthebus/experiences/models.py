@@ -17,6 +17,9 @@ class Experience(models.Model):
     start = models.DateTimeField()
     end = models.DateTimeField()
 
+    def __str__(self):
+        return self.name
+
     @staticmethod
     def from_yaml(experience_yaml_filename):
         with open('%s/%s' % (EXPERIENCE_DATA_DIR, experience_yaml_filename), 'r') as f:

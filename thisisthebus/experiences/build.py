@@ -15,4 +15,4 @@ def build_experiences(summaries, locations, iotds, places):
     experiences = []
     for experience_file in experience_files:
         experiences.append(Experience.from_yaml(experience_file))
-    return experiences
+    return sorted(experiences, key=lambda e: e.start_maya, reverse=True)

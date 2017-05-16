@@ -60,6 +60,10 @@ color: #848b95;
 	left: 0;
 }
 
+#banner #banner-image {
+    width: 100%;
+}
+
 h1#pageName {
     top:-26px;
 }
@@ -248,6 +252,11 @@ margin-right:60px;
     margin-bottom: 10px;
 }
 
+.contentSection p {
+    font-size: 1.4em;
+    text-align: left;
+}
+
 .flex .locationContainer img {
     flex: 1;
 }
@@ -347,6 +356,10 @@ color: #5cffee;
 
 .locationContainer a {
     text-decoration: none;
+}
+
+.locationContainer a img {
+    margin: auto;
 }
 
 #iotd-container a {

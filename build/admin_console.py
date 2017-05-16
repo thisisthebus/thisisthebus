@@ -1,6 +1,12 @@
+
+
 from ensure_build_path import add_project_dir_to_path, BUILD_PATH
 
 add_project_dir_to_path()
+
+if __name__ == "__main__":
+    import django
+    django.setup()
 
 import os
 

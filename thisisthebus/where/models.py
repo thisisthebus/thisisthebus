@@ -17,6 +17,7 @@ class Place(object):
 
     def __init__(self, small_name, big_name, latitude, longitude, thumbnail_style,
                  thumbnail_zoom, link_zoom, yaml_checksum=None, use_both_names_for_slug=False,
+                 bearing=0, pitch=0,
                  *args, **kwargs):
         self.small_name = small_name
         self.big_name = big_name
@@ -27,6 +28,8 @@ class Place(object):
         self.link_zoom = link_zoom
         self.yaml_checksum = yaml_checksum
         self.use_both_names_for_slug = use_both_names_for_slug
+        self.bearing = bearing
+        self.pitch = pitch
 
     @staticmethod
     def from_yaml(place_name):
@@ -40,6 +43,7 @@ class Place(object):
             big_name=authored_place['BIG_NAME'],
             latitude=authored_place['LAT'],
             longitude=authored_place['LON'],
+            pitch=authored_place.get('PITCH', 0),
             thumbnail_style=authored_place['THUMB_STYLE'],
             thumbnail_zoom=authored_place['THUMB_ZOOM'],
             link_zoom=authored_place['LINK_ZOOM'],
@@ -89,16 +93,16 @@ class Place(object):
         else:
             print("Compiling %s - %s" % (self.small_name, self.big_name))
 
-        # service = Static(access_token=MAPBOX_ACCESS_KEY)
-
-        thumb_uri = "https://api.mapbox.com/styles/v1/mapbox/{style}/static/pin-s-bus({lon},{lat}/{lon},{lat},{zoom}/{width}x{height}?access_token={access_token}".format(
+        thumb_uri = "https://api.mapbox.com/styles/v1/mapbox/{style}/static/pin-s-bus({lon},{lat}/{lon},{lat},{zoom},{bearing},{pitch}/{width}x{height}?access_token={access_token}".format(
             lon=self.longitude,
             lat=self.latitude,
             style=self.thumbnail_style,
             access_token=MAPBOX_ACCESS_KEY,
             zoom=self.thumbnail_zoom,
             width=self.thumb_width,
-            height=self.thumb_height
+            height=self.thumb_height,
+            bearing=self.bearing,
+            pitch=self.pitch,
         )
 
         self.map_uri = "https://www.openstreetmap.org/?mlat={lat}&mlon={lon}#map={zoom}/{lat}/{lon}".format(
