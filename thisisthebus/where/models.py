@@ -44,6 +44,7 @@ class Place(object):
             latitude=authored_place['LAT'],
             longitude=authored_place['LON'],
             pitch=authored_place.get('PITCH', 0),
+            bearing=authored_place.get('BEARING', 0),
             thumbnail_style=authored_place['THUMB_STYLE'],
             thumbnail_zoom=authored_place['THUMB_ZOOM'],
             link_zoom=authored_place['LINK_ZOOM'],

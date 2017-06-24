@@ -1,4 +1,8 @@
+import sys
 from ensure_build_path import add_project_dir_to_path, BUILD_PATH
+
+sys.path.append("/home/hubcraft/git/thisisthesitebuilder")
+from thisisthesitebuilder.pages import PageBuilder
 
 add_project_dir_to_path()
 
@@ -9,7 +13,23 @@ if __name__ == "__main__":
 
 from build.built_fundamentals import summaries, locations, images, places
 from thisisthebus.experiences.build import build_experiences
-from thisisthebus.pages.build import build_page
+
+
+
+
+sys.path.append("/home/hubcraft/git/thisisthesitebuilder")
+
+# from thisisthesitebuilder.ensure_build_path import add_project_dir_to_path, BUILD_PATH
+#
+# add_project_dir_to_path()
+
+
+
+
+
+
+
+
 
 import json
 
@@ -86,15 +106,20 @@ def complete_build(django_setup=False):
         f.write(experiences_html)
 
     build_daily_log(summaries, locations, images, places)
-    build_page("index", root=True,
+
+    # Pages
+
+    page_builder = PageBuilder(DATA_DIR, FRONTEND_DIR)
+
+    page_builder.build_page("index", root=True,
                context={'place': latest_place,
                         'update_date': latest_location_date,
                         'build_hashes': hashes,
                         'build_time': build_time}
                )
 
-    build_page("about", root=True, slicey=True)
-    build_page("our-tech-stack", root=True, slicey=True)
+    page_builder.build_page("about", root=True, slicey=True)
+    page_builder.build_page("our-tech-stack", root=True, slicey=True)
 
     with open("%s/last_build.json" % BUILD_PATH, "w") as f:
         f.write(json.dumps(hashes))

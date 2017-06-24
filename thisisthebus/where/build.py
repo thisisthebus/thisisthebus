@@ -11,7 +11,7 @@ PLACES_DIR = "%s/authored/places" % DATA_DIR
 
 def process_locations(places):
     print("Processing Locations.")
-    locations_dir = "%s/compiled/locations/yaml" % DATA_DIR
+    locations_dir = "%s/authored/locations" % DATA_DIR
     locations_dir_listing = os.walk(locations_dir)
     location_files = list(locations_dir_listing)[0][2]
 

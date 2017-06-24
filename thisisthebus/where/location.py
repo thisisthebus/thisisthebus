@@ -2,11 +2,17 @@ from __future__ import print_function
 
 import json
 import os
+import maya
+import yaml
 
 from thisisthebus.settings.constants import DATA_DIR
-from thisisthebus.utils.questions import today_or_another_day
 from thisisthebus.where.build import process_places
+from thisisthesitebuilder.utils.questions import today_or_another_day, what_time, which_day
 
+
+def figure_out_datetime(day, time):
+    mdt = maya.parse(day + "T" + time)
+    return mdt
 
 def new_location():
     process_places()
@@ -29,10 +35,29 @@ def new_location():
     print("Place meta: %s" % place)
 
     day = None
+
     while not day:
-        day = today_or_another_day()
+        day = which_day()
 
-    location_meta = {"day": day, "place": place.replace(".yaml", "")}
+    time = None
+    while not time:
+        time = what_time()
 
-    with open("%s/compiled/locations/%s" % (DATA_DIR, day), 'w') as f:
-        f.write(json.dumps(location_meta))
+    dt = figure_out_datetime(day, time)
+
+    day_yaml_filename = "%s/authored/locations/%s.yaml" % (DATA_DIR, day)
+
+    try:
+        with open(day_yaml_filename, 'r') as f:
+            day_locations = yaml.load(f)
+    except FileNotFoundError:
+        day_locations = {}
+
+    day_locations[time] = place.replace(".yaml", "")
+
+    with open(day_yaml_filename, 'w') as f:
+        yaml.dump(day_locations, f, default_flow_style=False)
+
+
+def process_new_location_yaml(dt, place_slug):
+    pass
