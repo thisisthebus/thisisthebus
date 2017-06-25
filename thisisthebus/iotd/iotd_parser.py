@@ -109,8 +109,9 @@ def parse_iotd(image_filename):
         exif = {ExifTags.TAGS[k]: v for k, v in img._getexif().items() if k in ExifTags.TAGS}
         orientation = exif.get('Orientation')
 
-        abridged_exif = {k: exif[k] for k in (
-            'ApertureValue', 'DateTime', 'Flash', 'FocalLength', 'GPSInfo', 'Model', 'Orientation', 'ShutterSpeedValue')}
+        abridged_exif = {}
+        for k in ('ApertureValue', 'DateTime', 'Flash', 'FocalLength', 'GPSInfo', 'Model', 'Orientation', 'ShutterSpeedValue'):
+            abridged_exif[k] = exif.get(k)
 
         day_image_was_taken = abridged_exif['DateTime'].split()[0].replace(':', "-")
         time_image_was_taken = abridged_exif['DateTime'].split()[1]
@@ -119,6 +120,7 @@ def parse_iotd(image_filename):
         # We apparently don't have exif data.
         orientation = None
         day_image_was_taken = None
+        time_image_was_taken = None
 
     print("\n====================================")
     print("OK, let's add %s to our IOTD." % sys.argv[1])
