@@ -5,6 +5,6 @@ PITCH: 60
 BEARING: 270
 THUMB_STYLE: "satellite-streets-v9"
 LINK_ZOOM: 15
-SMALL_NAME: "Peter and Summer's Good Times"
+SMALL_NAME: "Peter and Summer's Place"
 BIG_NAME: "Portland, OR"
 USE_BOTH_NAMES_FOR_SLUG: False
