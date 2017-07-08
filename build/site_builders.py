@@ -84,10 +84,6 @@ def complete_build(django_setup=False):
 
     print("Building site...")
 
-    # with open("%s/authored/timeframes.yaml" % DATA_DIR, "r") as f:
-    #     timeframes = yaml.load(f)
-    # timeframes
-
     latest_location_date, latest_location_dict = max(locations.items())
     latest_location_time, latest_location = max(latest_location_dict.items())
     latest_place = places[latest_location]
@@ -95,7 +91,7 @@ def complete_build(django_setup=False):
     hashes = get_hashes()
     build_time = maya.now().datetime(to_timezone='US/Eastern', naive=True)
 
-    experiences = build_experiences(summaries, locations, images, places)
+    experiences = build_experiences("%s/authored/experiences" % DATA_DIR, summaries, locations, images, places)
     t = get_template('experiences.html')
     d = {"experiences": experiences, "include_swipebox": True, "slicey": True, "page_name": "Our Travels",
          "sub_nav": [('/travels-by-experience.html', "By Experience", True), ('/travels.html', "By Date", False)]

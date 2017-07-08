@@ -17,12 +17,18 @@ class Experience(models.Model):
     start = models.DateTimeField()
     end = models.DateTimeField()
 
+    def __init__(self, tags=None, *args, **kwargs):
+        self.tags = tags or []
+        self.sub_experiences = []
+        self.images = []
+        super(Experience, self).__init__(*args, **kwargs)
+
     def __str__(self):
         return self.name
 
     @staticmethod
     def from_yaml(experience_yaml_filename):
-        with open('%s/%s' % (EXPERIENCE_DATA_DIR, experience_yaml_filename), 'r') as f:
+        with open(experience_yaml_filename, 'r') as f:
             experience_dict = yaml.load(f.read())
 
         experience_dict['description'] = markdown(experience_dict['description'])
@@ -40,16 +46,22 @@ class Experience(models.Model):
 
         experience.start_maya = maya.MayaDT.from_datetime(experience.start)
         experience.end_maya = maya.MayaDT.from_datetime(experience.end)
-
-        experience.all_images_with_location = []
-        experience.all_summaries_with_location = []
-
-        experience.apply_locations()
-        experience.apply_images()
-        experience.apply_summaries()
-        experience.sort_data_by_location()
-
         return experience
+
+    def absorb_happenings(self):
+        """
+        Figure out everything that happened during this experience and populate it with the appropriate metadata.
+        """
+
+        self.all_images_with_location = []
+        self.all_summaries_with_location = []
+
+        self.apply_locations()
+        self.apply_images()
+        self.apply_summaries()
+        self.sort_data_by_location()
+
+
 
     def apply_locations(self):
         self.locations = {}
@@ -72,14 +84,24 @@ class Experience(models.Model):
         # OK, but now we want locations to be a sorted list.
         self.locations = sorted(self.locations.values(), key=lambda l: l['start'])
 
+    def analyze_sub_experience(self):
+        pass
+
     def apply_images(self):
-        self.images = []
         for day, image_list in images.items():
             for image in image_list:
                 image['day'] = day
                 image_maya = maya.parse(day + "T" + image['time'] + "-05")
                 if self.start_maya < image_maya < self.end_maya:
-                    self.images.append(image)
+                    applied_to_sub = False
+                    for sub_experience in self.sub_experiences:
+                        for tag in sub_experience.tags:
+                            if tag in image.get('tags', []):
+                                sub_experience.images.append(image)
+                                applied_to_sub = True
+                    if not applied_to_sub:
+                        self.images.append(image)
+
                     if self.display == "by-location":
                         # Loop through locations again, this time determining if this image goes with this location.
                         for location in self.locations:
@@ -110,7 +132,7 @@ class Experience(models.Model):
                 if image not in self.all_images_with_location:
                     print("WARNING: No associated location for %s %s - %s." % (image['day'], image['time'], image['caption']))
 
-            for summary in self.summaries:
-                if summary not in self.all_summaries_with_location:
-                    print("WARNING: No associated location for %s" % summary)
+            for date, summary in self.summaries.items():
+                if date not in self.all_summaries_with_location:
+                    print("WARNING: No associated location for summary: %s" % summary)
 
