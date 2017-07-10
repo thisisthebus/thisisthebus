@@ -1,8 +1,8 @@
-LAT: 34.646996
-LON: -86.542111
-THUMB_ZOOM: 12
-THUMB_STYLE: "streets-v9"
-LINK_ZOOM: 15
-SMALL_NAME: "Walmart Neighborhood Market"
-BIG_NAME: "Huntsville, Alabama"
-USE_BOTH_NAMES_FOR_SLUG: True
+lat: 34.646996
+lon: -86.542111
+thumb_zoom: 12
+thumb_style: "streets-v9"
+link_zoom: 15
+small_name: "Walmart Neighborhood Market"
+big_name: "Huntsville, Alabama"
+use_both_names_for_slug: True

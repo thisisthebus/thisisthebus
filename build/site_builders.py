@@ -101,21 +101,38 @@ def complete_build(django_setup=False):
     with open("%s/travels-by-experience.html" % FRONTEND_DIR, "w+") as f:
         f.write(experiences_html)
 
+    for experience in experiences:
+        t = get_template('experiences.html')
+        d = {"experiences": [experience], "include_swipebox": True, "slicey": True,
+             "page_name": "Our Travels",
+             "sub_nav": [('/travels-by-experience.html', "By Experience", False),
+                         ('/travels.html', "By Date", False)]
+             }
+        experiences_html = t.render(d)
+
+        with open("{frontend}/experiences/{slug}.html".format(frontend=FRONTEND_DIR, slug=experience.slug), "w+") as f:
+            f.write(experiences_html)
+
+
     build_daily_log(summaries, locations, images, places)
 
     # Pages
 
     page_builder = PageBuilder(DATA_DIR, FRONTEND_DIR)
 
-    page_builder.build_page("index", root=True,
+    pages = []
+
+    pages.append(page_builder.build_page("index", root=True,
                context={'place': latest_place,
                         'update_date': latest_location_date,
                         'build_hashes': hashes,
                         'build_time': build_time}
-               )
+               ))
 
-    page_builder.build_page("about", root=True, slicey=True)
-    page_builder.build_page("our-tech-stack", root=True, slicey=True)
+    pages.append(page_builder.build_page("about", root=True, slicey=True))
+    pages.append(page_builder.build_page("our-tech-stack", root=True, slicey=True))
+    pages.append(page_builder.build_page("4th-amendment-missing", slicey=True))
+
 
     with open("%s/last_build.json" % BUILD_PATH, "w") as f:
         f.write(json.dumps(hashes))

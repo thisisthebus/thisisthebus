@@ -4,3 +4,4 @@ end: 2017-06-30T18:59:59-05
 description: "Pedalpalooza, a month-long calendar of cycling events in Porltand, had our attention and energy all month long!"
 display: sub
 tags: ["pedalpalooza"]
+show_locations: False

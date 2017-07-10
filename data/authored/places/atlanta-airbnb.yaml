@@ -1,8 +1,8 @@
-LAT: 33.707467
-LON: -84.328900
-THUMB_ZOOM: 9
-THUMB_STYLE: "streets-v9"
-LINK_ZOOM: 15
-SMALL_NAME: "Harry & Genise's Home"
-BIG_NAME: "Atlanta, Georgia"
-USE_BOTH_NAMES_FOR_SLUG: False
+lat: 33.707467
+lon: -84.328900
+thumb_zoom: 9
+thumb_style: "streets-v9"
+link_zoom: 15
+small_name: "Harry & Genise's Home"
+big_name: "Atlanta, Georgia"
+use_both_names_for_slug: False

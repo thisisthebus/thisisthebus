@@ -1,8 +1,8 @@
-LAT: 33.172626
-LON: -84.012097
-THUMB_ZOOM: 8
-THUMB_STYLE: "streets-v9"
-LINK_ZOOM: 12
-SMALL_NAME: "High Falls State Park"
-BIG_NAME: "Jackson, Georgia"
-USE_BOTH_NAMES_FOR_SLUG: False
+lat: 33.172626
+lon: -84.012097
+thumb_zoom: 8
+thumb_style: "streets-v9"
+link_zoom: 12
+small_name: "High Falls State Park"
+big_name: "Jackson, Georgia"
+use_both_names_for_slug: False

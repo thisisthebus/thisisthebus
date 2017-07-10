@@ -1,8 +1,8 @@
-LAT: 29.239298
-LON: -81.829311
-THUMB_ZOOM: 12
-THUMB_STYLE: "satellite-streets-v9"
-LINK_ZOOM: 15
-SMALL_NAME: "Flame and Doughnut Crossing"
-BIG_NAME: "Ocala National Forest, Florida"
-USE_BOTH_NAMES_FOR_SLUG: False
+lat: 29.239298
+lon: -81.829311
+thumb_zoom: 12
+thumb_style: "satellite-streets-v9"
+link_zoom: 15
+small_name: "Flame and Doughnut Crossing"
+big_name: "Ocala National Forest, Florida"
+use_both_names_for_slug: False

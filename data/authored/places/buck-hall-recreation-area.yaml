@@ -1,8 +1,8 @@
-LAT: 33.041595
-LON: -79.563682
-THUMB_ZOOM: 7
-THUMB_STYLE: "streets-v9"
-LINK_ZOOM: 12
-SMALL_NAME: "Buck Hall Recreation Area"
-BIG_NAME: "Francis Marion National Forest, SC"
-USE_BOTH_NAMES_FOR_SLUG: False
+lat: 33.041595
+lon: -79.563682
+thumb_zoom: 7
+thumb_style: "streets-v9"
+link_zoom: 12
+small_name: "Buck Hall Recreation Area"
+big_name: "Francis Marion National Forest, SC"
+use_both_names_for_slug: False

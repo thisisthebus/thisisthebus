@@ -1,8 +1,8 @@
-LAT: 29.0698012
-LON: -81.8351415
-THUMB_ZOOM: 12
-THUMB_STYLE: "satellite-streets-v9"
-LINK_ZOOM: 15
-SMALL_NAME: "Rainbow Gathering at Lake Mary"
-BIG_NAME: "Ocala National Forest, Florida"
-USE_BOTH_NAMES_FOR_SLUG: False
+lat: 29.0698012
+lon: -81.8351415
+thumb_zoom: 12
+thumb_style: "satellite-streets-v9"
+link_zoom: 15
+small_name: "Rainbow Gathering at Lake Mary"
+big_name: "Ocala National Forest, Florida"
+use_both_names_for_slug: False

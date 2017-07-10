@@ -1,8 +1,8 @@
-LAT: 30.321883
-LON: -82.558409
-THUMB_ZOOM: 12
-THUMB_STYLE: "streets-v9"
-LINK_ZOOM: 12
-SMALL_NAME: "West Tower Camp"
-BIG_NAME: "Osceola National Forest, Florida"
-USE_BOTH_NAMES_FOR_SLUG: True
+lat: 30.321883
+lon: -82.558409
+thumb_zoom: 12
+thumb_style: "streets-v9"
+link_zoom: 12
+small_name: "West Tower Camp"
+big_name: "Osceola National Forest, Florida"
+use_both_names_for_slug: True

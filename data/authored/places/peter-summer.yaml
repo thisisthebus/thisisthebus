@@ -1,10 +1,11 @@
-LAT: 45.493975
-LON: -122.609241
-THUMB_ZOOM: 17
-PITCH: 60
-BEARING: 270
-THUMB_STYLE: "satellite-streets-v9"
-LINK_ZOOM: 15
-SMALL_NAME: "Peter and Summer's Place"
-BIG_NAME: "Portland, OR"
-USE_BOTH_NAMES_FOR_SLUG: False
+lat: 45.493975
+lon: -122.609241
+thumb_zoom: 17
+pitch: 60
+bearing: 270
+thumb_style: "satellite-streets-v9"
+link_zoom: 15
+small_name: "Peter and Summer's Place"
+big_name: "Portland, OR"
+use_both_names_for_slug: False
+show_on_top_level_experience: True

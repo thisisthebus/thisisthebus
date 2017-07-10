@@ -1,8 +1,8 @@
-LAT: 32.864383
-LON: -83.611602
-THUMB_ZOOM: 12
-THUMB_STYLE: "streets-v9"
-LINK_ZOOM: 15
-SMALL_NAME: "Walmart Parking Lot"
-BIG_NAME: "Macon, Georgia"
-USE_BOTH_NAMES_FOR_SLUG: True
+lat: 32.864383
+lon: -83.611602
+thumb_zoom: 12
+thumb_style: "streets-v9"
+link_zoom: 15
+small_name: "Walmart Parking Lot"
+big_name: "Macon, Georgia"
+use_both_names_for_slug: True

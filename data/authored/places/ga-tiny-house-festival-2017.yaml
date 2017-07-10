@@ -1,8 +1,8 @@
-LAT: 33.380762
-LON: -83.335247
-THUMB_ZOOM: 7
-THUMB_STYLE: "streets-v9"
-LINK_ZOOM: 15
-SMALL_NAME: "Georgia Tiny House Festival 2017"
-BIG_NAME: "Eatonton GA"
-USE_BOTH_NAMES_FOR_SLUG: False
+lat: 33.380762
+lon: -83.335247
+thumb_zoom: 7
+thumb_style: "streets-v9"
+link_zoom: 15
+small_name: "Georgia Tiny House Festival 2017"
+big_name: "Eatonton GA"
+use_both_names_for_slug: False

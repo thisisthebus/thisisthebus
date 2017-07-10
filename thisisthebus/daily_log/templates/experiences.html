@@ -8,6 +8,13 @@
                 {% include 'single-experience-by-place.html' %}
             {% else %}
                 {% include 'single-experience.html' %}
+                    {% for sub_experience in experience.sub_experiences %}
+                        <div class="sub-experience {% cycle 'left' 'right' %}">
+                            {% with sub_experience as experience %}
+                                {% include 'single-experience.html' %}
+                            {% endwith %}
+                        </div>
+                    {% endfor %}
             {% endif %}
         </div>
     {% endfor %}

@@ -1,8 +1,8 @@
-LAT: 29.015283
-LON: -80.994588
-THUMB_ZOOM: 12
-THUMB_STYLE: "streets-v9"
-LINK_ZOOM: 15
-SMALL_NAME: "Walmart Parking Lot"
-BIG_NAME: "New Smyrna Beach, FL"
-USE_BOTH_NAMES_FOR_SLUG: True
+lat: 29.015283
+lon: -80.994588
+thumb_zoom: 12
+thumb_style: "streets-v9"
+link_zoom: 15
+small_name: "Walmart Parking Lot"
+big_name: "New Smyrna Beach, FL"
+use_both_names_for_slug: True

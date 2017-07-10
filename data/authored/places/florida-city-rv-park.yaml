@@ -1,8 +1,8 @@
-LAT: 25.455876
-LON: -80.479408
-THUMB_ZOOM: 7
-THUMB_STYLE: "streets-v9"
-LINK_ZOOM: 12
-SMALL_NAME: "Florida City RV Park"
-BIG_NAME: "Homestead, Florida"
-USE_BOTH_NAMES_FOR_SLUG: False
+lat: 25.455876
+lon: -80.479408
+thumb_zoom: 7
+thumb_style: "streets-v9"
+link_zoom: 12
+small_name: "Florida City RV Park"
+big_name: "Homestead, Florida"
+use_both_names_for_slug: False

@@ -1,8 +1,8 @@
-LAT: 33.292945
-LON: -83.481179
-THUMB_ZOOM: 18
-THUMB_STYLE: "satellite-streets-v9"
-LINK_ZOOM: 12
-SMALL_NAME: "Cedar Creek Wilderness"
-BIG_NAME: "Piedmont Wildlife Refuge, Georgia"
-USE_BOTH_NAMES_FOR_SLUG: False
+lat: 33.292945
+lon: -83.481179
+thumb_zoom: 18
+thumb_style: "satellite-streets-v9"
+link_zoom: 12
+small_name: "Cedar Creek Wilderness"
+big_name: "Piedmont Wildlife Refuge, Georgia"
+use_both_names_for_slug: False

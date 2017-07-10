@@ -43,14 +43,14 @@ def build_experiences(experience_data_dir, *args):
             top_level_experiences.append(sub)
 
 
-    sub_experiences.sort(key=lambda e: e.start_maya, reverse=True)
+    sub_experiences.sort(key=lambda e: e.start_maya)
 
     if has_subs:
         for sub_experience in sub_experiences:
             top_level_experience.sub_experiences.append(sub_experience)
 
         top_level_experience.absorb_happenings()
-    # for sub in sub_experiences:
-    #     sub.absorb_happenings()
+    for sub in sub_experiences:
+        sub.apply_locations()
 
     return sorted(top_level_experiences, key=lambda e: e.start_maya, reverse=True)

@@ -1,8 +1,8 @@
-LAT: 25.139233
-LON: -80.942068
-THUMB_ZOOM: 4
-THUMB_STYLE: "streets-v9"
-LINK_ZOOM: 12
-SMALL_NAME: "Flamingo"
-BIG_NAME: "Everglades National Park, Florida"
-USE_BOTH_NAMES_FOR_SLUG: False
+lat: 25.139233
+lon: -80.942068
+thumb_zoom: 4
+thumb_style: "streets-v9"
+link_zoom: 12
+small_name: "Flamingo"
+big_name: "Everglades National Park, Florida"
+use_both_names_for_slug: False

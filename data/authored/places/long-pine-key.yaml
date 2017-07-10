@@ -1,8 +1,8 @@
-LAT: 25.400578
-LON: -80.656723
-THUMB_ZOOM: 12
-THUMB_STYLE: "satellite-streets-v9"
-LINK_ZOOM: 12
-SMALL_NAME: "Long Pine Key"
-BIG_NAME: "Everglades National Park, Florida"
-USE_BOTH_NAMES_FOR_SLUG: False
+lat: 25.400578
+lon: -80.656723
+thumb_zoom: 12
+thumb_style: "satellite-streets-v9"
+link_zoom: 12
+small_name: "Long Pine Key"
+big_name: "Everglades National Park, Florida"
+use_both_names_for_slug: False

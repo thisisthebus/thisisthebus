@@ -16,6 +16,10 @@ class Experience(models.Model):
 
     start = models.DateTimeField()
     end = models.DateTimeField()
+    show_locations = models.BooleanField(default=True)
+    show_dates = models.BooleanField(default=True)
+    slug = models.SlugField()
+
 
     def __init__(self, tags=None, *args, **kwargs):
         self.tags = tags or []
@@ -32,7 +36,14 @@ class Experience(models.Model):
             experience_dict = yaml.load(f.read())
 
         experience_dict['description'] = markdown(experience_dict['description'])
-        experience = Experience(**experience_dict)
+
+        right_most = experience_yaml_filename.rstrip('.yaml').split('/')[-1]
+        if right_most == "main":
+            slug = experience_yaml_filename.rstrip('.yaml').split('/')[-2]
+        else:
+            slug = right_most
+
+        experience = Experience(slug=slug, **experience_dict)
 
         experience.start_day = experience.start.date()
 
@@ -48,6 +59,9 @@ class Experience(models.Model):
         experience.end_maya = maya.MayaDT.from_datetime(experience.end)
         return experience
 
+    def apply_pages(self):
+        pass
+
     def absorb_happenings(self):
         """
         Figure out everything that happened during this experience and populate it with the appropriate metadata.
@@ -59,6 +73,7 @@ class Experience(models.Model):
         self.apply_locations()
         self.apply_images()
         self.apply_summaries()
+        self.apply_pages()
         self.sort_data_by_location()
 
 
@@ -70,11 +85,14 @@ class Experience(models.Model):
             for time, place in locations_for_day.items():
                 location_maya = maya.parse(day + "T" + time)
                 if self.start_maya <= location_maya <= self.end_maya:
-                    # This location qualifies!  We'll make this a 2-tuple with the place as the first item and any dates as the second.
-                    if not place in self.locations.keys():
-                        self.locations[place] = {'place_meta': places[place],
-                                                          'datetimes': [], 'images': [], "summaries": []}
-                    self.locations[place]['datetimes'].append(location_maya)
+                    # The dates match - now let's make sure that, if this is a top-level experience, that this place can be listed on it.
+                    can_be_listed = not self.sub_experiences or places[place].get("show_on_top_level_experience")
+                    if can_be_listed:
+                        # This location qualifies!  We'll make this a 2-tuple with the place as the first item and any dates as the second.
+                        if not place in self.locations.keys():
+                            self.locations[place] = {'place_meta': places[place],
+                                                              'datetimes': [], 'images': [], "summaries": []}
+                        self.locations[place]['datetimes'].append(location_maya)
 
         # Now that we have the locations for this self, loop through them again to get start and end mayas.
         for location in self.locations.values():

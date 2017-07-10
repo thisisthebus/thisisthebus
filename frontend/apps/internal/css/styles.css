@@ -93,6 +93,8 @@ h1#pageName {
 	z-index: 20;
 	bottom: 0;
 	margin: 0;
+	border: 1px solid #e7ca8d;
+	box-shadow: -2px -2px 5px black;
 }
 
 #updateDate {
@@ -181,6 +183,11 @@ margin-right:60px;
 	float: left;
 }
 
+#main.page .blackMainInfo {
+    padding:30px;
+    font-size: 1.3em;
+}
+
 .author, .lastUpdate {
     float:left;
     margin-left:50px;
@@ -204,6 +211,16 @@ margin-right:60px;
 	color: #848b95;
 	margin: 0;
 	text-align: center;
+}
+
+.blackMainInfo h3 a {
+    color: #848b95;
+    text-decoration: none;
+}
+
+.blackMainInfo h3 a:hover {
+    color: #dca9ff;
+    text-decoration: underline;
 }
 
 .blackMainInfo h4 {
@@ -301,6 +318,38 @@ margin-right:60px;
     margin:auto;
 }
 
+.sub-experience {
+	margin-top: 12px;
+	border-top: 2px dashed #fcc65c;
+	width: 80%;
+}
+
+.sub-experience .contentSection {
+    width: 100%;
+}
+
+.sub-experience h3 {
+	color: #fcc65c;
+    font-size: 2.5em;
+}
+
+.sub-experience.left {
+    text-align: left;
+}
+
+.sub-experience.right {
+    text-align: right;
+    margin-right: 25px;
+}
+
+.sub-experience.right .contentSection p {
+    text-align: right;
+}
+
+.sub-experience .bigDate {
+    margin-bottom: 15px;
+    text-align: center;
+}
 
 .dailyLog .daySummary {
     float:right;
@@ -413,6 +462,7 @@ font-size: 10px;
 .iotd-instance {
     width:400px;
     margin: auto;
+    font-size: 0px;
 }
 
 .but-centered {

@@ -92,6 +92,10 @@ def what_time(exif_date):
 def ask_for_caption():
     return str(input("Enter a caption - say, 140 chars or so: "))
 
+def ask_for_tags():
+    tag_str = str(input("Tags, separated by comma: "))
+    return tag_str.split(',')
+
 
 def write_to_file(filename, payload):
     with open(filename, "w") as f:
@@ -138,6 +142,7 @@ def parse_iotd(image_filename):
 
     # Start our new meta dict by asking for a caption.
     new_iotd = {'caption': ask_for_caption()}
+    new_iotd['tags'] = ask_for_tags()
 
     with open(image_filename, "rb") as f:
         image_bytes = f.read(1024)

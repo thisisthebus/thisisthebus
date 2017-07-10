@@ -35,7 +35,7 @@ def process_locations(places):
     return locations
 
 
-def process_places(wait_at_end=False):
+def process_places(wait_at_end=False, force_update=False):
     print("Processing Places from %s" % PLACES_DIR)
     authored_places_dir = os.walk(PLACES_DIR)
 
@@ -44,7 +44,7 @@ def process_places(wait_at_end=False):
 
     for yaml_file in list(authored_places_dir)[0][2]:
         place = Place.from_yaml(yaml_file)
-        place_meta, created = place.compile()
+        place_meta, created = place.compile(force_update)
         if created:
             new_places += 1
         place_name = yaml_file.replace('.yaml', '')

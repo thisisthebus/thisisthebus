@@ -1,8 +1,8 @@
-LAT: 25.382233
-LON: -80.606352
-THUMB_ZOOM: 18
-THUMB_STYLE: "satellite-streets-v9"
-LINK_ZOOM: 12
-SMALL_NAME: "Royal Palm"
-BIG_NAME: "Everglades National Park, Florida"
-USE_BOTH_NAMES_FOR_SLUG: False
+lat: 25.382233
+lon: -80.606352
+thumb_zoom: 18
+thumb_style: "satellite-streets-v9"
+link_zoom: 12
+small_name: "Royal Palm"
+big_name: "Everglades National Park, Florida"
+use_both_names_for_slug: False

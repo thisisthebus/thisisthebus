@@ -1,9 +1,9 @@
-LAT: 34.015443
-LON: -86.146931
-THUMB_ZOOM: 4
-THUMB_STYLE: "satellite-streets-v9"
-LINK_ZOOM: 12
-SMALL_NAME: "Nomad's Land"
-BIG_NAME: "Attalla, Alabama"
-SMALL_LINK: http://www.thenomadsland.org/
-USE_BOTH_NAMES_FOR_SLUG: False
+lat: 34.015443
+lon: -86.146931
+thumb_zoom: 4
+thumb_style: "satellite-streets-v9"
+link_zoom: 12
+small_name: "Nomad's Land"
+big_name: "Attalla, Alabama"
+small_link: http://www.thenomadsland.org/
+use_both_names_for_slug: False

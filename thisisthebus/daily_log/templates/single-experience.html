@@ -1,6 +1,8 @@
 <div class="experienceContainer">
-    <h3>{{experience.name}}</h3>
-    <h4 class="bigDate">{{experience.start_maya.slang_date}} - {{experience.end_maya.slang_date}}</h4>
+    <h3><a href="/experiences/{{experience.slug}}.html">{{experience.name}}</a></h3>
+    {% if experience.show_dates %}
+        <h4 class="bigDate">{{experience.start_maya.slang_date}} - {{experience.end_maya.slang_date}}</h4>
+    {% endif %}
     <div class="contentSection flex">
         {% for location in experience.locations %}
             {% with location.place_meta as place %}
@@ -20,7 +22,7 @@
         <div class="daySummary">{{day_meta.summary|safe}}</div>
         <div class="iotdsContainer">
             {% for iotd in experience.images %}
-                {% include "iotd-instance.html" %}
+              {% include "iotd-instance.html" %}
             {% endfor %}
         </div>
     </div>

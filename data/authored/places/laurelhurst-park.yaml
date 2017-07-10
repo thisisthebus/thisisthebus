@@ -1,9 +1,9 @@
-LAT: 45.5214908
-LON: -122.6274292
-THUMB_ZOOM: 16
-PITCH: 60
-THUMB_STYLE: "satellite-streets-v9"
-LINK_ZOOM: 12
-SMALL_NAME: "Laurelhurst Park"
-BIG_NAME: "Portland, Oregon"
-USE_BOTH_NAMES_FOR_SLUG: False
+lat: 45.5214908
+lon: -122.6274292
+thumb_zoom: 16
+pitch: 60
+thumb_style: "satellite-streets-v9"
+link_zoom: 12
+small_name: "Laurelhurst Park"
+big_name: "Portland, Oregon"
+use_both_names_for_slug: False
