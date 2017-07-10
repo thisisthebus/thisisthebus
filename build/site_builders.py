@@ -105,6 +105,7 @@ def complete_build(django_setup=False):
         t = get_template('experiences.html')
         d = {"experiences": [experience], "include_swipebox": True, "slicey": True,
              "page_name": "Our Travels",
+             "page_title": experience.name,
              "sub_nav": [('/travels-by-experience.html', "By Experience", False),
                          ('/travels.html', "By Date", False)]
              }
