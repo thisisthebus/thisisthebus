@@ -1,8 +1,8 @@
 lat: 44.305113
 lon: -121.558085
-thumb_zoom: 12
-thumb_style: "satellite-streets-v9"
+thumb_zoom: 10
+thumb_style: "streets-v9"
 link_zoom: 15
-small_name: "Dispersed Campsite in Deschutes NF"
+small_name: "Dispersed Camping, Deschutes NF"
 big_name: "Sisters, Oregon"
 use_both_names_for_slug: False
