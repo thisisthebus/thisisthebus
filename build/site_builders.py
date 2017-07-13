@@ -15,20 +15,7 @@ from build.built_fundamentals import summaries, locations, images, places
 from thisisthebus.experiences.build import build_experiences
 
 
-
-
 sys.path.append("/home/hubcraft/git/thisisthesitebuilder")
-
-# from thisisthesitebuilder.ensure_build_path import add_project_dir_to_path, BUILD_PATH
-#
-# add_project_dir_to_path()
-
-
-
-
-
-
-
 
 
 import json
