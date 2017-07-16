@@ -464,3 +464,21 @@ font-size: 10px;
 .but-centered {
     margin: auto;
 }
+
+body #swipebox-top-bar {
+    height: auto;
+    top: -150px;
+    line-height: 35px;
+}
+
+body #swipebox-top-bar #swipebox-title {
+	width: 70%;
+	margin: auto;
+	font-size: 30px;
+	font-family: 'Kreon', serif;
+}
+
+body #swipebox-top-bar.visible-bars
+{
+    transform: translate3d(0,150px,0);
+}

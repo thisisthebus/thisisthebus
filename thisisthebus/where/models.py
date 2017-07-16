@@ -25,29 +25,6 @@ class Place(object):
         self.place_meta['pitch'] = 0
         self.place_meta.update(place_meta)
         self.yaml_checksum = yaml_checksum
-        # self.small_name = small_name
-        # self.big_name = big_name
-        # self.latitude = latitude
-        # self.longitude = longitude
-        # self.thumbnail_style = thumbnail_style
-        # self.thumbnail_zoom = thumbnail_zoom
-        # self.link_zoom = link_zoom
-        # self.yaml_checksum = yaml_checksum
-        # self.use_both_names_for_slug = use_both_names_for_slug
-        # self.bearing = bearing
-        # self.pitch = pitch
-
-        # small_name = authored_place['small_name'],
-        # big_name = authored_place['big_name'],
-        # latitude = authored_place['lat'],
-        # longitude = authored_place['lon'],
-        # pitch = authored_place.get('PITCH', 0),
-        # bearing = authored_place.get('BEARING', 0),
-        # thumbnail_style = authored_place['thumb_style'],
-        # thumbnail_zoom = authored_place['thumb_zoom'],
-        # link_zoom = authored_place['link_zoom'],
-        # yaml_checksum = checksum,
-        # use_both_names_for_slug = authored_place['use_both_names_for_slug']
 
     @staticmethod
     def from_yaml(place_name):
@@ -104,20 +81,13 @@ class Place(object):
             print("Compiling {small_name} - {big_name}".format(**self.place_meta))
 
         thumb_uri = "https://api.mapbox.com/styles/v1/mapbox/{thumb_style}/static/pin-s-bus({lon},{lat}/{lon},{lat},{thumb_zoom},{bearing},{pitch}/{width}x{height}?access_token={access_token}".format(
-            # lon=self.lon,
-            # lat=self.lat,
-            # style=self.thumb_style,
-            # access_token=MAPBOX_ACCESS_KEY,
-            # zoom=self.thumb_zoom,
             width=self.thumb_width,
             height=self.thumb_height,
-            # bearing=self.bearing,
-            # pitch=self.pitch,
             access_token=MAPBOX_ACCESS_KEY,
             **self.place_meta
         )
 
-        self.map_uri = "https://www.openstreetmap.org/?mlat={lat}&mlon={lon}#map={link_zoom}/{lat}/{lon}".format(
+        self.place_meta['map_uri'] = "https://www.openstreetmap.org/?mlat={lat}&mlon={lon}#map={link_zoom}/{lat}/{lon}".format(
             **self.place_meta
         )
 
@@ -129,18 +99,6 @@ class Place(object):
 
         print("Content Type is %s" % response.headers['Content-Type'])
         self.place_meta['thumb_filename'] = "%s.%s" % (self.to_slug(), response.headers['Content-Type'].split('/')[1])
-        #
-        # place_meta = dict(
-        #     lat=self.lat,
-        #     lon=self.lon,
-        #     small_name=self.small_name,
-        #     big_name=self.big_name,
-        #     thumb=self.thumb_image_filename,
-        #     map=self.map_uri,
-        #     small_link=self.small_link,
-        # )
-
-
 
         if self.yaml_checksum:
             self.place_meta['yaml_checksum'] = self.yaml_checksum
