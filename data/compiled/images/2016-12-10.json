@@ -1,30 +1,46 @@
 [
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2016-12-10____during-our-trolley-ride-around-savannah.jpg",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_4955.JPG____during-our-trolley-ride-around-savannah.jpg",
-    "caption": "During our trolley ride around Savannah we stopped off at Cathedral of St. John the Baptist.",
-    "full_url": "/apps/iotd/img/2016-12-10____during-our-trolley-ride-around-savannah.jpg",
-    "time": "14:16:00"
-  },
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2016-12-10____watching-the-boats-come-into-savannah.jpg",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_4962.JPG____watching-the-boats-come-into-savannah.jpg",
-    "caption": "Watching the boats come into Savannah.",
-    "full_url": "/apps/iotd/img/2016-12-10____watching-the-boats-come-into-savannah.jpg",
-    "time": "15:36:12"
-  },
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2016-12-10____justin-created-festive-green-red-light.jpg",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_4966.JPG____justin-created-festive-green-red-light.jpg",
-    "caption": "Justin created festive green & red lights for display while families took holiday hay rides around the Skidaway Island State Park campground.",
-    "full_url": "/apps/iotd/img/2016-12-10____justin-created-festive-green-red-light.jpg",
-    "time": "19:59:55"
-  },
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2016-12-10____fibonacci-layered-up-under-the-red-glow.jpg",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_4969.JPG____fibonacci-layered-up-under-the-red-glow.jpg",
-    "caption": "Fibonacci layered up under the red glow, ready for a holiday hay ride!",
-    "full_url": "/apps/iotd/img/2016-12-10____fibonacci-layered-up-under-the-red-glow.jpg",
-    "time": "20:00:08"
-  }
+    {
+        "caption": "During our trolley ride around Savannah we stopped off at Cathedral of St. John the Baptist.",
+        "ext": "jpg",
+        "full_url": "/apps/iotd/img/2016-12-10____during-our-trolley-ride-around-savannah.jpg",
+        "hash": "8bc9166c",
+        "orig": "IMG_4955.JPG",
+        "slug": "during-our-trolley-ride-around-savannah",
+        "thumb_url": "/apps/iotd/img/thumbs/2016-12-10____during-our-trolley-ride-around-savannah.jpg",
+        "time": "14:16:00",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_4955.JPG____during-our-trolley-ride-around-savannah.jpg"
+    },
+    {
+        "caption": "Watching the boats come into Savannah.",
+        "ext": "jpg",
+        "full_url": "/apps/iotd/img/2016-12-10____watching-the-boats-come-into-savannah.jpg",
+        "hash": "0aa29961",
+        "orig": "IMG_4962.JPG",
+        "slug": "watching-the-boats-come-into-savannah",
+        "thumb_url": "/apps/iotd/img/thumbs/2016-12-10____watching-the-boats-come-into-savannah.jpg",
+        "time": "15:36:12",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_4962.JPG____watching-the-boats-come-into-savannah.jpg"
+    },
+    {
+        "caption": "Justin created festive green & red lights for display while families took holiday hay rides around the Skidaway Island State Park campground.",
+        "ext": "jpg",
+        "full_url": "/apps/iotd/img/2016-12-10____justin-created-festive-green-red-light.jpg",
+        "hash": "8ea85571",
+        "orig": "IMG_4966.JPG",
+        "slug": "justin-created-festive-green-red-light",
+        "thumb_url": "/apps/iotd/img/thumbs/2016-12-10____justin-created-festive-green-red-light.jpg",
+        "time": "19:59:55",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_4966.JPG____justin-created-festive-green-red-light.jpg"
+    },
+    {
+        "caption": "Fibonacci layered up under the red glow, ready for a holiday hay ride!",
+        "ext": "jpg",
+        "full_url": "/apps/iotd/img/2016-12-10____fibonacci-layered-up-under-the-red-glow.jpg",
+        "hash": "eda89f0f",
+        "orig": "IMG_4969.JPG",
+        "slug": "fibonacci-layered-up-under-the-red-glow",
+        "thumb_url": "/apps/iotd/img/thumbs/2016-12-10____fibonacci-layered-up-under-the-red-glow.jpg",
+        "time": "20:00:08",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_4969.JPG____fibonacci-layered-up-under-the-red-glow.jpg"
+    }
 ]

@@ -1,16 +1,24 @@
 [
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2017-01-25____notch-half-naked-befriends-a-squirrele.jpg",
-    "full_url": "/apps/iotd/img/2017-01-25____notch-half-naked-befriends-a-squirrele.jpg",
-    "caption": "Notch, half naked, befriends a squirrelel, completely naked.",
-    "time": "16:35:22",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5058.JPG____notch-half-naked-befriends-a-squirrele.jpg"
-  },
-  {
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5059.JPG__notch-made-a-woodland-friend__5f994a00.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-01-25__notch-made-a-woodland-friend__5f994a00.JPG",
-    "caption": "Notch made a woodland friend.",
-    "time": "16:35:31",
-    "full_url": "/apps/iotd/img/2017-01-25__notch-made-a-woodland-friend__5f994a00.JPG"
-  }
+    {
+        "caption": "Notch, half naked, befriends a squirrelel, completely naked.",
+        "ext": "jpg",
+        "full_url": "/apps/iotd/img/2017-01-25____notch-half-naked-befriends-a-squirrele.jpg",
+        "hash": "c39294e9",
+        "orig": "IMG_5058.JPG",
+        "slug": "notch-half-naked-befriends-a-squirrele",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-01-25____notch-half-naked-befriends-a-squirrele.jpg",
+        "time": "16:35:22",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5058.JPG____notch-half-naked-befriends-a-squirrele.jpg"
+    },
+    {
+        "caption": "Notch made a woodland friend.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-01-25__notch-made-a-woodland-friend__5f994a00.JPG",
+        "hash": "5f994a00",
+        "orig": "IMG_5059.JPG",
+        "slug": "notch-made-a-woodland-friend",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-01-25__notch-made-a-woodland-friend__5f994a00.JPG",
+        "time": "16:35:31",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5059.JPG__notch-made-a-woodland-friend__5f994a00.JPG"
+    }
 ]

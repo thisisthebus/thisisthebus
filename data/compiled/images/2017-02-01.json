@@ -1,9 +1,13 @@
 [
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2017-02-01____alligator-boots-no-pants-but-you-know.jpg",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5065.JPG____alligator-boots-no-pants-but-you-know.jpg",
-    "caption": "Alligator boots.  No pants, but you know, boots.",
-    "full_url": "/apps/iotd/img/2017-02-01____alligator-boots-no-pants-but-you-know.jpg",
-    "time": "17:41:54"
-  }
+    {
+        "caption": "Alligator boots.  No pants, but you know, boots.",
+        "ext": "jpg",
+        "full_url": "/apps/iotd/img/2017-02-01____alligator-boots-no-pants-but-you-know.jpg",
+        "hash": "b63729e7",
+        "orig": "IMG_5065.JPG",
+        "slug": "alligator-boots-no-pants-but-you-know",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-02-01____alligator-boots-no-pants-but-you-know.jpg",
+        "time": "17:41:54",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5065.JPG____alligator-boots-no-pants-but-you-know.jpg"
+    }
 ]

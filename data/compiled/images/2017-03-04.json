@@ -1,37 +1,57 @@
 [
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2017-03-04____every-time-we-opened-our-front-door-fes.jpg",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5116.JPG____every-time-we-opened-our-front-door-fes.jpg",
-    "caption": "Every time we opened our front door, festival folks lined up for a tour! Here, Fibonacci looks onto a helicopter that people rode in all weekend.",
-    "full_url": "/apps/iotd/img/2017-03-04____every-time-we-opened-our-front-door-fes.jpg",
-    "time": "12:04:10"
-  },
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2017-03-04____one-festival-goer-said-that-our-solar-pa.jpg",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5119.JPG____one-festival-goer-said-that-our-solar-pa.jpg",
-    "caption": "One festival goer said that our solar panels were like a beacon that she felt drawn toward. ",
-    "full_url": "/apps/iotd/img/2017-03-04____one-festival-goer-said-that-our-solar-pa.jpg",
-    "time": "12:08:50"
-  },
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2017-03-04____fibonacci-made-himself-cozy-at-nearbyy-r.jpg",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5137.JPG____fibonacci-made-himself-cozy-at-nearbyy-r.jpg",
-    "caption": "Fibonacci made himself cozy at nearbyy RV sites.",
-    "full_url": "/apps/iotd/img/2017-03-04____fibonacci-made-himself-cozy-at-nearbyy-r.jpg",
-    "time": "12:31:55"
-  },
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2017-03-04____our-setup-outside-the-front-door-folks.jpg",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5139.JPG____our-setup-outside-the-front-door-folks.jpg",
-    "caption": "Our setup outside the front door - folks enjoyed the 'How to Build Global Community' poster.",
-    "full_url": "/apps/iotd/img/2017-03-04____our-setup-outside-the-front-door-folks.jpg",
-    "time": "12:59:41"
-  },
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2017-03-04____justins-view-of-welcoming-the__1c2ccf3b.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5142.JPG____justins-view-of-welcoming-the__1c2ccf3b.JPG",
-    "caption": "Justin's view of welcoming the lines of folks into the bus to tour and ask questions!",
-    "full_url": "/apps/iotd/img/2017-03-04____justins-view-of-welcoming-the__1c2ccf3b.JPG",
-    "time": "14:16:14"
-  }
+    {
+        "caption": "Every time we opened our front door, festival folks lined up for a tour! Here, Fibonacci looks onto a helicopter that people rode in all weekend.",
+        "ext": "jpg",
+        "full_url": "/apps/iotd/img/2017-03-04____every-time-we-opened-our-front-door-fes.jpg",
+        "hash": "c02d9b3b",
+        "orig": "IMG_5116.JPG",
+        "slug": "every-time-we-opened-our-front-door-fes",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-03-04____every-time-we-opened-our-front-door-fes.jpg",
+        "time": "12:04:10",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5116.JPG____every-time-we-opened-our-front-door-fes.jpg"
+    },
+    {
+        "caption": "One festival goer said that our solar panels were like a beacon that she felt drawn toward. ",
+        "ext": "jpg",
+        "full_url": "/apps/iotd/img/2017-03-04____one-festival-goer-said-that-our-solar-pa.jpg",
+        "hash": "e5e72a3f",
+        "orig": "IMG_5119.JPG",
+        "slug": "one-festival-goer-said-that-our-solar-pa",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-03-04____one-festival-goer-said-that-our-solar-pa.jpg",
+        "time": "12:08:50",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5119.JPG____one-festival-goer-said-that-our-solar-pa.jpg"
+    },
+    {
+        "caption": "Fibonacci made himself cozy at nearbyy RV sites.",
+        "ext": "jpg",
+        "full_url": "/apps/iotd/img/2017-03-04____fibonacci-made-himself-cozy-at-nearbyy-r.jpg",
+        "hash": "7c73af31",
+        "orig": "IMG_5137.JPG",
+        "slug": "fibonacci-made-himself-cozy-at-nearbyy-r",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-03-04____fibonacci-made-himself-cozy-at-nearbyy-r.jpg",
+        "time": "12:31:55",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5137.JPG____fibonacci-made-himself-cozy-at-nearbyy-r.jpg"
+    },
+    {
+        "caption": "Our setup outside the front door - folks enjoyed the 'How to Build Global Community' poster.",
+        "ext": "jpg",
+        "full_url": "/apps/iotd/img/2017-03-04____our-setup-outside-the-front-door-folks.jpg",
+        "hash": "6972a804",
+        "orig": "IMG_5139.JPG",
+        "slug": "our-setup-outside-the-front-door-folks",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-03-04____our-setup-outside-the-front-door-folks.jpg",
+        "time": "12:59:41",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5139.JPG____our-setup-outside-the-front-door-folks.jpg"
+    },
+    {
+        "caption": "Justin's view of welcoming the lines of folks into the bus to tour and ask questions!",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-03-04____justins-view-of-welcoming-the__1c2ccf3b.JPG",
+        "hash": "1c2ccf3b",
+        "orig": "IMG_5142.JPG",
+        "slug": "justins-view-of-welcoming-the",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-03-04____justins-view-of-welcoming-the__1c2ccf3b.JPG",
+        "time": "14:16:14",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5142.JPG____justins-view-of-welcoming-the__1c2ccf3b.JPG"
+    }
 ]

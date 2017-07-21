@@ -1,9 +1,13 @@
 [
-  {
-    "caption": "Myles: \"PyCon has basically become a yoga fashion festival for me, but with sprints and studying.\"",
-    "time": "22:38:13",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_6121.JPG__myles-pycon-has-basically-be__d377de66.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-05-21__myles-pycon-has-basically-be__d377de66.JPG",
-    "full_url": "/apps/iotd/img/2017-05-21__myles-pycon-has-basically-be__d377de66.JPG"
-  }
+    {
+        "caption": "Myles: \"PyCon has basically become a yoga fashion festival for me, but with sprints and studying.\"",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-05-21__myles-pycon-has-basically-be__d377de66.JPG",
+        "hash": "d377de66",
+        "orig": "IMG_6121.JPG",
+        "slug": "myles-pycon-has-basically-be",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-05-21__myles-pycon-has-basically-be__d377de66.JPG",
+        "time": "22:38:13",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_6121.JPG__myles-pycon-has-basically-be__d377de66.JPG"
+    }
 ]

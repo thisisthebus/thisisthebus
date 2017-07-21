@@ -1,9 +1,13 @@
 [
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2017-03-06____suited-up-for-grocery-shopping__b4bcf6d4.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5183.JPG____suited-up-for-grocery-shopping__b4bcf6d4.JPG",
-    "caption": "Suited up for grocery shopping.",
-    "full_url": "/apps/iotd/img/2017-03-06____suited-up-for-grocery-shopping__b4bcf6d4.JPG",
-    "time": "16:45:38"
-  }
+    {
+        "caption": "Suited up for grocery shopping.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-03-06____suited-up-for-grocery-shopping__b4bcf6d4.JPG",
+        "hash": "b4bcf6d4",
+        "orig": "IMG_5183.JPG",
+        "slug": "suited-up-for-grocery-shopping",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-03-06____suited-up-for-grocery-shopping__b4bcf6d4.JPG",
+        "time": "16:45:38",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5183.JPG____suited-up-for-grocery-shopping__b4bcf6d4.JPG"
+    }
 ]

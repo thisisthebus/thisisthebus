@@ -1,23 +1,35 @@
 [
-  {
-    "full_url": "/apps/iotd/img/2017-05-12__stoppin-off-the-highway-for-a__ca9fe77e.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-05-12__stoppin-off-the-highway-for-a__ca9fe77e.JPG",
-    "time": "19:11:00",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5456.JPG__stoppin-off-the-highway-for-a__ca9fe77e.JPG",
-    "caption": "Stoppin' off the highway for a break."
-  },
-  {
-    "full_url": "/apps/iotd/img/2017-05-12__before-this-journey-west-we-lo__2f968c65.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-05-12__before-this-journey-west-we-lo__2f968c65.JPG",
-    "time": "19:55:29",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5464.JPG__before-this-journey-west-we-lo__2f968c65.JPG",
-    "caption": "Before this journey west we lowered Fibonacci's seat platform so now he can comfortably look out the window."
-  },
-  {
-    "full_url": "/apps/iotd/img/2017-05-12__a-handsome-bus-indeed__cd450000.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5478.JPG__a-handsome-bus-indeed__cd450000.JPG",
-    "time": "21:46:26",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-05-12__a-handsome-bus-indeed__cd450000.JPG",
-    "caption": "A handsome bus indeed."
-  }
+    {
+        "caption": "Stoppin' off the highway for a break.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-05-12__stoppin-off-the-highway-for-a__ca9fe77e.JPG",
+        "hash": "ca9fe77e",
+        "orig": "IMG_5456.JPG",
+        "slug": "stoppin-off-the-highway-for-a",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-05-12__stoppin-off-the-highway-for-a__ca9fe77e.JPG",
+        "time": "19:11:00",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5456.JPG__stoppin-off-the-highway-for-a__ca9fe77e.JPG"
+    },
+    {
+        "caption": "Before this journey west we lowered Fibonacci's seat platform so now he can comfortably look out the window.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-05-12__before-this-journey-west-we-lo__2f968c65.JPG",
+        "hash": "2f968c65",
+        "orig": "IMG_5464.JPG",
+        "slug": "before-this-journey-west-we-lo",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-05-12__before-this-journey-west-we-lo__2f968c65.JPG",
+        "time": "19:55:29",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5464.JPG__before-this-journey-west-we-lo__2f968c65.JPG"
+    },
+    {
+        "caption": "A handsome bus indeed.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-05-12__a-handsome-bus-indeed__cd450000.JPG",
+        "hash": "cd450000",
+        "orig": "IMG_5478.JPG",
+        "slug": "a-handsome-bus-indeed",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-05-12__a-handsome-bus-indeed__cd450000.JPG",
+        "time": "21:46:26",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5478.JPG__a-handsome-bus-indeed__cd450000.JPG"
+    }
 ]

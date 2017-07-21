@@ -1,9 +1,13 @@
 [
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2017-06-30__jitz-some-of-chelseas-art-f__137c9f0e.JPG",
-    "full_url": "/apps/iotd/img/2017-06-30__jitz-some-of-chelseas-art-f__137c9f0e.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_6266.JPG__jitz-some-of-chelseas-art-f__137c9f0e.JPG",
-    "time": "14:56:35",
-    "caption": "Jitz.  Some of Chelsea's art for her brother's b-day."
-  }
+    {
+        "caption": "Jitz.  Some of Chelsea's art for her brother's b-day.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-06-30__jitz-some-of-chelseas-art-f__137c9f0e.JPG",
+        "hash": "137c9f0e",
+        "orig": "IMG_6266.JPG",
+        "slug": "jitz-some-of-chelseas-art-f",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-06-30__jitz-some-of-chelseas-art-f__137c9f0e.JPG",
+        "time": "14:56:35",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_6266.JPG__jitz-some-of-chelseas-art-f__137c9f0e.JPG"
+    }
 ]

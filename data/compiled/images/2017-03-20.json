@@ -1,44 +1,68 @@
 [
-  {
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5250.JPG__the-nomads-land-has-an-impres__226332cf.JPG",
-    "time": "11:27:31",
-    "full_url": "/apps/iotd/img/2017-03-20__the-nomads-land-has-an-impres__226332cf.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-03-20__the-nomads-land-has-an-impres__226332cf.JPG",
-    "caption": "The Nomad's Land has an impressneighborhood of old vehicles converted to living spaces. We received a tour of several from Joshua as soon as we arrived to the land."
-  },
-  {
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5252.JPG__notch-explores-one-of-the-skoo__1df1fcb9.JPG",
-    "time": "11:29:04",
-    "full_url": "/apps/iotd/img/2017-03-20__notch-explores-one-of-the-skoo__1df1fcb9.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-03-20__notch-explores-one-of-the-skoo__1df1fcb9.JPG",
-    "caption": "Notch explores one of the skoolie conversions."
-  },
-  {
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5260.JPG__the-skoolie-on-the-left-is-kno__e94bd75e.JPG",
-    "time": "11:32:18",
-    "full_url": "/apps/iotd/img/2017-03-20__the-skoolie-on-the-left-is-kno__e94bd75e.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-03-20__the-skoolie-on-the-left-is-kno__e94bd75e.JPG",
-    "caption": "The skoolie on the left is known as the Grilled Cheese Wagon & the old city bus on the right is the beautiful, cozy home of our new & dear friends, Rachel & Nigel (oh and Liz the kitty!)."
-  },
-  {
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5271.JPG__here-is-another-area-of-the-la__a247c3dd.JPG",
-    "time": "11:51:31",
-    "full_url": "/apps/iotd/img/2017-03-20__here-is-another-area-of-the-la__a247c3dd.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-03-20__here-is-another-area-of-the-la__a247c3dd.JPG",
-    "caption": "Here is another area of the land with an old RV, a bus conversion sporting The Nomad's Land logo & the shed converted home of our new friend Charlene!"
-  },
-  {
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5267.JPG__plenty-of-buses-to-tour-for-in__415d895d.JPG",
-    "time": "11:41:29",
-    "full_url": "/apps/iotd/img/2017-03-20__plenty-of-buses-to-tour-for-in__415d895d.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-03-20__plenty-of-buses-to-tour-for-in__415d895d.JPG",
-    "caption": "Plenty of buses to tour for inspiration and ideas."
-  },
-  {
-    "full_url": "/apps/iotd/img/2017-03-20__some-of-the-best-woodworking-w__0a287f96.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5264.JPG__some-of-the-best-woodworking-w__0a287f96.JPG",
-    "time": "11:35:43",
-    "caption": "Some of the best woodworking we've seen in a skoolie.",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-03-20__some-of-the-best-woodworking-w__0a287f96.JPG"
-  }
+    {
+        "caption": "The Nomad's Land has an impressneighborhood of old vehicles converted to living spaces. We received a tour of several from Joshua as soon as we arrived to the land.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-03-20__the-nomads-land-has-an-impres__226332cf.JPG",
+        "hash": "226332cf",
+        "orig": "IMG_5250.JPG",
+        "slug": "the-nomads-land-has-an-impres",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-03-20__the-nomads-land-has-an-impres__226332cf.JPG",
+        "time": "11:27:31",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5250.JPG__the-nomads-land-has-an-impres__226332cf.JPG"
+    },
+    {
+        "caption": "Notch explores one of the skoolie conversions.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-03-20__notch-explores-one-of-the-skoo__1df1fcb9.JPG",
+        "hash": "1df1fcb9",
+        "orig": "IMG_5252.JPG",
+        "slug": "notch-explores-one-of-the-skoo",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-03-20__notch-explores-one-of-the-skoo__1df1fcb9.JPG",
+        "time": "11:29:04",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5252.JPG__notch-explores-one-of-the-skoo__1df1fcb9.JPG"
+    },
+    {
+        "caption": "The skoolie on the left is known as the Grilled Cheese Wagon & the old city bus on the right is the beautiful, cozy home of our new & dear friends, Rachel & Nigel (oh and Liz the kitty!).",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-03-20__the-skoolie-on-the-left-is-kno__e94bd75e.JPG",
+        "hash": "e94bd75e",
+        "orig": "IMG_5260.JPG",
+        "slug": "the-skoolie-on-the-left-is-kno",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-03-20__the-skoolie-on-the-left-is-kno__e94bd75e.JPG",
+        "time": "11:32:18",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5260.JPG__the-skoolie-on-the-left-is-kno__e94bd75e.JPG"
+    },
+    {
+        "caption": "Here is another area of the land with an old RV, a bus conversion sporting The Nomad's Land logo & the shed converted home of our new friend Charlene!",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-03-20__here-is-another-area-of-the-la__a247c3dd.JPG",
+        "hash": "a247c3dd",
+        "orig": "IMG_5271.JPG",
+        "slug": "here-is-another-area-of-the-la",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-03-20__here-is-another-area-of-the-la__a247c3dd.JPG",
+        "time": "11:51:31",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5271.JPG__here-is-another-area-of-the-la__a247c3dd.JPG"
+    },
+    {
+        "caption": "Plenty of buses to tour for inspiration and ideas.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-03-20__plenty-of-buses-to-tour-for-in__415d895d.JPG",
+        "hash": "415d895d",
+        "orig": "IMG_5267.JPG",
+        "slug": "plenty-of-buses-to-tour-for-in",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-03-20__plenty-of-buses-to-tour-for-in__415d895d.JPG",
+        "time": "11:41:29",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5267.JPG__plenty-of-buses-to-tour-for-in__415d895d.JPG"
+    },
+    {
+        "caption": "Some of the best woodworking we've seen in a skoolie.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-03-20__some-of-the-best-woodworking-w__0a287f96.JPG",
+        "hash": "0a287f96",
+        "orig": "IMG_5264.JPG",
+        "slug": "some-of-the-best-woodworking-w",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-03-20__some-of-the-best-woodworking-w__0a287f96.JPG",
+        "time": "11:35:43",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5264.JPG__some-of-the-best-woodworking-w__0a287f96.JPG"
+    }
 ]

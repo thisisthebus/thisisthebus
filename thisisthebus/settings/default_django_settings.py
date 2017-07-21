@@ -17,7 +17,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'thisisthebus.where',
     'thisisthebus.daily_log',
-    'thisisthebus.iotd',
     'thisisthebus.experiences',
 ]
 

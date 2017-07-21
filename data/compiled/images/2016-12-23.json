@@ -1,9 +1,13 @@
 [
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2016-12-23____we-learned-how-to-change-a-bicycle-tube.jpg",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5027.JPG____we-learned-how-to-change-a-bicycle-tube.jpg",
-    "caption": "We learned how to change a bicycle tube when we suspected a hole in one of Justin's.",
-    "full_url": "/apps/iotd/img/2016-12-23____we-learned-how-to-change-a-bicycle-tube.jpg",
-    "time": "10:50:07"
-  }
+    {
+        "caption": "We learned how to change a bicycle tube when we suspected a hole in one of Justin's.",
+        "ext": "jpg",
+        "full_url": "/apps/iotd/img/2016-12-23____we-learned-how-to-change-a-bicycle-tube.jpg",
+        "hash": "a96aafe0",
+        "orig": "IMG_5027.JPG",
+        "slug": "we-learned-how-to-change-a-bicycle-tube",
+        "thumb_url": "/apps/iotd/img/thumbs/2016-12-23____we-learned-how-to-change-a-bicycle-tube.jpg",
+        "time": "10:50:07",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5027.JPG____we-learned-how-to-change-a-bicycle-tube.jpg"
+    }
 ]

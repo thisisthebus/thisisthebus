@@ -1,9 +1,13 @@
 [
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2017-02-22____a-bushold-favorite-yogurt-granola.jpg",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5096.JPG____a-bushold-favorite-yogurt-granola.jpg",
-    "caption": "A bushold favorite - yogurt & granola!",
-    "full_url": "/apps/iotd/img/2017-02-22____a-bushold-favorite-yogurt-granola.jpg",
-    "time": "12:59:02"
-  }
+    {
+        "caption": "A bushold favorite - yogurt & granola!",
+        "ext": "jpg",
+        "full_url": "/apps/iotd/img/2017-02-22____a-bushold-favorite-yogurt-granola.jpg",
+        "hash": "3c2a7088",
+        "orig": "IMG_5096.JPG",
+        "slug": "a-bushold-favorite-yogurt-granola",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-02-22____a-bushold-favorite-yogurt-granola.jpg",
+        "time": "12:59:02",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5096.JPG____a-bushold-favorite-yogurt-granola.jpg"
+    }
 ]

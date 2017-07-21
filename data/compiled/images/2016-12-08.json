@@ -1,23 +1,35 @@
 [
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2016-12-08____fibonacci-helped-our-ranger-friend-chey.jpg",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_4939.JPG____fibonacci-helped-our-ranger-friend-chey.jpg",
-    "caption": "Fibonacci helped our ranger friend, Cheyenne, decorate the Skidaway Island State Park tree for Christmas! He enjoyed the sparkly ornaments.",
-    "full_url": "/apps/iotd/img/2016-12-08____fibonacci-helped-our-ranger-friend-chey.jpg",
-    "time": "11:34:59"
-  },
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2016-12-08____taking-a-break-from-our-walk-along-the-b.jpg",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_4945.JPG____taking-a-break-from-our-walk-along-the-b.jpg",
-    "caption": "Taking a break from our walk along the boardwalk.",
-    "full_url": "/apps/iotd/img/2016-12-08____taking-a-break-from-our-walk-along-the-b.jpg",
-    "time": "16:43:51"
-  },
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2016-12-08____justin-notch.jpg",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_4951.JPG____justin-notch.jpg",
-    "caption": "Justin & Notch",
-    "full_url": "/apps/iotd/img/2016-12-08____justin-notch.jpg",
-    "time": "16:46:40"
-  }
+    {
+        "caption": "Fibonacci helped our ranger friend, Cheyenne, decorate the Skidaway Island State Park tree for Christmas! He enjoyed the sparkly ornaments.",
+        "ext": "jpg",
+        "full_url": "/apps/iotd/img/2016-12-08____fibonacci-helped-our-ranger-friend-chey.jpg",
+        "hash": "0ed95b75",
+        "orig": "IMG_4939.JPG",
+        "slug": "fibonacci-helped-our-ranger-friend-chey",
+        "thumb_url": "/apps/iotd/img/thumbs/2016-12-08____fibonacci-helped-our-ranger-friend-chey.jpg",
+        "time": "11:34:59",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_4939.JPG____fibonacci-helped-our-ranger-friend-chey.jpg"
+    },
+    {
+        "caption": "Taking a break from our walk along the boardwalk.",
+        "ext": "jpg",
+        "full_url": "/apps/iotd/img/2016-12-08____taking-a-break-from-our-walk-along-the-b.jpg",
+        "hash": "d3220e31",
+        "orig": "IMG_4945.JPG",
+        "slug": "taking-a-break-from-our-walk-along-the-b",
+        "thumb_url": "/apps/iotd/img/thumbs/2016-12-08____taking-a-break-from-our-walk-along-the-b.jpg",
+        "time": "16:43:51",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_4945.JPG____taking-a-break-from-our-walk-along-the-b.jpg"
+    },
+    {
+        "caption": "Justin & Notch",
+        "ext": "jpg",
+        "full_url": "/apps/iotd/img/2016-12-08____justin-notch.jpg",
+        "hash": "68b1e471",
+        "orig": "IMG_4951.JPG",
+        "slug": "justin-notch",
+        "thumb_url": "/apps/iotd/img/thumbs/2016-12-08____justin-notch.jpg",
+        "time": "16:46:40",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_4951.JPG____justin-notch.jpg"
+    }
 ]

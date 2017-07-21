@@ -1,9 +1,13 @@
 [
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2016-10-28__experimenting-with-leds-and-a__30858e3b.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_4633.JPG__experimenting-with-leds-and-a__30858e3b.JPG",
-    "caption": "Experimenting with LEDs and a Raspberry Pi for the bus.",
-    "full_url": "/apps/iotd/img/2016-10-28__experimenting-with-leds-and-a__30858e3b.JPG",
-    "time": "12:00:26"
-  }
+    {
+        "caption": "Experimenting with LEDs and a Raspberry Pi for the bus.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2016-10-28__experimenting-with-leds-and-a__30858e3b.JPG",
+        "hash": "30858e3b",
+        "orig": "IMG_4633.JPG",
+        "slug": "experimenting-with-leds-and-a",
+        "thumb_url": "/apps/iotd/img/thumbs/2016-10-28__experimenting-with-leds-and-a__30858e3b.JPG",
+        "time": "12:00:26",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_4633.JPG__experimenting-with-leds-and-a__30858e3b.JPG"
+    }
 ]

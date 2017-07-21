@@ -1,12 +1,16 @@
 [
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2017-06-01__in-two-years-of-life-his-favo__9dd5c0a5.JPG",
-    "time": "18:28:26",
-    "caption": "In two years of life, his favorite source of nutrition hasn't changed.",
-    "tags": [
-      ""
-    ],
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_6195.JPG__in-two-years-of-life-his-favo__9dd5c0a5.JPG",
-    "full_url": "/apps/iotd/img/2017-06-01__in-two-years-of-life-his-favo__9dd5c0a5.JPG"
-  }
+    {
+        "caption": "In two years of life, his favorite source of nutrition hasn't changed.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-06-01__in-two-years-of-life-his-favo__9dd5c0a5.JPG",
+        "hash": "9dd5c0a5",
+        "orig": "IMG_6195.JPG",
+        "slug": "in-two-years-of-life-his-favo",
+        "tags": [
+            ""
+        ],
+        "thumb_url": "/apps/iotd/img/thumbs/2017-06-01__in-two-years-of-life-his-favo__9dd5c0a5.JPG",
+        "time": "18:28:26",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_6195.JPG__in-two-years-of-life-his-favo__9dd5c0a5.JPG"
+    }
 ]

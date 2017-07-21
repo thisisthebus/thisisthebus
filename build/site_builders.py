@@ -11,11 +11,11 @@ if __name__ == "__main__":
 
     django.setup()
 
-from build.built_fundamentals import summaries, locations, images, places
-from thisisthebus.experiences.build import build_experiences
 
-
-sys.path.append("/home/hubcraft/git/thisisthesitebuilder")
+from thisisthesitebuilder.images.models import Image
+Image.image_path = "apps/iotd/img/"
+from build.built_fundamentals import SUMMARIES, LOCATIONS, IMAGES, PLACES
+from thisisthebus.experiences.build import EraBuilder
 
 
 import json
@@ -71,14 +71,17 @@ def complete_build(django_setup=False):
 
     print("Building site...")
 
-    latest_location_date, latest_location_dict = max(locations.items())
+    latest_location_date, latest_location_dict = max(LOCATIONS.items())
     latest_location_time, latest_location = max(latest_location_dict.items())
-    latest_place = places[latest_location]
+    latest_place = PLACES[latest_location]
 
     hashes = get_hashes()
     build_time = maya.now().datetime(to_timezone='US/Eastern', naive=True)
 
-    experiences = build_experiences("%s/authored/experiences" % DATA_DIR, summaries, locations, images, places)
+    era_builder = EraBuilder(SUMMARIES, LOCATIONS, IMAGES, PLACES)
+
+
+    experiences = era_builder.build_experiences("%s/authored/experiences" % DATA_DIR)
     t = get_template('experiences.html')
     d = {"experiences": experiences, "include_swipebox": True, "slicey": True, "page_name": "Our Travels",
          "sub_nav": [('/travels-by-experience.html', "By Experience", True), ('/travels.html', "By Date", False)]
@@ -101,8 +104,23 @@ def complete_build(django_setup=False):
         with open("{frontend}/experiences/{slug}.html".format(frontend=FRONTEND_DIR, slug=experience.slug), "w+") as f:
             f.write(experiences_html)
 
+    bigger_eras = era_builder.build_eras("%s/authored/eras" % DATA_DIR)
 
-    build_daily_log(summaries, locations, images, places)
+    for era in bigger_eras:
+        t = get_template('era.html')
+        d = {"era": era, "include_swipebox": True, "slicey": True,
+             "page_name": "Our Travels",
+             "page_title": era.name,
+             "sub_nav": [('/travels-by-experience.html', "By Experience", False),
+                         ('/travels.html', "By Date", False)]
+             }
+        era_html = t.render(d)
+
+
+        with open("{frontend}/eras/{slug}.html".format(frontend=FRONTEND_DIR, slug=era.slug), "w+") as f:
+            f.write(era_html)
+
+    build_daily_log(SUMMARIES, LOCATIONS, IMAGES, PLACES)
 
     # Pages
 

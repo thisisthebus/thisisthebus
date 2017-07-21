@@ -1,37 +1,57 @@
 [
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2016-12-04____baby-gator.jpg",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_4903.JPG____baby-gator.jpg",
-    "caption": "Baby gator.",
-    "full_url": "/apps/iotd/img/2016-12-04____baby-gator.jpg",
-    "time": "11:15:45"
-  },
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2016-12-04____fibonacci-ventures-through-the-skidaway.jpg",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_4907.JPG____fibonacci-ventures-through-the-skidaway.jpg",
-    "caption": "Fibonacci ventures through the Skidaway Island nature trail.",
-    "full_url": "/apps/iotd/img/2016-12-04____fibonacci-ventures-through-the-skidaway.jpg",
-    "time": "12:16:09"
-  },
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2016-12-04____follow-the-bambino.jpg",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_4912.JPG____follow-the-bambino.jpg",
-    "caption": "Follow the bambino.",
-    "full_url": "/apps/iotd/img/2016-12-04____follow-the-bambino.jpg",
-    "time": "12:16:54"
-  },
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2016-12-04____.jpg",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_4920.JPG____.jpg",
-    "caption": " ",
-    "full_url": "/apps/iotd/img/2016-12-04____.jpg",
-    "time": "12:18:55"
-  },
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2016-12-04__c59d48d4.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_4915.JPG__c59d48d4.JPG",
-    "caption": "",
-    "full_url": "/apps/iotd/img/2016-12-04__c59d48d4.JPG",
-    "time": "12:17:55"
-  }
+    {
+        "caption": "Baby gator.",
+        "ext": "jpg",
+        "full_url": "/apps/iotd/img/2016-12-04____baby-gator.jpg",
+        "hash": "d3174c27",
+        "orig": "IMG_4903.JPG",
+        "slug": "baby-gator",
+        "thumb_url": "/apps/iotd/img/thumbs/2016-12-04____baby-gator.jpg",
+        "time": "11:15:45",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_4903.JPG____baby-gator.jpg"
+    },
+    {
+        "caption": "Fibonacci ventures through the Skidaway Island nature trail.",
+        "ext": "jpg",
+        "full_url": "/apps/iotd/img/2016-12-04____fibonacci-ventures-through-the-skidaway.jpg",
+        "hash": "e4cd09bb",
+        "orig": "IMG_4907.JPG",
+        "slug": "fibonacci-ventures-through-the-skidaway",
+        "thumb_url": "/apps/iotd/img/thumbs/2016-12-04____fibonacci-ventures-through-the-skidaway.jpg",
+        "time": "12:16:09",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_4907.JPG____fibonacci-ventures-through-the-skidaway.jpg"
+    },
+    {
+        "caption": "Follow the bambino.",
+        "ext": "jpg",
+        "full_url": "/apps/iotd/img/2016-12-04____follow-the-bambino.jpg",
+        "hash": "c51d0d53",
+        "orig": "IMG_4912.JPG",
+        "slug": "follow-the-bambino",
+        "thumb_url": "/apps/iotd/img/thumbs/2016-12-04____follow-the-bambino.jpg",
+        "time": "12:16:54",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_4912.JPG____follow-the-bambino.jpg"
+    },
+    {
+        "caption": " ",
+        "ext": "jpg",
+        "full_url": "/apps/iotd/img/2016-12-04__fashionable_family_in_the_woods.jpg",
+        "hash": "b9d5e544",
+        "orig": "IMG_4920.JPG",
+        "slug": "fashionable_family_in_the_woods",
+        "thumb_url": "/apps/iotd/img/thumbs/2016-12-04__fashionable_family_in_the_woods.jpg",
+        "time": "12:18:55",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_4920.JPG__fashionable_family_in_the_woods.jpg"
+    },
+    {
+        "caption": "",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2016-12-04__c59d48d4.JPG",
+        "hash": "c59d48d4",
+        "orig": "IMG_4915.JPG",
+        "slug": "",
+        "thumb_url": "/apps/iotd/img/thumbs/2016-12-04__c59d48d4.JPG",
+        "time": "12:17:55",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_4915.JPG__c59d48d4.JPG"
+    }
 ]

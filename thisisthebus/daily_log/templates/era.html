@@ -1,0 +1,42 @@
+{% extends 'shared/generic-page.html' %}
+
+{% block main %}
+<div id="main" class="underSlice">
+    <div class="blackMainInfo experiences">
+
+        <div class="experienceContainer era">
+            <h2>{{era.name}}</h2>
+            <h3 class="bigDate">{{era.start_maya.slang_date}} - {{era.end_maya.slang_date}}</h3>
+            <h4>{{era.headline|safe}}</h4>
+
+
+            <div class="contentSection">
+                {{experience.description|safe}}
+            </div>
+
+            <div class="contentSection gridWrapper">
+                {% for location in era.locations %}
+                <div class="contentSection gridItem">
+                    {% with location.place_meta as place %}
+                      <div class="locationContainer">
+                          {% with omit_small_name=True %}
+                            {% include 'single-place.html' %}
+                          {% endwith %}
+                          <h4>
+                              {% if location.start.slang_date != location.end.slang_date %}
+                                {{location.start.slang_date}} - {{location.end.slang_date}}
+                              {% else %}
+                                {{location.start.slang_date}}
+                              {% endif %}
+                          </h4>
+                      </div>
+
+                    {% endwith %}
+                </div>
+                {% endfor %}
+
+                </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

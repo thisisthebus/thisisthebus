@@ -1,9 +1,13 @@
 [
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2017-02-03____toilet-deep-clean.jpg",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5076.JPG____toilet-deep-clean.jpg",
-    "caption": "Toilet deep clean.",
-    "full_url": "/apps/iotd/img/2017-02-03____toilet-deep-clean.jpg",
-    "time": "11:34:10"
-  }
+    {
+        "caption": "Toilet deep clean.",
+        "ext": "jpg",
+        "full_url": "/apps/iotd/img/2017-02-03____toilet-deep-clean.jpg",
+        "hash": "f9342e3c",
+        "orig": "IMG_5076.JPG",
+        "slug": "toilet-deep-clean",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-02-03____toilet-deep-clean.jpg",
+        "time": "11:34:10",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5076.JPG____toilet-deep-clean.jpg"
+    }
 ]

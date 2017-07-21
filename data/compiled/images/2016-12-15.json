@@ -1,9 +1,13 @@
 [
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2016-12-15____happy-snowpeople-welcome-notch-to-the-pa.jpg",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5007.JPG____happy-snowpeople-welcome-notch-to-the-pa.jpg",
-    "caption": "Happy snowpeople welcome Notch to the payphone booth.",
-    "full_url": "/apps/iotd/img/2016-12-15____happy-snowpeople-welcome-notch-to-the-pa.jpg",
-    "time": "11:29:17"
-  }
+    {
+        "caption": "Happy snowpeople welcome Notch to the payphone booth.",
+        "ext": "jpg",
+        "full_url": "/apps/iotd/img/2016-12-15____happy-snowpeople-welcome-notch-to-the-pa.jpg",
+        "hash": "f3a10537",
+        "orig": "IMG_5007.JPG",
+        "slug": "happy-snowpeople-welcome-notch-to-the-pa",
+        "thumb_url": "/apps/iotd/img/thumbs/2016-12-15____happy-snowpeople-welcome-notch-to-the-pa.jpg",
+        "time": "11:29:17",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5007.JPG____happy-snowpeople-welcome-notch-to-the-pa.jpg"
+    }
 ]

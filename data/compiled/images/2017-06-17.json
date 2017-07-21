@@ -1,23 +1,24 @@
 [
-  {
-    "time": "15:13:28",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_6228.JPG__the-pedalpalooza-garden-tour-b__4ff09548.JPG",
-    "full_url": "/apps/iotd/img/2017-06-17__the-pedalpalooza-garden-tour-b__4ff09548.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-06-17__the-pedalpalooza-garden-tour-b__4ff09548.JPG",
-    "caption": "The pedalpalooza garden tour brought us to Dennis' jungle villa.  We were amazed what can be done with a hellstrip."
-  },
-  {
-    "caption": "Some of the Portland gardens are nothing short of paradisal.",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_6236.JPG__some-of-the-portland-gardens-a__a8ff1002.JPG",
-    "full_url": "/apps/iotd/img/2017-06-17__some-of-the-portland-gardens-a__a8ff1002.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-06-17__some-of-the-portland-gardens-a__a8ff1002.JPG",
-    "time": "15:25:32"
-  },
-  {
-    "caption": "",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_6228.JPG__4ff09548.JPG",
-    "full_url": "/apps/iotd/img/2017-06-17__4ff09548.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-06-17__4ff09548.JPG",
-    "time": "15:13:28"
-  }
+    {
+        "caption": "The pedalpalooza garden tour brought us to Dennis' jungle villa.  We were amazed what can be done with a hellstrip.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-06-17__the-pedalpalooza-garden-tour-b__4ff09548.JPG",
+        "hash": "4ff09548",
+        "orig": "IMG_6228.JPG",
+        "slug": "the-pedalpalooza-garden-tour-b",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-06-17__the-pedalpalooza-garden-tour-b__4ff09548.JPG",
+        "time": "15:13:28",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_6228.JPG__the-pedalpalooza-garden-tour-b__4ff09548.JPG"
+    },
+    {
+        "caption": "Some of the Portland gardens are nothing short of paradisal.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-06-17__some-of-the-portland-gardens-a__a8ff1002.JPG",
+        "hash": "a8ff1002",
+        "orig": "IMG_6236.JPG",
+        "slug": "some-of-the-portland-gardens-a",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-06-17__some-of-the-portland-gardens-a__a8ff1002.JPG",
+        "time": "15:25:32",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_6236.JPG__some-of-the-portland-gardens-a__a8ff1002.JPG"
+    }
 ]

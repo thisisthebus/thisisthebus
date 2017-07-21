@@ -19,7 +19,7 @@ def new_location():
     print("-------------------------------------------")
 
     places_dir_listing = os.walk("%s/authored/places" % DATA_DIR)
-    places = list(places_dir_listing)[0][2]
+    places = sorted(list(places_dir_listing)[0][2])
 
     place = None
     while not place:
@@ -61,3 +61,7 @@ def new_location():
 
 def process_new_location_yaml(dt, place_slug):
     pass
+
+
+if __name__ == "__main__":
+    new_location()

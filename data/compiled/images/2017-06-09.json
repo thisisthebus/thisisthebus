@@ -1,16 +1,24 @@
 [
-  {
-    "time": "22:47:11",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-06-09__two-years-old-with-strawberr__421cb2f9.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_6150.JPG__two-years-old-with-strawberr__421cb2f9.JPG",
-    "full_url": "/apps/iotd/img/2017-06-09__two-years-old-with-strawberr__421cb2f9.JPG",
-    "caption": "Two years old!  With strawberries!  (and dates and nuts)"
-  },
-  {
-    "caption": "Still getting used to how awesome it is to have room enough for friends on the bus.",
-    "full_url": "/apps/iotd/img/2017-06-09__still-getting-used-to-how-awes__02f0cfa4.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-06-09__still-getting-used-to-how-awes__02f0cfa4.JPG",
-    "time": "22:05:52",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_6144.JPG__still-getting-used-to-how-awes__02f0cfa4.JPG"
-  }
+    {
+        "caption": "Two years old!  With strawberries!  (and dates and nuts)",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-06-09__two-years-old-with-strawberr__421cb2f9.JPG",
+        "hash": "421cb2f9",
+        "orig": "IMG_6150.JPG",
+        "slug": "two-years-old-with-strawberr",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-06-09__two-years-old-with-strawberr__421cb2f9.JPG",
+        "time": "22:47:11",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_6150.JPG__two-years-old-with-strawberr__421cb2f9.JPG"
+    },
+    {
+        "caption": "Still getting used to how awesome it is to have room enough for friends on the bus.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-06-09__still-getting-used-to-how-awes__02f0cfa4.JPG",
+        "hash": "02f0cfa4",
+        "orig": "IMG_6144.JPG",
+        "slug": "still-getting-used-to-how-awes",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-06-09__still-getting-used-to-how-awes__02f0cfa4.JPG",
+        "time": "22:05:52",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_6144.JPG__still-getting-used-to-how-awes__02f0cfa4.JPG"
+    }
 ]

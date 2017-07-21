@@ -1,32 +1,44 @@
 [
-  {
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_6217.JPG__beginning-of-the-grateful-dead__dfa61b4b.JPG",
-    "tags": [
-      "pedalpalooza"
-    ],
-    "time": "20:40:02",
-    "caption": "Beginning of the Grateful Dead ride.",
-    "full_url": "/apps/iotd/img/2017-06-19__beginning-of-the-grateful-dead__dfa61b4b.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-06-19__beginning-of-the-grateful-dead__dfa61b4b.JPG"
-  },
-  {
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_6252.JPG__notch-and-stella-at-creston-o__3498d14c.JPG",
-    "tags": [
-      "pedalpalooza"
-    ],
-    "time": "15:44:27",
-    "caption": "Notch and Stella at Creston, one of Notch's favorite hangouts.",
-    "full_url": "/apps/iotd/img/2017-06-19__notch-and-stella-at-creston-o__3498d14c.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-06-19__notch-and-stella-at-creston-o__3498d14c.JPG"
-  },
-  {
-    "time": "14:01:28",
-    "caption": "Fibonacci's first pedalpalooza ride on his own bike.",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_6248.JPG__fibonaccis-first-pedalpalooza__6e24cf60.JPG",
-    "tags": [
-      "pedalpalooza"
-    ],
-    "full_url": "/apps/iotd/img/2017-06-19__fibonaccis-first-pedalpalooza__6e24cf60.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-06-19__fibonaccis-first-pedalpalooza__6e24cf60.JPG"
-  }
+    {
+        "caption": "Beginning of the Grateful Dead ride.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-06-19__beginning-of-the-grateful-dead__dfa61b4b.JPG",
+        "hash": "dfa61b4b",
+        "orig": "IMG_6217.JPG",
+        "slug": "beginning-of-the-grateful-dead",
+        "tags": [
+            "pedalpalooza"
+        ],
+        "thumb_url": "/apps/iotd/img/thumbs/2017-06-19__beginning-of-the-grateful-dead__dfa61b4b.JPG",
+        "time": "20:40:02",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_6217.JPG__beginning-of-the-grateful-dead__dfa61b4b.JPG"
+    },
+    {
+        "caption": "Notch and Stella at Creston, one of Notch's favorite hangouts.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-06-19__notch-and-stella-at-creston-o__3498d14c.JPG",
+        "hash": "3498d14c",
+        "orig": "IMG_6252.JPG",
+        "slug": "notch-and-stella-at-creston-o",
+        "tags": [
+            "pedalpalooza"
+        ],
+        "thumb_url": "/apps/iotd/img/thumbs/2017-06-19__notch-and-stella-at-creston-o__3498d14c.JPG",
+        "time": "15:44:27",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_6252.JPG__notch-and-stella-at-creston-o__3498d14c.JPG"
+    },
+    {
+        "caption": "Fibonacci's first pedalpalooza ride on his own bike.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-06-19__fibonaccis-first-pedalpalooza__6e24cf60.JPG",
+        "hash": "6e24cf60",
+        "orig": "IMG_6248.JPG",
+        "slug": "fibonaccis-first-pedalpalooza",
+        "tags": [
+            "pedalpalooza"
+        ],
+        "thumb_url": "/apps/iotd/img/thumbs/2017-06-19__fibonaccis-first-pedalpalooza__6e24cf60.JPG",
+        "time": "14:01:28",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_6248.JPG__fibonaccis-first-pedalpalooza__6e24cf60.JPG"
+    }
 ]

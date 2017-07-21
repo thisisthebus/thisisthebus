@@ -1,16 +1,24 @@
 [
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2017-03-15____the-south-has-gotten-surprisin__641f46fc.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5236.JPG____the-south-has-gotten-surprisin__641f46fc.JPG",
-    "caption": "The south has gotten surprisingly cold so we opted to stay at an AirBnb for a few nights to escape the temperature. Can you spot the toddlerino?",
-    "full_url": "/apps/iotd/img/2017-03-15____the-south-has-gotten-surprisin__641f46fc.JPG",
-    "time": "09:08:31"
-  },
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2017-03-15____movie-snacking__0fc71487.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5241.JPG____movie-snacking__0fc71487.JPG",
-    "caption": "Movie snacking.",
-    "full_url": "/apps/iotd/img/2017-03-15____movie-snacking__0fc71487.JPG",
-    "time": "16:34:13"
-  }
+    {
+        "caption": "The south has gotten surprisingly cold so we opted to stay at an AirBnb for a few nights to escape the temperature. Can you spot the toddlerino?",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-03-15____the-south-has-gotten-surprisin__641f46fc.JPG",
+        "hash": "641f46fc",
+        "orig": "IMG_5236.JPG",
+        "slug": "the-south-has-gotten-surprisin",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-03-15____the-south-has-gotten-surprisin__641f46fc.JPG",
+        "time": "09:08:31",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5236.JPG____the-south-has-gotten-surprisin__641f46fc.JPG"
+    },
+    {
+        "caption": "Movie snacking.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-03-15____movie-snacking__0fc71487.JPG",
+        "hash": "0fc71487",
+        "orig": "IMG_5241.JPG",
+        "slug": "movie-snacking",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-03-15____movie-snacking__0fc71487.JPG",
+        "time": "16:34:13",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5241.JPG____movie-snacking__0fc71487.JPG"
+    }
 ]

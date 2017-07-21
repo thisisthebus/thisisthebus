@@ -365,7 +365,7 @@ margin-right:60px;
 }
 
 .locationContainer {
-    width: 280px !important;
+    width: 280px;
 }
 
 .locationContainer .locationNameCaption div {
@@ -469,6 +469,7 @@ body #swipebox-top-bar {
     height: auto;
     top: -150px;
     line-height: 35px;
+    background-color:rgba(0,0,0,0.5);
 }
 
 body #swipebox-top-bar #swipebox-title {
@@ -481,4 +482,31 @@ body #swipebox-top-bar #swipebox-title {
 body #swipebox-top-bar.visible-bars
 {
     transform: translate3d(0,150px,0);
+}
+
+.contentSection.gridWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.contentSection.gridItem {
+    width:auto;
+}
+
+.era .gridWrapper .locationContainer {
+    width: 200px;
+}
+
+.era .gridWrapper .locationContainer a img {
+    width: 200px;
+}
+
+.era .gridWrapper .locationContainer .locationNameMask {
+    width: 200px;
+}
+
+.era .gridWrapper .locationContainer .locationNameCaption {
+    width: 200px;
 }

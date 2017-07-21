@@ -1,16 +1,24 @@
 [
-  {
-    "time": "14:05:46",
-    "caption": "Reading about Peppa Pig is an easy way to become Notch's friend.",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-06-12__reading-about-peppa-pig-is-an__9b2e228c.JPG",
-    "full_url": "/apps/iotd/img/2017-06-12__reading-about-peppa-pig-is-an__9b2e228c.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_6184.JPG__reading-about-peppa-pig-is-an__9b2e228c.JPG"
-  },
-  {
-    "time": "13:35:49",
-    "caption": "Fibonacci Photo bomb!",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_6179.JPG__fibonacci-photo-bomb__d6f5de78.JPG",
-    "full_url": "/apps/iotd/img/2017-06-12__fibonacci-photo-bomb__d6f5de78.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-06-12__fibonacci-photo-bomb__d6f5de78.JPG"
-  }
+    {
+        "caption": "Reading about Peppa Pig is an easy way to become Notch's friend.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-06-12__reading-about-peppa-pig-is-an__9b2e228c.JPG",
+        "hash": "9b2e228c",
+        "orig": "IMG_6184.JPG",
+        "slug": "reading-about-peppa-pig-is-an",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-06-12__reading-about-peppa-pig-is-an__9b2e228c.JPG",
+        "time": "14:05:46",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_6184.JPG__reading-about-peppa-pig-is-an__9b2e228c.JPG"
+    },
+    {
+        "caption": "Fibonacci Photo bomb!",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-06-12__fibonacci-photo-bomb__d6f5de78.JPG",
+        "hash": "d6f5de78",
+        "orig": "IMG_6179.JPG",
+        "slug": "fibonacci-photo-bomb",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-06-12__fibonacci-photo-bomb__d6f5de78.JPG",
+        "time": "13:35:49",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_6179.JPG__fibonacci-photo-bomb__d6f5de78.JPG"
+    }
 ]

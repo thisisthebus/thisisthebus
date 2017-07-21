@@ -1,82 +1,114 @@
 [
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2016-12-25__our-first-foray-into-living-on__71cbea58.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_4933.JPG__our-first-foray-into-living-on__71cbea58.JPG",
-    "full_url": "/apps/iotd/img/2016-12-25__our-first-foray-into-living-on__71cbea58.JPG",
-    "tags": [
-      ""
-    ],
-    "caption": "Our first foray into living on solar ne.",
-    "time": "12:12:54"
-  },
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2016-12-25__starting-down-the-canal-on-our__8de1592d.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_4945.JPG__starting-down-the-canal-on-our__8de1592d.JPG",
-    "full_url": "/apps/iotd/img/2016-12-25__starting-down-the-canal-on-our__8de1592d.JPG",
-    "tags": [
-      ""
-    ],
-    "caption": "Starting down the canal on our Christmas canoe adventure.",
-    "time": "13:53:30"
-  },
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2016-12-25__rowing-and-milking-at-the-sa__68b32a87.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_4952.JPG__rowing-and-milking-at-the-sa__68b32a87.JPG",
-    "full_url": "/apps/iotd/img/2016-12-25__rowing-and-milking-at-the-sa__68b32a87.JPG",
-    "tags": [
-      ""
-    ],
-    "caption": "Rowing and milking.  At the same time.",
-    "time": "15:12:03"
-  },
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2016-12-25__fibonacci-liked-being-in-the-f__42587588.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_4969.JPG__fibonacci-liked-being-in-the-f__42587588.JPG",
-    "full_url": "/apps/iotd/img/2016-12-25__fibonacci-liked-being-in-the-f__42587588.JPG",
-    "tags": [
-      ""
-    ],
-    "caption": "Fibonacci liked being in the front of the canoe.",
-    "time": "15:56:32"
-  },
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2016-12-25__so-much-going-on-in-one-photo__e94ce547.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_4977.JPG__so-much-going-on-in-one-photo__e94ce547.JPG",
-    "full_url": "/apps/iotd/img/2016-12-25__so-much-going-on-in-one-photo__e94ce547.JPG",
-    "tags": [
-      ""
-    ],
-    "caption": "So much going on in one photo: The kid looking at the crocodile, the crocodile looking at us, and Notch looking off into the distance, showing off his many mosquito bites.",
-    "time": "17:21:23"
-  },
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2016-12-25__the-crocs-looked-prehistoric__871042a9.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_4981.JPG__the-crocs-looked-prehistoric__871042a9.JPG",
-    "full_url": "/apps/iotd/img/2016-12-25__the-crocs-looked-prehistoric__871042a9.JPG",
-    "tags": [
-      ""
-    ],
-    "caption": "The crocs looked prehistoric.",
-    "time": "17:23:18"
-  },
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2016-12-25__a-substantial-osprey-nest-arou__cbcbb4ee.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_4985.JPG__a-substantial-osprey-nest-arou__cbcbb4ee.JPG",
-    "full_url": "/apps/iotd/img/2016-12-25__a-substantial-osprey-nest-arou__cbcbb4ee.JPG",
-    "tags": [
-      ""
-    ],
-    "caption": "A substantial osprey nest around the corner from our campsite.",
-    "time": "17:35:08"
-  },
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2016-12-25__a-heron__fab7bb24.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_4993.JPG__a-heron__fab7bb24.JPG",
-    "caption": "A heron.",
-    "tags": [
-      ""
-    ],
-    "full_url": "/apps/iotd/img/2016-12-25__a-heron__fab7bb24.JPG",
-    "time": "17:40:40"
-  }
+    {
+        "caption": "Our first foray into living on solar ne.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2016-12-25__our-first-foray-into-living-on__71cbea58.JPG",
+        "hash": "71cbea58",
+        "orig": "IMG_4933.JPG",
+        "slug": "our-first-foray-into-living-on",
+        "tags": [
+            ""
+        ],
+        "thumb_url": "/apps/iotd/img/thumbs/2016-12-25__our-first-foray-into-living-on__71cbea58.JPG",
+        "time": "12:12:54",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_4933.JPG__our-first-foray-into-living-on__71cbea58.JPG"
+    },
+    {
+        "caption": "Starting down the canal on our Christmas canoe adventure.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2016-12-25__starting-down-the-canal-on-our__8de1592d.JPG",
+        "hash": "8de1592d",
+        "orig": "IMG_4945.JPG",
+        "slug": "starting-down-the-canal-on-our",
+        "tags": [
+            ""
+        ],
+        "thumb_url": "/apps/iotd/img/thumbs/2016-12-25__starting-down-the-canal-on-our__8de1592d.JPG",
+        "time": "13:53:30",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_4945.JPG__starting-down-the-canal-on-our__8de1592d.JPG"
+    },
+    {
+        "caption": "Rowing and milking.  At the same time.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2016-12-25__rowing-and-milking-at-the-sa__68b32a87.JPG",
+        "hash": "68b32a87",
+        "orig": "IMG_4952.JPG",
+        "slug": "rowing-and-milking-at-the-sa",
+        "tags": [
+            ""
+        ],
+        "thumb_url": "/apps/iotd/img/thumbs/2016-12-25__rowing-and-milking-at-the-sa__68b32a87.JPG",
+        "time": "15:12:03",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_4952.JPG__rowing-and-milking-at-the-sa__68b32a87.JPG"
+    },
+    {
+        "caption": "Fibonacci liked being in the front of the canoe.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2016-12-25__fibonacci-liked-being-in-the-f__42587588.JPG",
+        "hash": "42587588",
+        "orig": "IMG_4969.JPG",
+        "slug": "fibonacci-liked-being-in-the-f",
+        "tags": [
+            ""
+        ],
+        "thumb_url": "/apps/iotd/img/thumbs/2016-12-25__fibonacci-liked-being-in-the-f__42587588.JPG",
+        "time": "15:56:32",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_4969.JPG__fibonacci-liked-being-in-the-f__42587588.JPG"
+    },
+    {
+        "caption": "So much going on in one photo: The kid looking at the crocodile, the crocodile looking at us, and Notch looking off into the distance, showing off his many mosquito bites.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2016-12-25__so-much-going-on-in-one-photo__e94ce547.JPG",
+        "hash": "e94ce547",
+        "orig": "IMG_4977.JPG",
+        "slug": "so-much-going-on-in-one-photo",
+        "tags": [
+            ""
+        ],
+        "thumb_url": "/apps/iotd/img/thumbs/2016-12-25__so-much-going-on-in-one-photo__e94ce547.JPG",
+        "time": "17:21:23",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_4977.JPG__so-much-going-on-in-one-photo__e94ce547.JPG"
+    },
+    {
+        "caption": "The crocs looked prehistoric.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2016-12-25__the-crocs-looked-prehistoric__871042a9.JPG",
+        "hash": "871042a9",
+        "orig": "IMG_4981.JPG",
+        "slug": "the-crocs-looked-prehistoric",
+        "tags": [
+            ""
+        ],
+        "thumb_url": "/apps/iotd/img/thumbs/2016-12-25__the-crocs-looked-prehistoric__871042a9.JPG",
+        "time": "17:23:18",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_4981.JPG__the-crocs-looked-prehistoric__871042a9.JPG"
+    },
+    {
+        "caption": "A substantial osprey nest around the corner from our campsite.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2016-12-25__a-substantial-osprey-nest-arou__cbcbb4ee.JPG",
+        "hash": "cbcbb4ee",
+        "orig": "IMG_4985.JPG",
+        "slug": "a-substantial-osprey-nest-arou",
+        "tags": [
+            ""
+        ],
+        "thumb_url": "/apps/iotd/img/thumbs/2016-12-25__a-substantial-osprey-nest-arou__cbcbb4ee.JPG",
+        "time": "17:35:08",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_4985.JPG__a-substantial-osprey-nest-arou__cbcbb4ee.JPG"
+    },
+    {
+        "caption": "A heron.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2016-12-25__a-heron__fab7bb24.JPG",
+        "hash": "fab7bb24",
+        "orig": "IMG_4993.JPG",
+        "slug": "a-heron",
+        "tags": [
+            ""
+        ],
+        "thumb_url": "/apps/iotd/img/thumbs/2016-12-25__a-heron__fab7bb24.JPG",
+        "time": "17:40:40",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_4993.JPG__a-heron__fab7bb24.JPG"
+    }
 ]

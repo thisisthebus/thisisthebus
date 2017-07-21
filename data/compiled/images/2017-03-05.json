@@ -1,51 +1,79 @@
 [
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2017-03-05____inside-the-victorian-tiny__9ac3283e.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5164.JPG____inside-the-victorian-tiny__9ac3283e.JPG",
-    "caption": "Inside the Victorian Tiny.",
-    "full_url": "/apps/iotd/img/2017-03-05____inside-the-victorian-tiny__9ac3283e.JPG",
-    "time": "16:31:40"
-  },
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2017-03-05____chelsea-stares-down-from-the-b__3e678149.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5166.JPG____chelsea-stares-down-from-the-b__3e678149.JPG",
-    "caption": "Chelsea stares down from the balcony bunk of the Victorian Tiny.",
-    "full_url": "/apps/iotd/img/2017-03-05____chelsea-stares-down-from-the-b__3e678149.JPG",
-    "time": "16:31:51"
-  },
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2017-03-05____one-of-the-downsides-to-the-ge__fcc63ae7.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5169.JPG____one-of-the-downsides-to-the-ge__fcc63ae7.JPG",
-    "caption": "One of the downsides to the Georgia Tiny House festival: the state was permitted to set up a huge and vulgar display of its toys.",
-    "full_url": "/apps/iotd/img/2017-03-05____one-of-the-downsides-to-the-ge__fcc63ae7.JPG",
-    "time": "16:35:19"
-  },
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2017-03-05____goat-notch-says-oat__0f585480.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5174.JPG____goat-notch-says-oat__0f585480.JPG",
-    "caption": "Goat!  (Notch says, \"Oat!\")",
-    "full_url": "/apps/iotd/img/2017-03-05____goat-notch-says-oat__0f585480.JPG",
-    "time": "16:57:57"
-  },
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2017-03-05____the-midwest-wanderers-had-a-sw__de1369e2.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5177.JPG____the-midwest-wanderers-had-a-sw__de1369e2.JPG",
-    "caption": "The Midwest Wanderers had a sweet wood stove.  And an adorable toddlerino.",
-    "full_url": "/apps/iotd/img/2017-03-05____the-midwest-wanderers-had-a-sw__de1369e2.JPG",
-    "time": "18:00:34"
-  },
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2017-03-05____new-friends-also-living-in-the__036c33e8.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5179.JPG____new-friends-also-living-in-the__036c33e8.JPG",
-    "caption": "New friends also living in their skoolie home.  Luke is making Chelsea a latte (heck yeah!) while Rachel prepares dinner and Charlotte looks out the door.",
-    "full_url": "/apps/iotd/img/2017-03-05____new-friends-also-living-in-the__036c33e8.JPG",
-    "time": "18:05:14"
-  },
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2017-03-05____fibonacci-tours-the-other-skoo__2856992b.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5181.JPG____fibonacci-tours-the-other-skoo__2856992b.JPG",
-    "caption": "Fibonacci tours the other skoolies.",
-    "full_url": "/apps/iotd/img/2017-03-05____fibonacci-tours-the-other-skoo__2856992b.JPG",
-    "time": "18:19:58"
-  }
+    {
+        "caption": "Inside the Victorian Tiny.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-03-05____inside-the-victorian-tiny__9ac3283e.JPG",
+        "hash": "9ac3283e",
+        "orig": "IMG_5164.JPG",
+        "slug": "inside-the-victorian-tiny",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-03-05____inside-the-victorian-tiny__9ac3283e.JPG",
+        "time": "16:31:40",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5164.JPG____inside-the-victorian-tiny__9ac3283e.JPG"
+    },
+    {
+        "caption": "Chelsea stares down from the balcony bunk of the Victorian Tiny.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-03-05____chelsea-stares-down-from-the-b__3e678149.JPG",
+        "hash": "3e678149",
+        "orig": "IMG_5166.JPG",
+        "slug": "chelsea-stares-down-from-the-b",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-03-05____chelsea-stares-down-from-the-b__3e678149.JPG",
+        "time": "16:31:51",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5166.JPG____chelsea-stares-down-from-the-b__3e678149.JPG"
+    },
+    {
+        "caption": "One of the downsides to the Georgia Tiny House festival: the state was permitted to set up a huge and vulgar display of its toys.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-03-05____one-of-the-downsides-to-the-ge__fcc63ae7.JPG",
+        "hash": "fcc63ae7",
+        "orig": "IMG_5169.JPG",
+        "slug": "one-of-the-downsides-to-the-ge",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-03-05____one-of-the-downsides-to-the-ge__fcc63ae7.JPG",
+        "time": "16:35:19",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5169.JPG____one-of-the-downsides-to-the-ge__fcc63ae7.JPG"
+    },
+    {
+        "caption": "Goat!  (Notch says, \"Oat!\")",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-03-05____goat-notch-says-oat__0f585480.JPG",
+        "hash": "0f585480",
+        "orig": "IMG_5174.JPG",
+        "slug": "goat-notch-says-oat",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-03-05____goat-notch-says-oat__0f585480.JPG",
+        "time": "16:57:57",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5174.JPG____goat-notch-says-oat__0f585480.JPG"
+    },
+    {
+        "caption": "The Midwest Wanderers had a sweet wood stove.  And an adorable toddlerino.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-03-05____the-midwest-wanderers-had-a-sw__de1369e2.JPG",
+        "hash": "de1369e2",
+        "orig": "IMG_5177.JPG",
+        "slug": "the-midwest-wanderers-had-a-sw",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-03-05____the-midwest-wanderers-had-a-sw__de1369e2.JPG",
+        "time": "18:00:34",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5177.JPG____the-midwest-wanderers-had-a-sw__de1369e2.JPG"
+    },
+    {
+        "caption": "New friends also living in their skoolie home.  Luke is making Chelsea a latte (heck yeah!) while Rachel prepares dinner and Charlotte looks out the door.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-03-05____new-friends-also-living-in-the__036c33e8.JPG",
+        "hash": "036c33e8",
+        "orig": "IMG_5179.JPG",
+        "slug": "new-friends-also-living-in-the",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-03-05____new-friends-also-living-in-the__036c33e8.JPG",
+        "time": "18:05:14",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5179.JPG____new-friends-also-living-in-the__036c33e8.JPG"
+    },
+    {
+        "caption": "Fibonacci tours the other skoolies.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-03-05____fibonacci-tours-the-other-skoo__2856992b.JPG",
+        "hash": "2856992b",
+        "orig": "IMG_5181.JPG",
+        "slug": "fibonacci-tours-the-other-skoo",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-03-05____fibonacci-tours-the-other-skoo__2856992b.JPG",
+        "time": "18:19:58",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5181.JPG____fibonacci-tours-the-other-skoo__2856992b.JPG"
+    }
 ]

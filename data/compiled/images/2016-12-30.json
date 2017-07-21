@@ -1,9 +1,13 @@
 [
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2016-12-30____during-a-bike-ride-through-a-town-just-n.jpg",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5042.JPG____during-a-bike-ride-through-a-town-just-n.jpg",
-    "caption": "During a bike ride through a town just north of the Everglades National Park, we stopped off for a delicious mexican lunch. Guacamole!",
-    "full_url": "/apps/iotd/img/2016-12-30____during-a-bike-ride-through-a-town-just-n.jpg",
-    "time": "16:15:46"
-  }
+    {
+        "caption": "During a bike ride through a town just north of the Everglades National Park, we stopped off for a delicious mexican lunch. Guacamole!",
+        "ext": "jpg",
+        "full_url": "/apps/iotd/img/2016-12-30____during-a-bike-ride-through-a-town-just-n.jpg",
+        "hash": "008a2cb7",
+        "orig": "IMG_5042.JPG",
+        "slug": "during-a-bike-ride-through-a-town-just-n",
+        "thumb_url": "/apps/iotd/img/thumbs/2016-12-30____during-a-bike-ride-through-a-town-just-n.jpg",
+        "time": "16:15:46",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5042.JPG____during-a-bike-ride-through-a-town-just-n.jpg"
+    }
 ]

@@ -1,23 +1,35 @@
 [
-  {
-    "time": "16:18:07",
-    "full_url": "/apps/iotd/img/2017-05-07__our-visit-to-kansas-city-to-r__65dafeb3.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5402.JPG__our-visit-to-kansas-city-to-r__65dafeb3.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-05-07__our-visit-to-kansas-city-to-r__65dafeb3.JPG",
-    "caption": " Our visit to Kansas City to reunite with Annie & Phill and to meet young Finn. We had a lovely time of meals shared, late night conversation & help with some bus projects before continuing the Road Tri."
-  },
-  {
-    "caption": "Phill helped jMyles setteries.",
-    "time": "16:37:29",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5417.JPG__phill-helped-jmyles-setteries__ab73eba8.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-05-07__phill-helped-jmyles-setteries__ab73eba8.JPG",
-    "full_url": "/apps/iotd/img/2017-05-07__phill-helped-jmyles-setteries__ab73eba8.JPG"
-  },
-  {
-    "time": "17:54:12",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-05-07__finn-coming-soon-to-a-startu__2b01a0b3.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5419.JPG__finn-coming-soon-to-a-startu__2b01a0b3.JPG",
-    "caption": "Finn - coming soon to a startup near you.",
-    "full_url": "/apps/iotd/img/2017-05-07__finn-coming-soon-to-a-startu__2b01a0b3.JPG"
-  }
+    {
+        "caption": " Our visit to Kansas City to reunite with Annie & Phill and to meet young Finn. We had a lovely time of meals shared, late night conversation & help with some bus projects before continuing the Road Tri.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-05-07__our-visit-to-kansas-city-to-r__65dafeb3.JPG",
+        "hash": "65dafeb3",
+        "orig": "IMG_5402.JPG",
+        "slug": "our-visit-to-kansas-city-to-r",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-05-07__our-visit-to-kansas-city-to-r__65dafeb3.JPG",
+        "time": "16:18:07",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5402.JPG__our-visit-to-kansas-city-to-r__65dafeb3.JPG"
+    },
+    {
+        "caption": "Phill helped jMyles setteries.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-05-07__phill-helped-jmyles-setteries__ab73eba8.JPG",
+        "hash": "ab73eba8",
+        "orig": "IMG_5417.JPG",
+        "slug": "phill-helped-jmyles-setteries",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-05-07__phill-helped-jmyles-setteries__ab73eba8.JPG",
+        "time": "16:37:29",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5417.JPG__phill-helped-jmyles-setteries__ab73eba8.JPG"
+    },
+    {
+        "caption": "Finn - coming soon to a startup near you.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-05-07__finn-coming-soon-to-a-startu__2b01a0b3.JPG",
+        "hash": "2b01a0b3",
+        "orig": "IMG_5419.JPG",
+        "slug": "finn-coming-soon-to-a-startu",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-05-07__finn-coming-soon-to-a-startu__2b01a0b3.JPG",
+        "time": "17:54:12",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5419.JPG__finn-coming-soon-to-a-startu__2b01a0b3.JPG"
+    }
 ]

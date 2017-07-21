@@ -1,62 +1,86 @@
 [
-  {
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_6411.JPG__even-on-the-way-out-the-state__3fc641f0.JPG",
-    "time": "12:33:06",
-    "full_url": "/apps/iotd/img/2017-07-07__even-on-the-way-out-the-state__3fc641f0.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-07-07__even-on-the-way-out-the-state__3fc641f0.JPG",
-    "caption": "Even on the way out, the state still maintained its childish, thuggish, lawless intimidation tactics. ",
-    "tags": [
-      "traveling-from"
-    ]
-  },
-  {
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_6413.JPG__trying-against-the-odds-to-g__0d8cc258.JPG",
-    "time": "12:33:21",
-    "full_url": "/apps/iotd/img/2017-07-07__trying-against-the-odds-to-g__0d8cc258.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-07-07__trying-against-the-odds-to-g__0d8cc258.JPG",
-    "caption": "Trying, against the odds, to get some directions from a USDA police officer.  Unsurprisingly, they refused to help and barked at us to keep moving.",
-    "tags": [
-      "traveling-from"
-    ]
-  },
-  {
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_6427.JPG__pre-naturalizing-our-site-whil__54124a25.JPG",
-    "time": "22:25:28",
-    "full_url": "/apps/iotd/img/2017-07-07__pre-naturalizing-our-site-whil__54124a25.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-07-07__pre-naturalizing-our-site-whil__54124a25.JPG",
-    "caption": "Pre-naturalizing our site while we still had daylight.  Fortunatley, Notch really enjoys cleaning up other peoples' trash from the woods.",
-    "tags": [
-      "traveling-from"
-    ]
-  },
-  {
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_6432.JPG__a-perfectly-fine-beer-choice__b22e1226.JPG",
-    "time": "22:26:40",
-    "full_url": "/apps/iotd/img/2017-07-07__a-perfectly-fine-beer-choice__b22e1226.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-07-07__a-perfectly-fine-beer-choice__b22e1226.JPG",
-    "caption": "A perfectly fine beer choice, but the woods is no place to leave your bottle.",
-    "tags": [
-      "traveling-from"
-    ]
-  },
-  {
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_6436.JPG__we-had-to-get-the-tools-out-an__bc5e6f3a.JPG",
-    "time": "22:27:41",
-    "full_url": "/apps/iotd/img/2017-07-07__we-had-to-get-the-tools-out-an__bc5e6f3a.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-07-07__we-had-to-get-the-tools-out-an__bc5e6f3a.JPG",
-    "caption": "We had to get the tools out and sift the dirt to get at the broken glass.",
-    "tags": [
-      "traveling-from"
-    ]
-  },
-  {
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_6426.JPG__the-bus-parked-at-our-beautifu__890b1d9a.JPG",
-    "time": "22:25:24",
-    "full_url": "/apps/iotd/img/2017-07-07__the-bus-parked-at-our-beautifu__890b1d9a.JPG",
-    "tags": [
-      "traveling-from"
-    ],
-    "caption": "The bus parked at our beautiful natural forest home-for-a-night.  There was a lot of trash to clean up before it was ready for us, but it felt great to clean it.",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-07-07__the-bus-parked-at-our-beautifu__890b1d9a.JPG"
-  }
+    {
+        "caption": "Even on the way out, the state still maintained its childish, thuggish, lawless intimidation tactics. ",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-07-07__even-on-the-way-out-the-state__3fc641f0.JPG",
+        "hash": "3fc641f0",
+        "orig": "IMG_6411.JPG",
+        "slug": "even-on-the-way-out-the-state",
+        "tags": [
+            "traveling-from"
+        ],
+        "thumb_url": "/apps/iotd/img/thumbs/2017-07-07__even-on-the-way-out-the-state__3fc641f0.JPG",
+        "time": "12:33:06",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_6411.JPG__even-on-the-way-out-the-state__3fc641f0.JPG"
+    },
+    {
+        "caption": "Trying, against the odds, to get some directions from a USDA police officer.  Unsurprisingly, they refused to help and barked at us to keep moving.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-07-07__trying-against-the-odds-to-g__0d8cc258.JPG",
+        "hash": "0d8cc258",
+        "orig": "IMG_6413.JPG",
+        "slug": "trying-against-the-odds-to-g",
+        "tags": [
+            "traveling-from"
+        ],
+        "thumb_url": "/apps/iotd/img/thumbs/2017-07-07__trying-against-the-odds-to-g__0d8cc258.JPG",
+        "time": "12:33:21",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_6413.JPG__trying-against-the-odds-to-g__0d8cc258.JPG"
+    },
+    {
+        "caption": "Pre-naturalizing our site while we still had daylight.  Fortunatley, Notch really enjoys cleaning up other peoples' trash from the woods.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-07-07__pre-naturalizing-our-site-whil__54124a25.JPG",
+        "hash": "54124a25",
+        "orig": "IMG_6427.JPG",
+        "slug": "pre-naturalizing-our-site-whil",
+        "tags": [
+            "traveling-from"
+        ],
+        "thumb_url": "/apps/iotd/img/thumbs/2017-07-07__pre-naturalizing-our-site-whil__54124a25.JPG",
+        "time": "22:25:28",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_6427.JPG__pre-naturalizing-our-site-whil__54124a25.JPG"
+    },
+    {
+        "caption": "A perfectly fine beer choice, but the woods is no place to leave your bottle.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-07-07__a-perfectly-fine-beer-choice__b22e1226.JPG",
+        "hash": "b22e1226",
+        "orig": "IMG_6432.JPG",
+        "slug": "a-perfectly-fine-beer-choice",
+        "tags": [
+            "traveling-from"
+        ],
+        "thumb_url": "/apps/iotd/img/thumbs/2017-07-07__a-perfectly-fine-beer-choice__b22e1226.JPG",
+        "time": "22:26:40",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_6432.JPG__a-perfectly-fine-beer-choice__b22e1226.JPG"
+    },
+    {
+        "caption": "We had to get the tools out and sift the dirt to get at the broken glass.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-07-07__we-had-to-get-the-tools-out-an__bc5e6f3a.JPG",
+        "hash": "bc5e6f3a",
+        "orig": "IMG_6436.JPG",
+        "slug": "we-had-to-get-the-tools-out-an",
+        "tags": [
+            "traveling-from"
+        ],
+        "thumb_url": "/apps/iotd/img/thumbs/2017-07-07__we-had-to-get-the-tools-out-an__bc5e6f3a.JPG",
+        "time": "22:27:41",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_6436.JPG__we-had-to-get-the-tools-out-an__bc5e6f3a.JPG"
+    },
+    {
+        "caption": "The bus parked at our beautiful natural forest home-for-a-night.  There was a lot of trash to clean up before it was ready for us, but it felt great to clean it.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-07-07__the-bus-parked-at-our-beautifu__890b1d9a.JPG",
+        "hash": "890b1d9a",
+        "orig": "IMG_6426.JPG",
+        "slug": "the-bus-parked-at-our-beautifu",
+        "tags": [
+            "traveling-from"
+        ],
+        "thumb_url": "/apps/iotd/img/thumbs/2017-07-07__the-bus-parked-at-our-beautifu__890b1d9a.JPG",
+        "time": "22:25:24",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_6426.JPG__the-bus-parked-at-our-beautifu__890b1d9a.JPG"
+    }
 ]

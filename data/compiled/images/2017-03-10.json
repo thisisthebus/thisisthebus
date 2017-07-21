@@ -1,16 +1,24 @@
 [
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2017-03-10____naked-healthy-primate-toddle__92825239.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5219.JPG____naked-healthy-primate-toddle__92825239.JPG",
-    "caption": "Naked & healthy primate toddlerino in the sun!",
-    "full_url": "/apps/iotd/img/2017-03-10____naked-healthy-primate-toddle__92825239.JPG",
-    "time": "15:27:44"
-  },
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2017-03-10____chelsea-embroidered-a-little-s__3c8d2d10.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5220.JPG____chelsea-embroidered-a-little-s__3c8d2d10.JPG",
-    "caption": "Chelsea embroidered a little sign above our stairs to cover up an unwelcoming view of the unfinished floor.",
-    "full_url": "/apps/iotd/img/2017-03-10____chelsea-embroidered-a-little-s__3c8d2d10.JPG",
-    "time": "15:32:39"
-  }
+    {
+        "caption": "Naked & healthy primate toddlerino in the sun!",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-03-10____naked-healthy-primate-toddle__92825239.JPG",
+        "hash": "92825239",
+        "orig": "IMG_5219.JPG",
+        "slug": "naked-healthy-primate-toddle",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-03-10____naked-healthy-primate-toddle__92825239.JPG",
+        "time": "15:27:44",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5219.JPG____naked-healthy-primate-toddle__92825239.JPG"
+    },
+    {
+        "caption": "Chelsea embroidered a little sign above our stairs to cover up an unwelcoming view of the unfinished floor.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-03-10____chelsea-embroidered-a-little-s__3c8d2d10.JPG",
+        "hash": "3c8d2d10",
+        "orig": "IMG_5220.JPG",
+        "slug": "chelsea-embroidered-a-little-s",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-03-10____chelsea-embroidered-a-little-s__3c8d2d10.JPG",
+        "time": "15:32:39",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5220.JPG____chelsea-embroidered-a-little-s__3c8d2d10.JPG"
+    }
 ]

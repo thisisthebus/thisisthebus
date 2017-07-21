@@ -1,0 +1,10 @@
+lat: 38.970212
+lon: -95.236241
+thumb_zoom: 17
+pitch: 60
+thumb_style: "satellite-streets-v9"
+link_zoom: 15
+small_name: "Ladybird Diner"
+big_name: "Lawrence, Kansas"
+use_both_names_for_slug: False
+show_on_top_level_experience: True

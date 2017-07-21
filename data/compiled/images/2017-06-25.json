@@ -1,12 +1,16 @@
 [
-  {
-    "time": "00:00:37",
-    "full_url": "/apps/iotd/img/2017-06-25__the-biggest-pedalpalooza-ride__a0ce027d.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-06-25__the-biggest-pedalpalooza-ride__a0ce027d.JPG",
-    "tags": [
-      "pedalpalooza"
-    ],
-    "caption": "The biggest pedalpalooza ride of all, unless you're counting clothes: the World Naked Bike Ride.  Over 12,000 mostly naked Portlanders.  This photo is from the park, before the ride - people are just beginning to remove their garments.",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_6259.JPG__the-biggest-pedalpalooza-ride__a0ce027d.JPG"
-  }
+    {
+        "caption": "The biggest pedalpalooza ride of all, unless you're counting clothes: the World Naked Bike Ride.  Over 12,000 mostly naked Portlanders.  This photo is from the park, before the ride - people are just beginning to remove their garments.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-06-25__the-biggest-pedalpalooza-ride__a0ce027d.JPG",
+        "hash": "a0ce027d",
+        "orig": "IMG_6259.JPG",
+        "slug": "the-biggest-pedalpalooza-ride",
+        "tags": [
+            "pedalpalooza"
+        ],
+        "thumb_url": "/apps/iotd/img/thumbs/2017-06-25__the-biggest-pedalpalooza-ride__a0ce027d.JPG",
+        "time": "00:00:37",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_6259.JPG__the-biggest-pedalpalooza-ride__a0ce027d.JPG"
+    }
 ]

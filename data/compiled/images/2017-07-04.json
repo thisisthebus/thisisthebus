@@ -1,52 +1,72 @@
 [
-  {
-    "tags": [
-      "signage"
-    ],
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_6310.JPG__by-the-time-we-got-there-the__a5e48a53.JPG",
-    "full_url": "/apps/iotd/img/2017-07-04__by-the-time-we-got-there-the__a5e48a53.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-07-04__by-the-time-we-got-there-the__a5e48a53.JPG",
-    "caption": "By the time we got there, the site had been thoroughly examined, with notices placed at all of the most sensitive parts of the environment.",
-    "time": "13:51:53"
-  },
-  {
-    "tags": [
-      "signage"
-    ],
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_6313.JPG__a-tipi-village__e3d75797.JPG",
-    "full_url": "/apps/iotd/img/2017-07-04__a-tipi-village__e3d75797.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-07-04__a-tipi-village__e3d75797.JPG",
-    "caption": "A tipi village. ",
-    "time": "13:52:41"
-  },
-  {
-    "tags": [
-      "woods-meadows"
-    ],
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_6316.JPG__a-little-henna-tattoo__ec74985b.JPG",
-    "full_url": "/apps/iotd/img/2017-07-04__a-little-henna-tattoo__ec74985b.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-07-04__a-little-henna-tattoo__ec74985b.JPG",
-    "caption": "A little henna tattoo.",
-    "time": "19:08:51"
-  },
-  {
-    "tags": [
-      "rainbow-lifestyle"
-    ],
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_6317.JPG__dirty-kid-village-dirt-kids__501b5461.JPG",
-    "full_url": "/apps/iotd/img/2017-07-04__dirty-kid-village-dirt-kids__501b5461.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-07-04__dirty-kid-village-dirt-kids__501b5461.JPG",
-    "caption": "One of the very impressive childcare facilities at Rainbow: \"Dirty Kid Village\" - it had dirt, kids, breastfeeding, and dogs.  And swings, toys, age-appropriate vegetarian food, and loving vibes.",
-    "time": "22:12:09"
-  },
-  {
-    "tags": [
-      "rainbow-lifestyle"
-    ],
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_6326.JPG__playpen-in-the-woooods-from__80e82bca.JPG",
-    "full_url": "/apps/iotd/img/2017-07-04__playpen-in-the-woooods-from__80e82bca.JPG",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-07-04__playpen-in-the-woooods-from__80e82bca.JPG",
-    "caption": "Playpen in the woooods!  (From Dirty Kid Village)",
-    "time": "22:46:36"
-  }
+    {
+        "caption": "By the time we got there, the site had been thoroughly examined, with notices placed at all of the most sensitive parts of the environment.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-07-04__by-the-time-we-got-there-the__a5e48a53.JPG",
+        "hash": "a5e48a53",
+        "orig": "IMG_6310.JPG",
+        "slug": "by-the-time-we-got-there-the",
+        "tags": [
+            "signage"
+        ],
+        "thumb_url": "/apps/iotd/img/thumbs/2017-07-04__by-the-time-we-got-there-the__a5e48a53.JPG",
+        "time": "13:51:53",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_6310.JPG__by-the-time-we-got-there-the__a5e48a53.JPG"
+    },
+    {
+        "caption": "A tipi village. ",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-07-04__a-tipi-village__e3d75797.JPG",
+        "hash": "e3d75797",
+        "orig": "IMG_6313.JPG",
+        "slug": "a-tipi-village",
+        "tags": [
+            "signage"
+        ],
+        "thumb_url": "/apps/iotd/img/thumbs/2017-07-04__a-tipi-village__e3d75797.JPG",
+        "time": "13:52:41",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_6313.JPG__a-tipi-village__e3d75797.JPG"
+    },
+    {
+        "caption": "A little henna tattoo.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-07-04__a-little-henna-tattoo__ec74985b.JPG",
+        "hash": "ec74985b",
+        "orig": "IMG_6316.JPG",
+        "slug": "a-little-henna-tattoo",
+        "tags": [
+            "woods-meadows"
+        ],
+        "thumb_url": "/apps/iotd/img/thumbs/2017-07-04__a-little-henna-tattoo__ec74985b.JPG",
+        "time": "19:08:51",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_6316.JPG__a-little-henna-tattoo__ec74985b.JPG"
+    },
+    {
+        "caption": "One of the very impressive childcare facilities at Rainbow: \"Dirty Kid Village\" - it had dirt, kids, breastfeeding, and dogs.  And swings, toys, age-appropriate vegetarian food, and loving vibes.",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-07-04__dirty-kid-village-dirt-kids__501b5461.JPG",
+        "hash": "501b5461",
+        "orig": "IMG_6317.JPG",
+        "slug": "dirty-kid-village-dirt-kids",
+        "tags": [
+            "rainbow-lifestyle"
+        ],
+        "thumb_url": "/apps/iotd/img/thumbs/2017-07-04__dirty-kid-village-dirt-kids__501b5461.JPG",
+        "time": "22:12:09",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_6317.JPG__dirty-kid-village-dirt-kids__501b5461.JPG"
+    },
+    {
+        "caption": "Playpen in the woooods!  (From Dirty Kid Village)",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-07-04__playpen-in-the-woooods-from__80e82bca.JPG",
+        "hash": "80e82bca",
+        "orig": "IMG_6326.JPG",
+        "slug": "playpen-in-the-woooods-from",
+        "tags": [
+            "rainbow-lifestyle"
+        ],
+        "thumb_url": "/apps/iotd/img/thumbs/2017-07-04__playpen-in-the-woooods-from__80e82bca.JPG",
+        "time": "22:46:36",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_6326.JPG__playpen-in-the-woooods-from__80e82bca.JPG"
+    }
 ]

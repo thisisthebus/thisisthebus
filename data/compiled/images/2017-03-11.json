@@ -1,9 +1,13 @@
 [
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2017-03-11____spaghetti__11547152.JPG",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5226.JPG____spaghetti__11547152.JPG",
-    "caption": "Spaghetti!",
-    "full_url": "/apps/iotd/img/2017-03-11____spaghetti__11547152.JPG",
-    "time": "19:32:47"
-  }
+    {
+        "caption": "Spaghetti!",
+        "ext": "JPG",
+        "full_url": "/apps/iotd/img/2017-03-11____spaghetti__11547152.JPG",
+        "hash": "11547152",
+        "orig": "IMG_5226.JPG",
+        "slug": "spaghetti",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-03-11____spaghetti__11547152.JPG",
+        "time": "19:32:47",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5226.JPG____spaghetti__11547152.JPG"
+    }
 ]

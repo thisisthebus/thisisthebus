@@ -1,13 +1,13 @@
+import datetime
+from collections import OrderedDict
+
 import maya
-import datetime, pytz
 from PIL import Image, ExifTags
 from django.template.loader import get_template
 
 from build.ensure_build_path import add_project_dir_to_path
-from thisisthebus.iotd.build import process_iotds
 from thisisthebus.settings.constants import FRONTEND_DIR
-
-from collections import OrderedDict
+from thisisthesitebuilder.images import process_iotds
 
 
 def parse_exif_datetime(exif_datetime_string):

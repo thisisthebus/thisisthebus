@@ -1,9 +1,13 @@
 [
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2017-02-26____fibonacci-in-the-sunlight-helping-pack.jpg",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5108.JPG____fibonacci-in-the-sunlight-helping-pack.jpg",
-    "caption": "Fibonacci in the sunlight, helping pack up camp.",
-    "full_url": "/apps/iotd/img/2017-02-26____fibonacci-in-the-sunlight-helping-pack.jpg",
-    "time": "12:02:01"
-  }
+    {
+        "caption": "Fibonacci in the sunlight, helping pack up camp.",
+        "ext": "jpg",
+        "full_url": "/apps/iotd/img/2017-02-26____fibonacci-in-the-sunlight-helping-pack.jpg",
+        "hash": "eb33ea05",
+        "orig": "IMG_5108.JPG",
+        "slug": "fibonacci-in-the-sunlight-helping-pack",
+        "thumb_url": "/apps/iotd/img/thumbs/2017-02-26____fibonacci-in-the-sunlight-helping-pack.jpg",
+        "time": "12:02:01",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5108.JPG____fibonacci-in-the-sunlight-helping-pack.jpg"
+    }
 ]

@@ -1,9 +1,13 @@
 [
-  {
-    "thumb_url": "/apps/iotd/img/thumbs/2016-12-12____outdoor-dinner-date.jpg",
-    "unchanged_url": "/apps/iotd/img/unchanged/IMG_4981.JPG____outdoor-dinner-date.jpg",
-    "caption": "Outdoor dinner date.",
-    "full_url": "/apps/iotd/img/2016-12-12____outdoor-dinner-date.jpg",
-    "time": "20:12:55"
-  }
+    {
+        "caption": "Outdoor dinner date.",
+        "ext": "jpg",
+        "full_url": "/apps/iotd/img/2016-12-12____outdoor-dinner-date.jpg",
+        "hash": "dac30cc0",
+        "orig": "IMG_4981.JPG",
+        "slug": "outdoor-dinner-date",
+        "thumb_url": "/apps/iotd/img/thumbs/2016-12-12____outdoor-dinner-date.jpg",
+        "time": "20:12:55",
+        "unchanged_url": "/apps/iotd/img/unchanged/IMG_4981.JPG____outdoor-dinner-date.jpg"
+    }
 ]

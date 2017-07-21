@@ -1,0 +1,11 @@
+name: 71 days off the electrical grid
+start: 2017-05-03T00:00:00-05
+end: 2017-07-13T18:55:00-08
+headline: Over two months and 2,500 miles without plugging into the power grid.<br/>At all times, we had cold beer and Star Trek.
+description: |
+  Our longest stretch yet without plugging in.
+
+sections:
+  - some_big_section:
+    images:
+      - dingo

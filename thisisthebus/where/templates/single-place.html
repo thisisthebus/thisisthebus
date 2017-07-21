@@ -3,6 +3,8 @@
 </a>
   <div class="locationNameMask"></div>
     <div class="locationNameCaption">
-    <div>{% if place.small_link %}<a href="{{place.small_link}}">{{place.small_name}}</a>{% else %}{{place.small_name}}{% endif %}</div>
+      {% if not omit_small_name %}
+        <div>{% if place.small_link %}<a href="{{place.small_link}}">{{place.small_name}}</a>{% else %}{{place.small_name}}{% endif %}</div>
+      {% endif %}
     <div>{{place.big_name}}</div>
   </div>
