@@ -1,11 +1,12 @@
 import os
 
-from markdown import markdown
 import maya
 import yaml
 import datetime
 from thisisthebus.experiences.models import Experience, Era
 from thisisthebus.settings.constants import DATA_DIR
+from thisisthesitebuilder.pages.parsers import parse_markdown_and_django_template
+from thisisthesitebuilder.utils.yaml_loader import yaml_ordered_load
 
 
 class EraBuilder(object):
@@ -18,9 +19,9 @@ class EraBuilder(object):
 
     def era_meta_from_yaml(self, yaml_filename):
         with open(yaml_filename, 'r') as f:
-            experience_dict = yaml.load(f.read())
+            experience_dict = yaml_ordered_load(f.read())
 
-        experience_dict['description'] = markdown(experience_dict['description'])
+        experience_dict['description'] = parse_markdown_and_django_template(experience_dict['description'])
         return experience_dict
 
     def era_from_yaml(self, yaml_filename):

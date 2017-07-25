@@ -1,16 +1,27 @@
 [
-    {
-        "caption": "Our new battery bank: four Trojan L16H 6V lead-acid float batteries.",
-        "ext": "JPG",
-        "full_url": "/apps/iotd/img/2017-05-03__our-new-battery-bank-four-tro__8f3eca4a.JPG",
-        "hash": "8f3eca4a",
-        "orig": "IMG_5825.JPG",
-        "slug": "our-new-battery-bank-four-tro",
-        "tags": [
-            ""
-        ],
-        "thumb_url": "/apps/iotd/img/thumbs/2017-05-03__our-new-battery-bank-four-tro__8f3eca4a.JPG",
-        "time": "12:55:10",
-        "unchanged_url": "/apps/iotd/img/unchanged/IMG_5825.JPG__our-new-battery-bank-four-tro__8f3eca4a.JPG"
-    }
+  {
+    "slug": "our-new-battery-bank-four-tro",
+    "hash": "8f3eca4a",
+    "ext": "JPG",
+    "caption": "Our new battery bank: four Trojan L16H 6V lead-acid float batteries.",
+    "full_url": "/apps/iotd/img/2017-05-03__our-new-battery-bank-four-tro__8f3eca4a.JPG",
+    "tags": [
+      ""
+    ],
+    "unchanged_url": "/apps/iotd/img/unchanged/IMG_5825.JPG__our-new-battery-bank-four-tro__8f3eca4a.JPG",
+    "time": "12:55:10",
+    "thumb_url": "/apps/iotd/img/thumbs/2017-05-03__our-new-battery-bank-four-tro__8f3eca4a.JPG",
+    "orig": "IMG_5825.JPG"
+  },
+  {
+    "tags": [
+      ""
+    ],
+    "ext": "JPG",
+    "caption": "The big battery box reconfiguration.  Notch contributed his white bike.",
+    "slug": "battery-box-reorganization-n",
+    "hash": "26b191b7",
+    "time": "12:55:25",
+    "orig": "IMG_5826.JPG"
+  }
 ]

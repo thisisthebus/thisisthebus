@@ -1,8 +1,8 @@
 import sys
 from ensure_build_path import add_project_dir_to_path, BUILD_PATH
+from thisisthesitebuilder.pages.build import PageBuilder
 
-sys.path.append("/home/hubcraft/git/thisisthesitebuilder")
-from thisisthesitebuilder.pages import PageBuilder
+sys.path.append("~/git/thisisthesitebuilder")
 
 add_project_dir_to_path()
 
@@ -13,10 +13,13 @@ if __name__ == "__main__":
 
 
 from thisisthesitebuilder.images.models import Image
-Image.image_path = "apps/iotd/img/"
+Image.image_path = "apps/iotd/img"
+from thisisthesitebuilder.images.templatetags.image_tags import register_image_tags
+register_image_tags("images/iotd-instance.html")
+
+
 from build.built_fundamentals import SUMMARIES, LOCATIONS, IMAGES, PLACES
 from thisisthebus.experiences.build import EraBuilder
-
 
 import json
 
@@ -80,7 +83,6 @@ def complete_build(django_setup=False):
 
     era_builder = EraBuilder(SUMMARIES, LOCATIONS, IMAGES, PLACES)
 
-
     experiences = era_builder.build_experiences("%s/authored/experiences" % DATA_DIR)
     t = get_template('experiences.html')
     d = {"experiences": experiences, "include_swipebox": True, "slicey": True, "page_name": "Our Travels",
@@ -104,6 +106,8 @@ def complete_build(django_setup=False):
         with open("{frontend}/experiences/{slug}.html".format(frontend=FRONTEND_DIR, slug=experience.slug), "w+") as f:
             f.write(experiences_html)
 
+    print("Rendered {count} Experiences.".format(count=len(experiences)))
+
     bigger_eras = era_builder.build_eras("%s/authored/eras" % DATA_DIR)
 
     for era in bigger_eras:
@@ -119,6 +123,14 @@ def complete_build(django_setup=False):
 
         with open("{frontend}/eras/{slug}.html".format(frontend=FRONTEND_DIR, slug=era.slug), "w+") as f:
             f.write(era_html)
+
+    t = get_template('images/all-images.html')
+    d = {"all_images": IMAGES, "include_swipebox": True, "slicey": True}
+    all_images_html = t.render(d)
+
+    with open("{frontend}/all-images.html".format(frontend=FRONTEND_DIR), "w+") as f:
+        f.write(all_images_html)
+
 
     build_daily_log(SUMMARIES, LOCATIONS, IMAGES, PLACES)
 

@@ -18,6 +18,8 @@ INSTALLED_APPS = [
     'thisisthebus.where',
     'thisisthebus.daily_log',
     'thisisthebus.experiences',
+    'thisisthesitebuilder.images',
+    'thisisthesitebuilder.pages',
 ]
 
 MIDDLEWARE = [

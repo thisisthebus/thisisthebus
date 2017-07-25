@@ -491,8 +491,8 @@ body #swipebox-top-bar.visible-bars
   grid-auto-rows: minmax(100px, auto);
 }
 
-.contentSection.gridItem {
-    width:auto;
+.era .gridWrapper .locationContainer h4 {
+    margin-top:10px;
 }
 
 .era .gridWrapper .locationContainer {
@@ -509,4 +509,20 @@ body #swipebox-top-bar.visible-bars
 
 .era .gridWrapper .locationContainer .locationNameCaption {
     width: 200px;
+}
+
+.imageMeta {
+    font-size:15px;
+}
+
+.bigAss, .bigAss .contentSection {
+    width: 100%;
+}
+
+.bigAss .gridWrapper {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.bigAss .iotd-instance {
+    width: auto;
 }

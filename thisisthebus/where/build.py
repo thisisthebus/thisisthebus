@@ -23,14 +23,7 @@ def process_locations(places):
             location_bytes = f.read()
             locations[day] = yaml.load(location_bytes)
 
-
-        ######
-        # with open("%s/yaml/%s.yaml" % (locations_dir, day), 'w') as f:
-            # d = locations[day]
-            # place_filename = d['place']
-            # yaml_dict = {"04:00:00-05": place_filename}
-            # yaml.dump(yaml_dict, f, default_flow_style=False)
-
+    print("Process {count} locations at {place_count} places.".format(count=len(locations), place_count=len(places)))
 
     return locations
 
@@ -50,7 +43,7 @@ def process_places(wait_at_end=False, force_update=False):
         place_name = yaml_file.replace('.yaml', '')
         places[place_name] = place_meta
 
-    print("Processed %s Places" % new_places)
+    print("Processed %s new Places" % new_places)
 
     if wait_at_end:
         input()

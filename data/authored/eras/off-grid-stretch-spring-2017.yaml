@@ -2,10 +2,32 @@ name: 71 days off the electrical grid
 start: 2017-05-03T00:00:00-05
 end: 2017-07-13T18:55:00-08
 headline: Over two months and 2,500 miles without plugging into the power grid.<br/>At all times, we had cold beer and Star Trek.
-description: |
+description: >
   Our longest stretch yet without plugging in.
 
+
 sections:
-  - some_big_section:
+  Dialing the system in:
     images:
-      - dingo
+      - slug: here-is-justin-installing-our
+        width: 295
+      - slug: huge-improvement
+        width: 295
+    text: |
+     Achieving sustainble off-grid power consists of three different exercises:
+
+     * Budgeting power consumption
+     * Storing power effectively
+     * Bringing in power from a green source (in our case, PV panels)
+  Measuring Our Power:
+    text: Dingos
+  Cold Beer and Star Trek:
+
+  The End:
+    text: |
+      llamas and dingos
+    images:
+      - slug: our-new-battery-bank-four-tro
+
+
+

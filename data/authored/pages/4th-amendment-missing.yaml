@@ -1,11 +1,13 @@
 author: jMyles
 title: Where the 4th amendment was, a void
 affix_to: ["disruption-from-the-state"]
+include_swipebox: True
 body_content: |
 
+  {% load image_tags %}
   #### Our bus was searched and trashed by federal police. <br/> The 4th amendment felt deeply dead.
 
-  ![Police Search](/apps/iotd/img/2017-07-02__our-welcome-home-was-an-inst__dc094b86.png)
+  {% include_image hash="dc094b86" width=800 %}
 
   One of the worst downsides to living on a bus in the USA is the legal (and extra-legal) vulnerability that comes from carting your home around on the public roadways.  You see, our government, through the intellectually pure and honest Supreme Court, has decided that vehicles enjoy almost none of the basic textual protections of the 4th amendment against unreasonable search and seizure.
 
@@ -44,11 +46,12 @@ body_content: |
 
   #### This is what democracy looks like for our family: <br/> awful interior re-decorating at the hands of federal police.
 
-   <img src="/apps/iotd/img/2017-07-02__even-though-we-werent-charged__4dd9b5a5.JPG" style="width:400px;">
+   {% include_image hash="4dd9b5a5" width=401 %}
+
    > Notch wonders what the fuck happened to his bedroom.
 
-   <img src="/apps/iotd/img/2017-07-02__even-though-we-werent-charged__99d8182a.JPG" style="width:400px;">
-   <img src="/apps/iotd/img/2017-07-02__even-though-we-werent-charged__c1187595.JPG" style="width:400px;">
+   {% include_image hash="99d8182a" %}
+   {% include_image hash="c1187595" %}
 
   Now, look: it's no secret that I do not view the government as a legitimate arbiter of my diet.  I don't give a good hoot which plants are formally designated by the state to be of lackluster medical or spiritual value, and, in light of the legal history on the matter, I don't view as lawful any act of the national congress to advance such a measure (although I do recognize the authority of the states to make their own bad laws).  It happens that the State of Oregon, in which the constitution vests police power, and in whose borders this incident took place, does not prohibit the possession or sale of cannabis.
 

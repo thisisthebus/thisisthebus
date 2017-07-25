@@ -1,9 +1,12 @@
-import sys
-# from ..settings import constants
-sys.path.append("/home/hubcraft/git/thisisthebus")
-from thisisthebus.settings.constants import DATA_DIR, FRONTEND_DIR
+# This path stuff is nonsense.  TODO: Turn these into real projects.
 
-sys.path.append("/home/hubcraft/git/thisisthesitebuilder")
+import inspect, os, sys
+this_path = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+PROJECT_DIR = ('/').join(this_path.split('/')[:-1])
+GIT_DIR = ('/').join(this_path.split('/')[:-2])
+sys.path.append(PROJECT_DIR)
+from thisisthebus.settings.constants import DATA_DIR, FRONTEND_DIR
+sys.path.append("%s/thisisthesitebuilder" % GIT_DIR)
 from thisisthesitebuilder.images import iotd_parser
 
 

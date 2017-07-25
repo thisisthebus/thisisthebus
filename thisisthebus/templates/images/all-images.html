@@ -1,0 +1,20 @@
+{% extends 'shared/generic-page.html' %}
+
+{% block main %}
+    <div id="main" class="underSlice bigAss">
+        <div class="blackMainInfo bigAss">
+            <h2>All Images</h2>
+            <div class="contentSection imageGrid gridWrapper">
+
+            {% for day, image_list in all_images.items reversed %}
+                {% for iotd in image_list %}
+                    {% with include_meta=True %}
+                      {% include "images/iotd-instance.html" %}
+                    {% endwith %}
+                {% endfor %}
+            {% endfor %}
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
