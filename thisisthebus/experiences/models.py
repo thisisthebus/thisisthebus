@@ -10,7 +10,7 @@ class Era(models.Model):
     slug = models.SlugField()
     name = models.CharField(max_length=100)
     description = models.TextField()
-    headline = models.TextField()
+    summary = models.TextField()
 
     def __init__(self, tags=None, sections=None, *args, **kwargs):
         self.sections = sections or []

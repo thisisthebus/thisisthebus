@@ -1,8 +1,7 @@
 import sys
 from ensure_build_path import add_project_dir_to_path, BUILD_PATH
-from thisisthesitebuilder.pages.build import PageBuilder
 
-sys.path.append("~/git/thisisthesitebuilder")
+sys.path.append("../../thisisthesitebuilder")
 
 add_project_dir_to_path()
 
@@ -16,7 +15,7 @@ from thisisthesitebuilder.images.models import Image
 Image.image_path = "apps/iotd/img"
 from thisisthesitebuilder.images.templatetags.image_tags import register_image_tags
 register_image_tags("images/iotd-instance.html")
-
+from thisisthesitebuilder.pages.build import PageBuilder
 
 from build.built_fundamentals import SUMMARIES, LOCATIONS, IMAGES, PLACES
 from thisisthebus.experiences.build import EraBuilder

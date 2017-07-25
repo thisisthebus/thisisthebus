@@ -269,7 +269,7 @@ margin-right:60px;
     margin-bottom: 10px;
 }
 
-.contentSection p {
+.contentSection p, .contentSection ul {
     font-size: 1.4em;
     text-align: left;
 }

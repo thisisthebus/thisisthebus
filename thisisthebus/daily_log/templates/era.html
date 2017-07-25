@@ -10,11 +10,10 @@
         <div class="experienceContainer era">
             <h2>{{era.name}}</h2>
             <h3 class="bigDate">{{era.start_maya.slang_date}} - {{era.end_maya.slang_date}}</h3>
-            <h4>{{era.headline|safe}}</h4>
-
+            <h4>{{era.summary|safe}}</h4>
 
             <div class="contentSection">
-                {{experience.description|safe}}
+                {% parse_md_dj era.description %}
             </div>
 
             <div class="contentSection">
