@@ -1,0 +1,15 @@
+<span class="iotd-instance gridItem">
+    <a href="../../{{ iotd.full_url }}" title="{{iotd.caption}}" class="swipebox" {% if thumb_width  %}style="width:{{thumb_width}}px"{% endif %}>
+        <img alt="{{ iotd.caption }}" {% if iotd.note %}class="thinBorder"{% endif %} src="../../{% if thumb_width > 400 %}{{ iotd.full_url }}{% else %}{{ iotd.thumb_url }}{% endif %}">
+    {% if image_note and not hide_image_notes %}
+        <div class="imageNote">{{image_note}}</div>
+    {% endif %}
+    </a>
+    {% if include_meta %}
+      <div class="imageMeta">
+        {{ iotd.hash }}
+          <br/>
+        {{ iotd.slug }}
+      </div>
+    {% endif %}
+</span>

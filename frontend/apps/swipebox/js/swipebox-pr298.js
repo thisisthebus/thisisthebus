@@ -830,6 +830,7 @@
     					var img = $( '<img>' ).on( 'load', function() {
     						callback.call( img );
     					} );
+    					console.log(img.length);
 
     					img.attr( 'src', src );
     				}

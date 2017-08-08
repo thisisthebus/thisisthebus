@@ -18,13 +18,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
     
-        <link rel="stylesheet" href="/apps/swipebox/css/swipebox.min.css">
-        <script src="/apps/swipebox/js/swipebox-pr298.js"></script>
-        <script type="text/javascript">
-        $( document ).ready(function() {
-            $( '.swipebox' ).swipebox({hideBarsDelay : 11000});
-        });
-        </script>
+        <link rel="stylesheet" href="/apps/blueimp/css/blueimp-gallery.min.css">
+
+
     
 </head>
 
@@ -106,7 +102,17 @@
             2017-02-15 - &lt;p&gt;Goodbye to Rainbow.  After a lovely morning with our Aeropress, sipping coffee with the hippies, we moved on.  We made a few stops - Best Buy for (yet another) computer, groceries, and Diesel.  Then on to Osceloa with some Rainbow friends.&lt;/p&gt;
         
         <div class="daySummary"></div>
-        <div class="iotdsContainer">
+        <div class="imagesContainer">
+            
+              <span class="image-instance gridItem">
+    <a href="../../apps/multimedia/Clip/full/2017-02-06__crucial-rainbow-babies-and-mu__59126172__0-10.webm" type="video/webm" title="Crucial Rainbow: babies and music in the trees."  data-gallery>
+        <video alt="Crucial Rainbow: babies and music in the trees."  src="../../apps/multimedia/Clip/thumbs/2017-02-06__crucial-rainbow-babies-and-mu__59126172__0-10.webm" autoplay loop>
+        </video>
+        
+    </a>
+    
+</span>    <!---->
+
             
         </div>
     </div>
@@ -127,5 +133,31 @@
         
     </div>
     
+
+
+    <div id="blueimp-gallery" class="blueimp-gallery">
+        <div class="slides"></div>
+        <h3 id="gallery-title" class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+    </div>
+
+    <script src="/apps/jquery-3.1.1.min.js"></script>
+    <script src="/apps/blueimp/js/jquery.blueimp-gallery.min.js"></script>
+
+    <script type="text/javascript">
+    $('#blueimp-gallery').on('slide', function (event, index, slide) {
+        slide.firstChild.firstChild.loop = "loop";
+        slide.firstChild.firstChild.play();
+    }).on('open', function (event) {
+        $('.blueimp-gallery > .title').show();
+    })
+    </script>
+
+
+
 
 </body>

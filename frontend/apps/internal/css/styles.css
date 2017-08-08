@@ -246,7 +246,6 @@ margin-right:60px;
 
 .blackMainInfo img {
     max-width: 800px;
-    margin: 15px;
 }
 
 .page .blackMainInfo h1, h2, h3, .cabin {
@@ -280,10 +279,10 @@ margin-right:60px;
 
 .imageGrid img {
     height: 140px;
-    margin: 10px;
+    margin: 0;
 }
 
-.iotdsContainer.right.imageGrid {
+.imagesContainer.right.imageGrid {
     width: 550px;
 }
 
@@ -407,17 +406,17 @@ color: #5cffee;
     margin: auto;
 }
 
-#iotd-container a {
+#image-container a {
 	margin: 5px;
 	background-color: black;
 	width:400px;
 }
 
-#iotd-container a img {
+#image-container a img {
     max-width:400px;
 }
 
-.iotd-instance .caption {
+.image-instance .caption {
 	color: white;
 	text-align: center;
 	width: 100%;
@@ -435,27 +434,27 @@ color: #5cffee;
     width:520px;
 }
 
-.dayContainer .iotdsContainer {
+.dayContainer .imagesContainer {
     margin: auto;
 }
 
-.dayContainer .iotd-instance {
+.dayContainer .image-instance {
 	width: 150px;
 	margin: auto;
 	margin-left: 10px;
 }
 
-.dayContainer .iotd-instance img {
+.dayContainer .image-instance img {
     width:150px;
     margin: auto;
 
 }
 
-.dayContainer .iotd-instance .caption {
+.dayContainer .image-instance .caption {
 font-size: 10px;
 }
 
-.iotd-instance {
+.image-instance {
     width:400px;
     margin: auto;
     font-size: 0px;
@@ -465,18 +464,16 @@ font-size: 10px;
     margin: auto;
 }
 
-body #swipebox-top-bar {
-    height: auto;
-    top: -150px;
-    line-height: 35px;
-    background-color:rgba(0,0,0,0.5);
-}
-
-body #swipebox-top-bar #swipebox-title {
+#blueimp-gallery > #gallery-title {
+	top: 0;
+	background-color: rgba(0,0,0,0.5);
 	width: 70%;
+	left: 15%;
 	margin: auto;
-	font-size: 30px;
+	font-size: 2em;
 	font-family: 'Kreon', serif;
+	opacity: 1;
+	text-align: center;
 }
 
 body #swipebox-top-bar.visible-bars
@@ -523,6 +520,28 @@ body #swipebox-top-bar.visible-bars
     grid-template-columns: repeat(5, 1fr);
 }
 
-.bigAss .iotd-instance {
+.bigAss .image-instance {
     width: auto;
+}
+
+.thinBorder {
+    border: 2px solid #363636;
+}
+
+.imageNote {
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+    background-color: #363636;
+    color: white;
+}
+
+.blackMainInfo .image-instance a {
+    display: inline-block;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.blackMainInfo .image-instance img {
+    width: inherit;
 }

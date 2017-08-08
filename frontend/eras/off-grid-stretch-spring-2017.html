@@ -18,13 +18,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
     
-        <link rel="stylesheet" href="/apps/swipebox/css/swipebox.min.css">
-        <script src="/apps/swipebox/js/swipebox-pr298.js"></script>
-        <script type="text/javascript">
-        $( document ).ready(function() {
-            $( '.swipebox' ).swipebox({hideBarsDelay : 11000});
-        });
-        </script>
+        <link rel="stylesheet" href="/apps/blueimp/css/blueimp-gallery.min.css">
+
+
     
 </head>
 
@@ -63,9 +59,9 @@
             <h4>Over two months and 2,500 miles without plugging into the power grid.<br/>At all times, we had cold beer and Star Trek.</h4>
 
             <div class="contentSection">
-                <p>One of the motivating visions for our engineering work on the bus is a world of clean, distributed power with much smaller points of failure.  We have experienced a number of local blackouts during our travels, and there's something deeply liberating about having no cause to even notice that the power has gone out.</p>
+                <p>One of the motivating visions for our engineering work on the bus is a world of clean, distributed energy with much smaller points of power failure.  We have experienced a number of area blackouts during our travels, and there's something deeply liberating about having no cause to even notice that the power has gone out.</p>
 
-<p>To this end, of course our goal is to create a system - and to publish all of the methods to help others create a system - which provides us with all the power we need in perpetuity, without connecting to the aging power grid and without releasing additional carbon into the atmosphere.</p>
+<p>To this end, of course our goal is to create a system - and to publish all of the methods to help others create a system - which provides us with all the power we need in perpetuity, without connecting to the aging power grid and without releasing additional carbon into the atmosphere.  This 71-day stretch is our longest yet, and it seems we're getting closer each time to being ready to leave the grid forever.</p>
             </div>
 
             <div class="contentSection">
@@ -73,19 +69,23 @@
                     <div class="sub-experience left">
                     <h3>Dialing the system in</h3>
                     
-                       <span class="iotd-instance gridItem">
-    <a href="../../apps/iotd/img/2017-04-29__here-is-justin-installing-our__bd7f2fd6.JPG" title="Here is Justin installing our replacement solar panels - with grommets!" class="swipebox">
-        <img alt="Here is Justin installing our replacement solar panels - with grommets!" src="../../apps/iotd/img/thumbs/2017-04-29__here-is-justin-installing-our__bd7f2fd6.JPG" style="width:295px">
+                       <span class="image-instance gridItem">
+    <a href="../../" title="" style="width:295px" data-gallery>
+        <img alt=""  src="../../">
+    
     </a>
     
-</span>
+</span>    <!---->
+
                     
-                       <span class="iotd-instance gridItem">
-    <a href="../../apps/iotd/img/2017-04-29__huge-improvement__4d7e163b.JPG" title="The specs of our panels." class="swipebox">
-        <img alt="The specs of our panels." src="../../apps/iotd/img/thumbs/2017-04-29__huge-improvement__4d7e163b.JPG" style="width:295px">
+                       <span class="image-instance gridItem">
+    <a href="../../" title="" style="width:295px" data-gallery>
+        <img alt=""  src="../../">
+    
     </a>
     
-</span>
+</span>    <!---->
+
                     
                     <p>Achieving sustainble off-grid power consists of three different exercises:</p>
 <ul>
@@ -101,14 +101,54 @@ If you can't store energy, or if you are loosing power idly from bat storage pra
                     <div class="sub-experience right">
                     <h3>Measuring Our Power</h3>
                     
-                       <span class="iotd-instance gridItem">
-    <a href="../../apps/iotd/img/2017-07-25__we-recently-started-adding-a__0475748c.png" title="We recently started adding a &quot;penalty&quot; (shown on this graph in purple) to account for the natural inefficiency of our battery bank." class="swipebox">
-        <img alt="We recently started adding a &quot;penalty&quot; (shown on this graph in purple) to account for the natural inefficiency of our battery bank." src="../../apps/iotd/img/thumbs/2017-07-25__we-recently-started-adding-a__0475748c.png" >
+                       <span class="image-instance gridItem">
+    <a href="../../" title="" style="width:380px" data-gallery>
+        <img alt=""  src="../../">
+    
+        <div class="imageNote">We use grafana to graph the results of our power readings.  Having both real-time and historical views is crucial for effective energy budgeting.</div>
+    
     </a>
     
-</span>
+</span>    <!---->
+
                     
-                    <p>Dingos</p>
+                       <span class="image-instance gridItem">
+    <a href="../../" title=""  data-gallery>
+        <img alt=""  src="../../">
+    
+    </a>
+    
+</span>    <!---->
+
+                    
+                    <p>We keep nearly obsessive track over the electrons entering and leaving our bus.  For this purpose, we maintain and use the open source project <a href="github.com">stray_electrons</a>.  We run it on our Raspberry Pi</p>
+                    </div>
+                
+                    <div class="sub-experience left">
+                    <h3>Budgeting</h3>
+                    
+                    <p>One thing that distinguishes our build from most that we see is that we don't use an inverter for everyday household operations.
+We only turn our inverter on to use AC motors (coffee grinder, blender, juicer).  Other than that, we convert DC voltage
+locally to the voltage our devices need.</p>
+<p>We cook with propane, but everything else in our school bus home is powered by electricity.</p>
+<p>The device that consumes the most energy - and has the most variable power usage - is our refrigerator.  It has two independent zones.  It uses about 55 watts          when cooling a zone, and about 2w on idle.  We normally keep the fridge temperature set at 1 degree celsius.</p>
+<p>Naturally, on hot days, it uses more power.  Of course, hot days are often quite productive for our solar panels as well.  Hot, muggy, humid, partly-cloudy days       are the most trying in terms of budgeting fridge power.  On such days - especially if we're running low on energy - we'll turn one or both zones up to about 4          degrees celsius.  We haven't hit a desperate enough situation to turn a zone off fully, but that's an option.</p>
+<p>We light the bus using NeoPixel LED strips through 5v converters.  They are very energy efficient, but we have also created a set of presets which yield nice          color and lighting at reasonable power levels.  Our most consumptive preset, "Ice Cave," uses about 25 watts.  A more typical bustling-evening preset, "Papaya       Supper," uses about 20.  Our most common evening preset, a relaxing pinkish color through the bus, uses just 10.  We call it "blush."  Later at night we switch to "Lunar Berries" or "Barely Here," which use less than 5.</p>
+                    </div>
+                
+                    <div class="sub-experience right">
+                    <h3>Storing Energy</h3>
+                    
+                       <span class="image-instance gridItem">
+    <a href="../../" title="" style="width:450px" data-gallery>
+        <img alt=""  src="../../">
+    
+    </a>
+    
+</span>    <!---->
+
+                    
+                    
                     </div>
                 
                     <div class="sub-experience left">
@@ -120,12 +160,14 @@ If you can't store energy, or if you are loosing power idly from bat storage pra
                     <div class="sub-experience right">
                     <h3>The End</h3>
                     
-                       <span class="iotd-instance gridItem">
-    <a href="../../apps/iotd/img/2017-05-03__our-new-battery-bank-four-tro__8f3eca4a.JPG" title="Our new battery bank: four Trojan L16H 6V lead-acid float batteries." class="swipebox">
-        <img alt="Our new battery bank: four Trojan L16H 6V lead-acid float batteries." src="../../apps/iotd/img/thumbs/2017-05-03__our-new-battery-bank-four-tro__8f3eca4a.JPG" >
+                       <span class="image-instance gridItem">
+    <a href="../../" title=""  data-gallery>
+        <img alt=""  src="../../">
+    
     </a>
     
-</span>
+</span>    <!---->
+
                     
                     <p>llamas and dingos</p>
                     </div>
@@ -340,5 +382,31 @@ If you can't store energy, or if you are loosing power idly from bat storage pra
         
     </div>
     
+
+
+    <div id="blueimp-gallery" class="blueimp-gallery">
+        <div class="slides"></div>
+        <h3 id="gallery-title" class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+    </div>
+
+    <script src="/apps/jquery-3.1.1.min.js"></script>
+    <script src="/apps/blueimp/js/jquery.blueimp-gallery.min.js"></script>
+
+    <script type="text/javascript">
+    $('#blueimp-gallery').on('slide', function (event, index, slide) {
+        slide.firstChild.firstChild.loop = "loop";
+        slide.firstChild.firstChild.play();
+    }).on('open', function (event) {
+        $('.blueimp-gallery > .title').show();
+    })
+    </script>
+
+
+
 
 </body>
