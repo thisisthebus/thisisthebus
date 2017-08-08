@@ -6,7 +6,7 @@ global FRONTEND_DIR
 FRONTEND_DIR = 'llamas'
 
 
-# from thisisthebus.iotd.iotd_parser import determine_previous_and_subsequent
+# from thisisthebus.image.image_parser import determine_previous_and_subsequent
 #
 #
 # class DayTests(unittest.TestCase):

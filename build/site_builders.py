@@ -1,4 +1,5 @@
 import sys
+
 from ensure_build_path import add_project_dir_to_path, BUILD_PATH
 
 sys.path.append("../../thisisthesitebuilder")
@@ -7,18 +8,22 @@ add_project_dir_to_path()
 
 if __name__ == "__main__":
     import django
-
     django.setup()
 
 
-from thisisthesitebuilder.images.models import Image
-Image.image_path = "apps/iotd/img"
-from thisisthesitebuilder.images.templatetags.image_tags import register_image_tags
-register_image_tags("images/iotd-instance.html")
+from thisisthesitebuilder.experiences.build import EraBuilder
 from thisisthesitebuilder.pages.build import PageBuilder
+from thisisthesitebuilder.images.templatetags.image_tags import register_image_tags
+from thisisthesitebuilder.images.models import Image, Multimedia, Clip
+# Set multimedia storage and template values.
+Multimedia.set_storage_url_path("apps/multimedia")
+Image.set_instance_template("images/image-instance.html")
+Clip.set_instance_template("images/clip-instance.html")
 
-from build.built_fundamentals import SUMMARIES, LOCATIONS, IMAGES, PLACES
-from thisisthebus.experiences.build import EraBuilder
+register_image_tags("images/image-instance.html")
+
+from build.built_fundamentals import SUMMARIES, LOCATIONS, IMAGES, CLIPS, PLACES, INTERTWINED_MEDIA
+
 
 import json
 
@@ -32,8 +37,8 @@ from thisisthebus.settings.constants import FRONTEND_DIR, DATA_DIR, PYTHON_APP_D
 SUMMARY_PREVIEW_LENGTH = 140
 
 
-def build_daily_log(summaries, locations, iotds, places):
-    days_of_note = set(list(summaries.keys()) + list(locations.keys()) + list(iotds.keys()))
+def build_daily_log(summaries, locations, images, clips, places):
+    days_of_note = set(list(summaries.keys()) + list(locations.keys()) + list(images.by_date().keys()))
     days_of_note = sorted(days_of_note, reverse=True)
 
     days = []
@@ -42,8 +47,8 @@ def build_daily_log(summaries, locations, iotds, places):
         this_day_meta = {}
         days.append((day_nice, this_day_meta))
         this_day_meta['summary'] = summaries.get(day, "")
-        if iotds.get(day_nice):
-            this_day_meta['images'] = iotds[day_nice]
+        if images.by_date().get(day_nice):
+            this_day_meta['images'] = images.by_date()[day_nice]
         if locations.get(day_nice):
             # For now, take the first location.  TODO: Allow multiple lcoations for day.
             this_day_meta['place'] = places[min(locations[day_nice].items())[1]]
@@ -124,14 +129,14 @@ def complete_build(django_setup=False):
             f.write(era_html)
 
     t = get_template('images/all-images.html')
-    d = {"all_images": IMAGES, "include_swipebox": True, "slicey": True}
+    d = {"all_images": INTERTWINED_MEDIA, "include_swipebox": True, "slicey": True}
     all_images_html = t.render(d)
 
     with open("{frontend}/all-images.html".format(frontend=FRONTEND_DIR), "w+") as f:
         f.write(all_images_html)
 
 
-    build_daily_log(SUMMARIES, LOCATIONS, IMAGES, PLACES)
+    build_daily_log(SUMMARIES, LOCATIONS, IMAGES, CLIPS, PLACES)
 
     # Pages
 
@@ -157,7 +162,7 @@ def complete_build(django_setup=False):
     print("Done building site.")
     print("Data: %s" % hashes['data'])
     print("App: %s" % hashes['app'])
-    input("....continue.")
+    print("Everything went, you know, OK.")
 
 
 if __name__ == "__main__":

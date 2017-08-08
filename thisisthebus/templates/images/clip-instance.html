@@ -1,0 +1,16 @@
+<span class="image-instance gridItem">
+    <a href="../../{{ image.full_url }}" type="video/webm" title="{{image.caption}}" {% if thumb_width  %}style="width:{{thumb_width}}px"{% endif %} data-gallery>
+        <video alt="{{ image.caption }}" {% if image.note %}class="thinBorder"{% endif %} src="../../{% if thumb_width > 400 %}{{ image.full_url }}{% else %}{{ image.thumb_url }}{% endif %}" autoplay loop>
+        </video>
+        {% if image_note and not hide_image_notes %}
+            <div class="imageNote">{{image_note}}</div>
+        {% endif %}
+    </a>
+    {% if include_meta %}
+      <div class="imageMeta">
+        {{ image.hash }}
+          <br/>
+        {{ image.slug }}
+      </div>
+    {% endif %}
+</span>    <!---->

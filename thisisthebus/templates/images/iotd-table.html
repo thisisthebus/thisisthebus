@@ -11,17 +11,17 @@
 </style>
 
 <table id="bigTable">
-    {% for day, iotd_list in iotds.items %}
+    {% for day, image_list in images.items %}
     <tr>
         <td>{{day}}</td>
         <td>
             <table class="smallTable">
-                {% for iotd in iotd_list %}
+                {% for image in image_list %}
                     <tr>
-                        <td><img class="thumb" src="{{iotd.thumb_url}}"></td>
-                        <td>{{iotd.exif_datetime}}</td>
-                        <td>{{iotd.new_datetime}}</td>
-                        <td>{{iotd.iso8601}}</td>
+                        <td><img class="thumb" src="{{image.thumb_url}}"></td>
+                        <td>{{image.exif_datetime}}</td>
+                        <td>{{image.new_datetime}}</td>
+                        <td>{{image.iso8601}}</td>
                     </tr>
                 {% endfor %}
             </table>

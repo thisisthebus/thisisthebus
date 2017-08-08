@@ -15,9 +15,9 @@ By Experience
                 </div>
                 <div class="right">
                     <div class="daySummary">{{day_meta.summary|safe}}</div>
-                    <div class="iotdsContainer">
-                        {% for iotd in day_meta.images %}
-                            {% include "images/iotd-instance.html" %}
+                    <div class="imagesContainer">
+                        {% for image in day_meta.images %}
+                            {% include "images/image-instance.html" %}
                         {% endfor %}
                     </div>
                 </div>

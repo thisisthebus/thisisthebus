@@ -25,9 +25,9 @@
                 {% for summary in location.summaries %}
                     <div class="daySummary right">{{summary|safe}}</div>
                 {% endfor %}
-                <div class="iotdsContainer right">
-                    {% for iotd in location.images %}
-                        {% include "images/iotd-instance.html" %}
+                <div class="imagesContainer right">
+                    {% for image in location.images %}
+                        {% include "images/image-instance.html" %}
                     {% endfor %}
                 </div>
 

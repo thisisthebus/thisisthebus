@@ -7,7 +7,7 @@ from django.template.loader import get_template
 
 from build.ensure_build_path import add_project_dir_to_path
 from thisisthebus.settings.constants import FRONTEND_DIR
-from thisisthesitebuilder.images import process_iotds
+from thisisthesitebuilder.images import process_images
 
 
 def parse_exif_datetime(exif_datetime_string):
@@ -18,11 +18,11 @@ if __name__ == "__main__":
     import django
     django.setup()
 
-    iotds_dict = process_iotds()
-    for day, iotd_list in iotds_dict.items():
-        for iotd in iotd_list:
+    images_dict = process_images()
+    for day, image_list in images_dict.items():
+        for image in image_list:
 
-            unchanged_filename = "%s/%s" % (FRONTEND_DIR, iotd['unchanged_url'])
+            unchanged_filename = "%s/%s" % (FRONTEND_DIR, image['unchanged_url'])
             img = Image.open(unchanged_filename)
 
             exif = {ExifTags.TAGS[k]: v for k, v in img._getexif().items() if k in ExifTags.TAGS}
@@ -31,13 +31,13 @@ if __name__ == "__main__":
             image_day = maya.when(day, timezone="US/Eastern")
             image_day.add()
             image_time = exif_datetime.time()
-            iotd['time'] = exif_datetime
-            iotd['iso8601'] = image_day.add(hours=image_time.hour, minutes=image_time.minute, seconds=image_time.second).iso8601()
-            iotd['new_datetime'] = image_day.add(hours=image_time.hour, minutes=image_time.minute, seconds=image_time.second).datetime(to_timezone="US/Eastern", naive=True)
+            image['time'] = exif_datetime
+            image['iso8601'] = image_day.add(hours=image_time.hour, minutes=image_time.minute, seconds=image_time.second).iso8601()
+            image['new_datetime'] = image_day.add(hours=image_time.hour, minutes=image_time.minute, seconds=image_time.second).datetime(to_timezone="US/Eastern", naive=True)
 
-    t = get_template('iotd-table.html')
-    sorted_iotds = OrderedDict(sorted(iotds_dict.items(), key=lambda i: i[0]))
-    iotd_table_html = t.render({'images': sorted_iotds})
+    t = get_template('image-table.html')
+    sorted_images = OrderedDict(sorted(images_dict.items(), key=lambda i: i[0]))
+    image_table_html = t.render({'images': sorted_images})
 
-    with open("%s/apps/iotd/image-table.html" % FRONTEND_DIR, "w+") as f:
-        f.write(iotd_table_html)
+    with open("%s/apps/image/image-table.html" % FRONTEND_DIR, "w+") as f:
+        f.write(image_table_html)

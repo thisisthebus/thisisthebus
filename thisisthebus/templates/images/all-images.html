@@ -4,12 +4,12 @@
     <div id="main" class="underSlice bigAss">
         <div class="blackMainInfo bigAss">
             <h2>All Images</h2>
-            <div class="contentSection imageGrid gridWrapper">
+            <div class="contentSection imageGrid gridWrapper lightbox-gallery">
 
             {% for day, image_list in all_images.items reversed %}
-                {% for iotd in image_list %}
+                {% for image in image_list %}
                     {% with include_meta=True %}
-                      {% include "images/iotd-instance.html" %}
+                      {% include image.instance_template %}
                     {% endwith %}
                 {% endfor %}
             {% endfor %}

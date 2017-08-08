@@ -7,14 +7,14 @@ GIT_DIR = ('/').join(this_path.split('/')[:-2])
 sys.path.append(PROJECT_DIR)
 from thisisthebus.settings.constants import DATA_DIR, FRONTEND_DIR
 sys.path.append("%s/thisisthesitebuilder" % GIT_DIR)
-from thisisthesitebuilder.images import iotd_parser
+from thisisthesitebuilder.images import image_parser
 
 
 if __name__ == "__main__":
     try:
         app_path = '/'.join(__file__.split('/')[:5])
         sys.path.append(app_path)
-        iotd_parser.parse_iotd(sys.argv[1], DATA_DIR, FRONTEND_DIR)
+        image_parser.parse_image(sys.argv[1], DATA_DIR, FRONTEND_DIR)
 
     except Exception as e:
         import traceback

@@ -18,13 +18,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
     {% if include_swipebox %}
-        <link rel="stylesheet" href="/apps/swipebox/css/swipebox.min.css">
-        <script src="/apps/swipebox/js/swipebox-pr298.js"></script>
-        <script type="text/javascript">
-        $( document ).ready(function() {
-            $( '.swipebox' ).swipebox({hideBarsDelay : 11000});
-        });
-        </script>
+        <link rel="stylesheet" href="/apps/blueimp/css/blueimp-gallery.min.css">
+
+
     {% endif %}
 </head>
 
@@ -50,6 +46,32 @@
         {% endif %}
     </div>
     {% endblock %}
+
+{% if include_swipebox %}
+    <div id="blueimp-gallery" class="blueimp-gallery">
+        <div class="slides"></div>
+        <h3 id="gallery-title" class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+    </div>
+
+    <script src="/apps/jquery-3.1.1.min.js"></script>
+    <script src="/apps/blueimp/js/jquery.blueimp-gallery.min.js"></script>
+
+    <script type="text/javascript">
+    $('#blueimp-gallery').on('slide', function (event, index, slide) {
+        slide.firstChild.firstChild.loop = "loop";
+        slide.firstChild.firstChild.play();
+    }).on('open', function (event) {
+        $('.blueimp-gallery > .title').show();
+    })
+    </script>
+
+
+{% endif %}
 
 </body>
 {% endblock %}

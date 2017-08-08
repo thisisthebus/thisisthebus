@@ -1,44 +1,55 @@
 [
   {
-    "slug": "our-visit-to-kansas-city-to-r",
+    "time": "16:18:07",
     "caption": " Our visit to Kansas City to reunite with Annie & Phill and to meet young Finn. We had a lovely time of meals shared, late night conversation & help with some bus projects before continuing the Road Tri.",
-    "ext": "JPG",
-    "hash": "65dafeb3",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-05-07__our-visit-to-kansas-city-to-r__65dafeb3.JPG",
+    "slug": "our-visit-to-kansas-city-to-r",
     "unchanged_url": "/apps/iotd/img/unchanged/IMG_5402.JPG__our-visit-to-kansas-city-to-r__65dafeb3.JPG",
-    "full_url": "/apps/iotd/img/2017-05-07__our-visit-to-kansas-city-to-r__65dafeb3.JPG",
+    "thumb_url": "/apps/iotd/img/thumbs/2017-05-07__our-visit-to-kansas-city-to-r__65dafeb3.JPG",
+    "hash": "65dafeb3",
     "orig": "IMG_5402.JPG",
-    "time": "16:18:07"
+    "ext": "JPG",
+    "full_url": "/apps/iotd/img/2017-05-07__our-visit-to-kansas-city-to-r__65dafeb3.JPG"
   },
   {
-    "slug": "phill-helped-jmyles-setteries",
+    "time": "16:37:29",
     "caption": "Phill helped jMyles setteries.",
-    "ext": "JPG",
-    "hash": "ab73eba8",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-05-07__phill-helped-jmyles-setteries__ab73eba8.JPG",
+    "slug": "phill-helped-jmyles-setteries",
     "unchanged_url": "/apps/iotd/img/unchanged/IMG_5417.JPG__phill-helped-jmyles-setteries__ab73eba8.JPG",
-    "full_url": "/apps/iotd/img/2017-05-07__phill-helped-jmyles-setteries__ab73eba8.JPG",
+    "thumb_url": "/apps/iotd/img/thumbs/2017-05-07__phill-helped-jmyles-setteries__ab73eba8.JPG",
+    "hash": "ab73eba8",
     "orig": "IMG_5417.JPG",
-    "time": "16:37:29"
+    "ext": "JPG",
+    "full_url": "/apps/iotd/img/2017-05-07__phill-helped-jmyles-setteries__ab73eba8.JPG"
   },
   {
-    "slug": "finn-coming-soon-to-a-startu",
+    "time": "17:54:12",
     "caption": "Finn - coming soon to a startup near you.",
-    "ext": "JPG",
-    "hash": "2b01a0b3",
-    "thumb_url": "/apps/iotd/img/thumbs/2017-05-07__finn-coming-soon-to-a-startu__2b01a0b3.JPG",
+    "slug": "finn-coming-soon-to-a-startu",
     "unchanged_url": "/apps/iotd/img/unchanged/IMG_5419.JPG__finn-coming-soon-to-a-startu__2b01a0b3.JPG",
-    "full_url": "/apps/iotd/img/2017-05-07__finn-coming-soon-to-a-startu__2b01a0b3.JPG",
+    "thumb_url": "/apps/iotd/img/thumbs/2017-05-07__finn-coming-soon-to-a-startu__2b01a0b3.JPG",
+    "hash": "2b01a0b3",
     "orig": "IMG_5419.JPG",
-    "time": "17:54:12"
+    "ext": "JPG",
+    "full_url": "/apps/iotd/img/2017-05-07__finn-coming-soon-to-a-startu__2b01a0b3.JPG"
   },
   {
-    "slug": "the-three-shunts-which-we-use",
-    "caption": "The three shunts which we use to measure power about six times per second.",
-    "ext": "JPG",
     "time": "13:50:19",
+    "caption": "The three shunts which we use to measure power about six times per second.",
+    "slug": "the-three-shunts-which-we-use",
     "hash": "f0e741fe",
     "orig": "IMG_5881.JPG",
+    "ext": "JPG",
+    "tags": [
+      ""
+    ]
+  },
+  {
+    "time": "13:49:57",
+    "caption": "The new battery box config.",
+    "ext": "JPG",
+    "slug": "the-new-battery-box-config",
+    "hash": "9ab36197",
+    "orig": "IMG_5879.JPG",
     "tags": [
       ""
     ]

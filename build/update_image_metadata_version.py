@@ -7,16 +7,16 @@ import hashlib
 sys.path.append("/home/hubcraft/git/thisisthesitebuilder")
 
 from thisisthesitebuilder.images.models import Image
-Image.image_url_path = "apps/iotd/img/"
-Image.image_file_path = "/home/hubcraft/git/thisisthebus/frontend/apps/iotd/img"
+Image.image_url_path = "apps/image/img/"
+Image.image_file_path = "/home/hubcraft/git/thisisthebus/frontend/apps/image/img"
 
 
 def fix_metadata():
     print("Processing Images.")
 
-    for iotd_file in os.listdir(image_data_dir):
-        day = iotd_file.strip(".json")
-        with open("%s/compiled/images/%s" % (DATA_DIR, iotd_file), 'r') as f:
+    for image_file in os.listdir(image_data_dir):
+        day = image_file.strip(".json")
+        with open("%s/compiled/images/%s" % (DATA_DIR, image_file), 'r') as f:
             images_metadata_for_this_day = json.loads(f.read())
             for image_metadata in images_metadata_for_this_day:
 
@@ -71,7 +71,7 @@ def fix_metadata():
                 image_metadata['orig'] = image_metadata['unchanged_url'].split("/")[-1].split("__")[0]
 
 
-        with open("%s/compiled/images/%s" % (DATA_DIR, iotd_file), 'w') as f:
+        with open("%s/compiled/images/%s" % (DATA_DIR, image_file), 'w') as f:
             f.seek(0)
             f.write(json.dumps(images_metadata_for_this_day, sort_keys=True, indent=4,))
             f.truncate()

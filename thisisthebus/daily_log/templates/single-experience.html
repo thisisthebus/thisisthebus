@@ -20,9 +20,9 @@
             {{day}} - {{summary}}
         {% endfor %}
         <div class="daySummary">{{day_meta.summary|safe}}</div>
-        <div class="iotdsContainer">
-            {% for iotd in experience.images %}
-              {% include "images/iotd-instance.html" %}
+        <div class="imagesContainer">
+            {% for image in experience.images %}
+              {% include image.instance_template %}
             {% endfor %}
         </div>
     </div>
