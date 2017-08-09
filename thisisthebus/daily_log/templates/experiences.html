@@ -2,6 +2,7 @@
 
 {% block main %}
 <div id="main" class="underSlice">
+    {{previous_page}} - {{next_page}}
     {% for experience in experiences %}
         <div class="blackMainInfo experiences">
             {% if experience.display == "by-location" %}
@@ -11,7 +12,9 @@
                     {% for sub_experience in experience.sub_experiences %}
                         <div class="sub-experience {% cycle 'left' 'right' %}">
                             {% with sub_experience as experience %}
-                                {% include 'single-experience.html' %}
+                                {% with no_experience_links=True %}
+                                    {% include 'single-experience.html' %}
+                                {% endwith %}
                             {% endwith %}
                         </div>
                     {% endfor %}

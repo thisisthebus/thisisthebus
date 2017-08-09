@@ -15,6 +15,7 @@ from thisisthesitebuilder.experiences.build import EraBuilder
 from thisisthesitebuilder.pages.build import PageBuilder
 from thisisthesitebuilder.images.templatetags.image_tags import register_image_tags
 from thisisthesitebuilder.images.models import Image, Multimedia, Clip
+from thisisthesitebuilder.experiences.models import Eras
 # Set multimedia storage and template values.
 Multimedia.set_storage_url_path("apps/multimedia")
 Image.set_instance_template("images/image-instance.html")
@@ -35,6 +36,7 @@ from django.template.loader import get_template
 from thisisthebus.settings.constants import FRONTEND_DIR, DATA_DIR, PYTHON_APP_DIR
 
 SUMMARY_PREVIEW_LENGTH = 140
+PAGINATE_ON_MEDIA_COUNT = 75
 
 
 def build_daily_log(summaries, locations, images, clips, places):
@@ -88,21 +90,48 @@ def complete_build(django_setup=False):
     era_builder = EraBuilder(SUMMARIES, LOCATIONS, IMAGES, PLACES)
 
     experiences = era_builder.build_experiences("%s/authored/experiences" % DATA_DIR)
-    t = get_template('experiences.html')
-    d = {"experiences": experiences, "include_swipebox": True, "slicey": True, "page_name": "Our Travels",
-         "sub_nav": [('/travels-by-experience.html', "By Experience", True), ('/travels.html', "By Date", False)]
-         }
-    experiences_html = t.render(d)
 
-    with open("%s/travels-by-experience.html" % FRONTEND_DIR, "w+") as f:
-        f.write(experiences_html)
+    # Paginate experiences.
+    cummulative_media_count = 0
+    experience_pages = Eras(page_name="experiences")
+
+    for experience in experiences:
+        if cummulative_media_count > PAGINATE_ON_MEDIA_COUNT:
+            experience_pages.next_group()
+            cummulative_media_count = 0
+        experience_pages.add_to_group(experience)
+        images, clips = experience.media_count()
+        cummulative_media_count += images + (clips * 5)
+
+    for group in experience_pages:
+        html_output_file = "{path}/{filename}".format(path=FRONTEND_DIR, filename=experience_pages.output_filename_for_group(group))
+        previous_page = None
+        # else:
+        #     html_output_file = "{}/experiences-page-{}.html".format(FRONTEND_DIR, counter)
+        #     previous_page = experience_pages[counter - 1]
+        #
+        # try:
+        #     next_page = experience_pages[counter + 1]
+        # except IndexError:
+        #     next_page = None
+
+        t = get_template('experiences.html')
+        d = {"experiences": experiences, "include_swipebox": True, "slicey": True, "page_name": "Our Travels",
+             "sub_nav": [('/experiences.html', "By Experience", True), ('/travels.html', "By Date", False)],
+             "next_page": next_page, "previous_page": previous_page,
+             }
+        experiences_html = t.render(d)
+        with open(html_output_file, "w+") as f:
+            f.write(experiences_html)
+
+    # Individual experience pages
 
     for experience in experiences:
         t = get_template('experiences.html')
         d = {"experiences": [experience], "include_swipebox": True, "slicey": True,
              "page_name": "Our Travels",
              "page_title": experience.name,
-             "sub_nav": [('/travels-by-experience.html', "By Experience", False),
+             "sub_nav": [('/experiences.html', "By Experience", False),
                          ('/travels.html', "By Date", False)]
              }
         experiences_html = t.render(d)
@@ -119,7 +148,7 @@ def complete_build(django_setup=False):
         d = {"era": era, "include_swipebox": True, "slicey": True,
              "page_name": "Our Travels",
              "page_title": era.name,
-             "sub_nav": [('/travels-by-experience.html', "By Experience", False),
+             "sub_nav": [('/experiences.html', "By Experience", False),
                          ('/travels.html', "By Date", False)]
              }
         era_html = t.render(d)

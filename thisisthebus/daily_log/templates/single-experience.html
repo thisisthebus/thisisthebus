@@ -1,5 +1,11 @@
 <div class="experienceContainer">
-    <h3><a href="/experiences/{{experience.slug}}.html">{{experience.name}}</a></h3>
+    <h3>
+        {% if no_experience_links %}
+            {{experience.name}}
+        {% else %}
+            <a href="/experiences/{{experience.slug}}.html">{{experience.name}}</a>
+        {% endif %}
+    </h3>
     {% if experience.show_dates %}
         <h4 class="bigDate">{{experience.start_maya.slang_date}} - {{experience.end_maya.slang_date}}</h4>
     {% endif %}
@@ -17,7 +23,7 @@
 
     <div class="contentSection imageGrid">
         {% for day, summary in experience.summaries.items %}
-            {{day}} - {{summary}}
+            {{day}} - {{summary|safe}}
         {% endfor %}
         <div class="daySummary">{{day_meta.summary|safe}}</div>
         <div class="imagesContainer">
