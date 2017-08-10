@@ -2,7 +2,6 @@
 
 {% block main %}
 <div id="main" class="underSlice">
-    {{previous_page}} - {{next_page}}
     {% for experience in experiences %}
         <div class="blackMainInfo experiences">
             {% if experience.display == "by-location" %}
@@ -21,5 +20,9 @@
             {% endif %}
         </div>
     {% endfor %}
+    <div class="pagination">
+        {% if previous_page %}<a class="left" href="{{previous_page}}">< Previous</a>{% endif %}
+        {% if next_page %}<a class="right" href="{{next_page}}">Next ></a>{% endif %}
+    </div>
 </div>
 {% endblock %}

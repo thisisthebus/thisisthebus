@@ -104,21 +104,17 @@ def complete_build(django_setup=False):
         cummulative_media_count += images + (clips * 5)
 
     for group in experience_pages:
-        html_output_file = "{path}/{filename}".format(path=FRONTEND_DIR, filename=experience_pages.output_filename_for_group(group))
-        previous_page = None
-        # else:
-        #     html_output_file = "{}/experiences-page-{}.html".format(FRONTEND_DIR, counter)
-        #     previous_page = experience_pages[counter - 1]
-        #
-        # try:
-        #     next_page = experience_pages[counter + 1]
-        # except IndexError:
-        #     next_page = None
+        html_output_file = "{path}/{filename}.html".format(path=FRONTEND_DIR, filename=experience_pages.output_filename_for_group(group))
+        previous_group, previous_page = experience_pages.output_filename_and_previous_group(group)
+        next_group, next_page = experience_pages.output_filename_and_next_group(group)
+
+        previous_path = "/{filename}.html".format(filename=previous_page) if previous_group else None
+        next_path = "/{filename}.html".format(filename=next_page) if next_group else None
 
         t = get_template('experiences.html')
-        d = {"experiences": experiences, "include_swipebox": True, "slicey": True, "page_name": "Our Travels",
+        d = {"experiences": group, "include_swipebox": True, "slicey": True, "page_name": "Our Travels",
              "sub_nav": [('/experiences.html', "By Experience", True), ('/travels.html', "By Date", False)],
-             "next_page": next_page, "previous_page": previous_page,
+             "next_page": next_path, "previous_page": previous_path,
              }
         experiences_html = t.render(d)
         with open(html_output_file, "w+") as f:

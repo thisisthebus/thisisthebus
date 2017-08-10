@@ -34,6 +34,12 @@ h1, h2, h3, .cabin {
 	z-index:100;
 }
 
+h4 {
+	margin: 0;
+	font-size: 1.3em;
+	color: #848b95;
+}
+
 h5 {
 margin: 0;
 font-size: 1em;
@@ -159,6 +165,19 @@ nav a {
     text-decoration: none;
 }
 
+.pagination {
+    float: left;
+    width: 820px;
+    margin-top: 20px;
+    margin-left: 65px;
+
+}
+
+.pagination a {
+    color: #7b5200;
+    font-size: 1.8em;
+}
+
 #between {
     width: 1200px;
 }
@@ -221,12 +240,6 @@ margin-right:60px;
 .blackMainInfo h3 a:hover {
     color: #dca9ff;
     text-decoration: underline;
-}
-
-.blackMainInfo h4 {
-	margin: 0;
-	font-size: 1.3em;
-	color: #848b95;
 }
 
 .blackMainInfo table {
