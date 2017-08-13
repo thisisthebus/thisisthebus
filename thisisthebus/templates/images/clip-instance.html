@@ -1,16 +1,18 @@
 <span class="image-instance gridItem">
-    <a href="../../{{ image.full_url }}" type="video/webm" title="{{image.caption}}" {% if thumb_width  %}style="width:{{thumb_width}}px"{% endif %} data-gallery>
-        <video alt="{{ image.caption }}" {% if image.note %}class="thinBorder"{% endif %} src="../../{% if thumb_width > 400 %}{{ image.full_url }}{% else %}{{ image.thumb_url }}{% endif %}" autoplay loop>
+    <a href="../../{{ media_object.full_url }}" type="video/webm" title="{{media_object.caption}}" {% if thumb_width  %}style="width:{{thumb_width}}px"{% endif %} data-gallery>
+        <video alt="{{ media_object.caption }}" {% if media_object.note %}class="thinBorder"{% endif %} src="../../{% if thumb_width > 400 %}{{ media_object.full_url }}{% else %}{{ media_object.thumb_url }}{% endif %}" autoplay loop>
         </video>
-        {% if image_note and not hide_image_notes %}
-            <div class="imageNote">{{image_note}}</div>
+        {% if media_object.note and not hide_media_notes %}
+            <div class="imageNote">{{media_object.note}}</div>
         {% endif %}
     </a>
     {% if include_meta %}
-      <div class="imageMeta">
-        {{ image.hash }}
+      <div class="imageMeta {% if not media_object.appears_in_experience %}highlight{% endif %}">
+        {{ media_object.distinguisher }}
           <br/>
-        {{ image.slug }}
+        {{media_object.date_and_time}}
+          <br/>
+        {{ media_object.slug }}
       </div>
     {% endif %}
 </span>    <!---->

@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
 from thisisthesitebuilder.experiences.build import EraBuilder
 from thisisthesitebuilder.pages.build import PageBuilder
-from thisisthesitebuilder.images.templatetags.image_tags import register_image_tags
+from thisisthesitebuilder.images.templatetags.multimedia_tags import register_image_tags
 from thisisthesitebuilder.images.models import Image, Multimedia, Clip
 from thisisthesitebuilder.experiences.models import Eras
 # Set multimedia storage and template values.
@@ -21,10 +21,8 @@ Multimedia.set_storage_url_path("apps/multimedia")
 Image.set_instance_template("images/image-instance.html")
 Clip.set_instance_template("images/clip-instance.html")
 
-register_image_tags("images/image-instance.html")
-
 from build.built_fundamentals import SUMMARIES, LOCATIONS, IMAGES, CLIPS, PLACES, INTERTWINED_MEDIA
-
+register_image_tags("images/image-instance.html", media_collection=INTERTWINED_MEDIA)
 
 import json
 
@@ -53,9 +51,10 @@ def build_daily_log(summaries, locations, images, clips, places):
             this_day_meta['images'] = images.by_date()[day_nice]
         if locations.get(day_nice):
             # For now, take the first location.  TODO: Allow multiple lcoations for day.
-            this_day_meta['place'] = places[min(locations[day_nice].items())[1]]
+            first_location_of_day = min(locations[day_nice].items())[1]
+            this_day_meta['place'] = first_location_of_day.place
 
-    t = get_template('daily-log-main-page.html')
+    t = get_template('daily/daily-log-main-page.html')
     d = {"days": days, "include_swipebox": True, "slicey": True, "page_name": "Our Travels",
          "sub_nav": [('/travels-by-experience.html', "By Experience", False), ('/travels.html', "By Date", True)]}
     daily_log_html = t.render(d)
@@ -78,18 +77,42 @@ def complete_build(django_setup=False):
         import django
         django.setup()
 
-    print("Building site...")
+    print("\n====================  BUILDING SITE  ====================\n")
 
     latest_location_date, latest_location_dict = max(LOCATIONS.items())
     latest_location_time, latest_location = max(latest_location_dict.items())
-    latest_place = PLACES[latest_location]
+    latest_place = latest_location.place
 
     hashes = get_hashes()
     build_time = maya.now().datetime(to_timezone='US/Eastern', naive=True)
 
-    era_builder = EraBuilder(SUMMARIES, LOCATIONS, IMAGES, PLACES)
+    print("-------------  Building Eras and Experiences  -------------")
 
+    era_builder = EraBuilder(SUMMARIES, LOCATIONS, IMAGES, PLACES)
     experiences = era_builder.build_experiences("%s/authored/experiences" % DATA_DIR)
+
+
+    unused_images = [image for image in IMAGES if not image.is_used]
+    if unused_images:
+        print("***{} Images are unused***".format(len(unused_images)))
+
+    unused_clips = [clip for clip in CLIPS if not clip.is_used]
+    if unused_clips:
+        print("***{} Clips are unused***".format(len(unused_clips)))
+
+
+    unused_locations = []
+    for location_days in LOCATIONS.values():
+        for location in location_days.values():
+            if not location.used_in_experiences:
+                unused_locations.append(location)
+
+    if unused_locations:
+        unused_locations.sort(key=lambda l: l.__str__())
+        print("*** {} Locations are unused. ***".format(len(unused_locations)))
+
+    for location in unused_locations:
+        print("***{} is unused***".format(location))
 
     # Paginate experiences.
     cummulative_media_count = 0
@@ -111,7 +134,7 @@ def complete_build(django_setup=False):
         previous_path = "/{filename}.html".format(filename=previous_page) if previous_group else None
         next_path = "/{filename}.html".format(filename=next_page) if next_group else None
 
-        t = get_template('experiences.html')
+        t = get_template('experiences/experiences.html')
         d = {"experiences": group, "include_swipebox": True, "slicey": True, "page_name": "Our Travels",
              "sub_nav": [('/experiences.html', "By Experience", True), ('/travels.html', "By Date", False)],
              "next_page": next_path, "previous_page": previous_path,
@@ -123,7 +146,7 @@ def complete_build(django_setup=False):
     # Individual experience pages
 
     for experience in experiences:
-        t = get_template('experiences.html')
+        t = get_template('experiences/experiences.html')
         d = {"experiences": [experience], "include_swipebox": True, "slicey": True,
              "page_name": "Our Travels",
              "page_title": experience.name,
@@ -137,10 +160,10 @@ def complete_build(django_setup=False):
 
     print("Rendered {count} Experiences.".format(count=len(experiences)))
 
-    bigger_eras = era_builder.build_eras("%s/authored/eras" % DATA_DIR)
+    bigger_eras = era_builder.build_eras("%s/authored/eras" % DATA_DIR, experiences=experiences)
 
     for era in bigger_eras:
-        t = get_template('era.html')
+        t = get_template('experiences/era.html')
         d = {"era": era, "include_swipebox": True, "slicey": True,
              "page_name": "Our Travels",
              "page_title": era.name,
@@ -148,7 +171,6 @@ def complete_build(django_setup=False):
                          ('/travels.html', "By Date", False)]
              }
         era_html = t.render(d)
-
 
         with open("{frontend}/eras/{slug}.html".format(frontend=FRONTEND_DIR, slug=era.slug), "w+") as f:
             f.write(era_html)
@@ -163,7 +185,7 @@ def complete_build(django_setup=False):
 
     build_daily_log(SUMMARIES, LOCATIONS, IMAGES, CLIPS, PLACES)
 
-    # Pages
+    print("-------------  Building Pages  -------------")
 
     page_builder = PageBuilder(DATA_DIR, FRONTEND_DIR)
 
@@ -184,9 +206,10 @@ def complete_build(django_setup=False):
     with open("%s/last_build.json" % BUILD_PATH, "w") as f:
         f.write(json.dumps(hashes))
 
-    print("Done building site.")
+    print("\n=====================  DONE  ========================")
     print("Data: %s" % hashes['data'])
     print("App: %s" % hashes['app'])
+    print("=====================================================")
     print("Everything went, you know, OK.")
 
 

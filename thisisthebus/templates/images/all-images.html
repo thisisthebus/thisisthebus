@@ -6,12 +6,10 @@
             <h2>All Images</h2>
             <div class="contentSection imageGrid gridWrapper lightbox-gallery">
 
-            {% for day, image_list in all_images.items reversed %}
-                {% for image in image_list %}
-                    {% with include_meta=True %}
-                      {% include image.instance_template %}
-                    {% endwith %}
-                {% endfor %}
+            {% for media_object in all_images reversed %}
+                {% with include_meta=True %}
+                  {% include media_object.instance_template %}
+                {% endwith %}
             {% endfor %}
 
             </div>

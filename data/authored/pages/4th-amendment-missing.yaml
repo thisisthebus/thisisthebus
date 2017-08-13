@@ -4,10 +4,10 @@ affix_to: ["disruption-from-the-state"]
 include_swipebox: True
 body_content: |
 
-  {% load image_tags %}
+  {% load multimedia_tags %}
   #### Our bus was searched and trashed by federal police. <br/> The 4th amendment felt deeply dead.
 
-  {% include_image hash="dc094b86" width=800 %}
+  {% include_media distinguisher="dc094b86" width=800 %}
 
   One of the worst downsides to living on a bus in the USA is the legal (and extra-legal) vulnerability that comes from carting your home around on the public roadways.  You see, our government, through the intellectually pure and honest Supreme Court, has decided that vehicles enjoy almost none of the basic textual protections of the 4th amendment against unreasonable search and seizure.
 
@@ -20,9 +20,9 @@ body_content: |
   1) Find a pretext to conduct a vehicle traffic stop.  In our case it was the wheel of Chelsea's bicycle allegedly partly obstructing our license plate.<br/>
   2) Bring a dog along to assert that there is an odor of some proscribed object, such as plant matter from a criminal gardening ring.
 
-  It's almost difficult to maintain a straight-face while outlining the ludicrous, childish legal justification for the above - the contortions of logic required to eviscerate these basic protections read in such a way as to convey a smirk and a raise-of-the-eyebrows, as if written by an arthritic, retired supervillain still able to operate a feather quill, but needing to train mindless, brawny henchmen to fulfill the twists and turns of the cheesy, campy plot:
+  It's almost difficult to maintain a straight-face while outlining the ludicrous, childish legal justification for the above - the contortions of logic required to eviscerate these basic protections read in such a way as to convey a smirk and a raise-of-the-eyebrows, as if written by an arthritic, retired supervillain still able to operate a feather quill, but needing to train naive henchmen to fulfill the twists and turns of the campy, predictable plot:
 
-  * The Supreme Court, in [Carroll v United States](https://en.wikipedia.org/wiki/Carroll_v._United_States), a prohibition-era liquor case, held that *probable cause alone* is sufficient to conduct a complete search of a vehicle being moved on a public roadway.  This was largely based on the reduced expectation of privacy in a moving vehicle and the exigency created by the fact that the vehicle can take off with the evidence.
+  * The Supreme Court, in [Carroll v United States](https://en.wikipedia.org/wiki/Carroll_v._United_States), a prohibition-era liquor case, held that *probable cause alone* is sufficient to conduct a complete search of a vehicle being conveyed on a public roadway.  This was largely based on the reduced expectation of privacy in a moving vehicle and the exigency created by the fact that the vehicle can take off with the evidence.
 
   * Then, in 2013, in [Florida v. Harris](https://www.oyez.org/cases/2012/11-817), the Supreme Court (unanimously!) ruled that a dog's say-so is sufficient cause for such a search.  Since then, it has repeatedly ruled that, even though [the reliability of a drug dog's indication is barely better then a coin-flip](https://www.washingtonpost.com/news/the-watch/wp/2015/08/04/federal-appeals-court-drug-dog-thats-barely-more-accurate-than-a-coin-flip-is-good-enough/), these searches aren't in violation of the 4th amendment.  (Thanks to Radley Balko for his tireless reporting on this topic).
 
@@ -46,12 +46,12 @@ body_content: |
 
   #### This is what democracy looks like for our family: <br/> awful interior re-decorating at the hands of federal police.
 
-   {% include_image hash="4dd9b5a5" width=401 %}
+   {% include_media distinguisher="4dd9b5a5" width=401 %}
 
    > Notch wonders what the fuck happened to his bedroom.
 
-   {% include_image hash="99d8182a" %}
-   {% include_image hash="c1187595" %}
+   {% include_media distinguisher="99d8182a" %}
+   {% include_media distinguisher="c1187595" %}
 
   Now, look: it's no secret that I do not view the government as a legitimate arbiter of my diet.  I don't give a good hoot which plants are formally designated by the state to be of lackluster medical or spiritual value, and, in light of the legal history on the matter, I don't view as lawful any act of the national congress to advance such a measure (although I do recognize the authority of the states to make their own bad laws).  It happens that the State of Oregon, in which the constitution vests police power, and in whose borders this incident took place, does not prohibit the possession or sale of cannabis.
 

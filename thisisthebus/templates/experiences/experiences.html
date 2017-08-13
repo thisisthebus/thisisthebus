@@ -1,0 +1,28 @@
+{% extends 'shared/generic-page.html' %}
+
+{% block main %}
+<div id="main" class="underSlice">
+    {% for experience in experiences %}
+        <div class="blackMainInfo experiences">
+            {% if experience.display == "by-location" %}
+                {% include 'experiences/single-experience-by-place.html' %}
+            {% else %}
+                {% include 'experiences/single-experience.html' %}
+                    {% for sub_experience in experience.sub_experiences %}
+                        <div class="sub-experience {% cycle 'left' 'right' %}">
+                            {% with sub_experience as experience %}
+                                {% with no_experience_links=True %}
+                                    {% include 'experiences/single-experience.html' %}
+                                {% endwith %}
+                            {% endwith %}
+                        </div>
+                    {% endfor %}
+            {% endif %}
+        </div>
+    {% endfor %}
+    <div class="pagination">
+        {% if previous_page %}<a class="left" href="{{previous_page}}">< Previous</a>{% endif %}
+        {% if next_page %}<a class="right" href="{{next_page}}">Next ></a>{% endif %}
+    </div>
+</div>
+{% endblock %}

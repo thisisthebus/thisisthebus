@@ -1,7 +1,7 @@
 name: 71 days off the electrical grid
 start: 2017-05-03T00:00:00-05
 end: 2017-07-13T18:55:00-08
-summary: Over two months and 2,500 miles without plugging into the power grid.<br/>At all times, we had cold beer and Star Trek.
+summary: "Our new personal best: ten weeks and 2,500 miles without plugging into the power grid.<br/>At all times, we had cold beer and Star Trek."
 description: |
   One of the motivating visions for our engineering work on the bus is a world of clean, distributed energy with much smaller points of power failure.  We have experienced a number of area blackouts during our travels, and there's something deeply liberating about having no cause to even notice that the power has gone out.
 
@@ -9,7 +9,7 @@ description: |
 
 sections:
   Dialing the system in:
-    images:
+    multimedia:
       - slug: here-is-justin-installing-our
         width: 295
       - slug: huge-improvement
@@ -17,7 +17,7 @@ sections:
     text: |
      Achieving sustainble off-grid power consists of three different exercises:
 
-     * Measuring and budgeting power output
+     * Measuring and budgeting power consumption
      * Storing energy effectively
      * Bringing in power from a green source (in our case, PV panels)
 
@@ -27,7 +27,7 @@ sections:
      If you can't store energy, or if you are loosing power idly from bat storage practices, your panels can't really help you.
 
   Measuring Our Power:
-    images:
+    multimedia:
       - slug: we-recently-started-adding-a
         width: 380
         note: We use grafana to graph the results of our power readings.  Having both real-time and historical views is crucial for effective energy budgeting.
@@ -54,7 +54,7 @@ sections:
 
 
   Storing Energy:
-    images:
+    multimedia:
       - slug:  the-new-battery-box-config
         width: 450
 

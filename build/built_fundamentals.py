@@ -1,16 +1,20 @@
 from thisisthebus.settings.constants import DATA_DIR
-from thisisthebus.daily_log.build import process_summaries
-from thisisthebus.where.build import process_locations, process_places
-from thisisthesitebuilder.images.build import MultimediaCollection, intertwine
+from thisisthesitebuilder.daily_log.build import process_summaries
+from thisisthesitebuilder.images.build import MultimediaCollection
 from thisisthesitebuilder.images.models import Image, Clip
+from thisisthesitebuilder.where.build import process_locations, process_places
+
+print("================  BUILDING FUNDAMENTALS  ================")
 
 SUMMARIES = process_summaries()
 PLACES = process_places()
 LOCATIONS = process_locations(PLACES)
 
 
+
+print("-------------  Processing Multimedia  -------------")
 IMAGES = MultimediaCollection(data_dir="%s/compiled/images" % DATA_DIR, multimedia_class=Image)
 CLIPS = MultimediaCollection(data_dir="%s/compiled/clips" % DATA_DIR, multimedia_class=Clip)
 
-INTERTWINED_MEDIA = intertwine(IMAGES, CLIPS)
+INTERTWINED_MEDIA = MultimediaCollection.intertwine(IMAGES, CLIPS)
 

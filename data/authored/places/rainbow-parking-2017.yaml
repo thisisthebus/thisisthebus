@@ -4,7 +4,7 @@ thumb_zoom: 16
 pitch: 35
 thumb_style: "satellite-streets-v9"
 link_zoom: 15
-small_name: "Rainbow Gathering Remote Parking"
-big_name: "Wickiup Creek, Malheur NF, OR"
+small_name: "Rainbow Remote Parking, Wickiup Creek"
+big_name: "Malheur NF, Oregon"
 use_both_names_for_slug: False
 show_on_top_level_experience: True

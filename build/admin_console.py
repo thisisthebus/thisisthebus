@@ -13,8 +13,7 @@ import os
 import json
 
 from site_builders import complete_build, get_hashes
-from thisisthebus.where.build import process_places
-from thisisthebus.where.location import new_location
+from thisisthesitebuilder.where import new_location
 
 os.environ['TERM'] = 'xterm'
 from cursesmenu import CursesMenu

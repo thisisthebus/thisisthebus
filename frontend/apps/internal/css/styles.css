@@ -23,7 +23,7 @@ h2 {
 }
 
 h3 {
-    font-size:3em;
+    font-size:2.7em;
 }
 
 h1, h2, h3, .cabin {
@@ -495,10 +495,7 @@ body #swipebox-top-bar.visible-bars
 }
 
 .contentSection.gridWrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
+    float:left;
 }
 
 .era .gridWrapper .locationContainer h4 {
@@ -557,4 +554,38 @@ body #swipebox-top-bar.visible-bars
 
 .blackMainInfo .image-instance img {
     width: inherit;
+}
+
+.blackMainInfo .highlight {
+    font-weight: bold;
+    color: yellow;
+}
+
+.groupName {
+  display:inline;
+}
+
+.gridGrouping {
+  border: 1px solid white;
+  float: left;
+}
+
+.gridGrouping .gridItem {
+    float: left;
+}
+
+.gridGrouping img {
+    float: left;
+}
+
+.contrast-1 {
+  background-color: red;
+}
+
+.contrast-2 {
+  background-color: blue;
+}
+
+.contrast-3 {
+  background-color: green;
 }

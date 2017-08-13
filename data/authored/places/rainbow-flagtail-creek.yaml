@@ -4,6 +4,6 @@ thumb_zoom: 16
 thumb_style: "satellite-streets-v9"
 link_zoom: 15
 small_name: "Rainbow Gathering Main Meadow"
-big_name: "Flagtail Creek, Malheur NF, Oregon"
+big_name: "Malheur NF, Oregon"
 use_both_names_for_slug: False
 show_on_top_level_experience: True

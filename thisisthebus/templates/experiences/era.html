@@ -1,0 +1,55 @@
+{% extends 'shared/generic-page.html' %}
+
+{% load multimedia_tags %}
+{% load parser_tags %}
+
+{% block main %}
+<div id="main" class="underSlice">
+    <div class="blackMainInfo experiences">
+
+        <div class="experienceContainer era">
+            <h2>{{era.name}}</h2>
+            <h3 class="bigDate">{{era.start_maya.slang_date}} - {{era.end_maya.slang_date}}</h3>
+            <h4>{{era.summary|safe}}</h4>
+
+            <div class="contentSection">
+                {% parse_md_dj era.description %}
+            </div>
+
+            <div class="contentSection">
+                {% for section_name, section in era.sections.items %}
+                    <div class="sub-experience {% cycle 'left' 'right' %}">
+                    <h3>{{section_name}}</h3>
+                    {% for media_object in section.multimedia %}
+                       {% include_media media_object %}
+                    {% endfor %}
+                    {% parse_md_dj section.text %}
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="contentSection gridWrapper">
+                {% for experience in era.intersection %}
+                <span class="gridGrouping contrast-{% cycle 1 2 3%}">
+                    <span class="groupName">{{experience}}</span>
+
+                    {% for location in experience.unique_locations_by_big_name %}
+                    <span class="gridItem">
+                        {% with location.place as place %}
+                          <div class="locationContainer">
+                              {% with omit_small_name=True use_experience=True %}
+                                {% include 'where/single-place.html' %}
+                              {% endwith %}
+                          </div>
+
+                        {% endwith %}
+                    </span>
+                    {% endfor %}
+                </span>
+                {% endfor %}
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

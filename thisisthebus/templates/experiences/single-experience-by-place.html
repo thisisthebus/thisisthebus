@@ -1,0 +1,39 @@
+<div class="experienceContainer">
+    <h3>{{experience.name}}</h3>
+    <h4 class="bigDate">{{experience.start_maya.slang_date}} - {{experience.end_maya.slang_date}}</h4>
+
+    <div class="contentSection">
+        {{experience.description|safe}}
+    </div>
+
+    <div class="contentSection">
+        {% for location in experience.locations %}
+        <div class="contentSection dayContainer">
+            {% with location.place_meta as place %}
+              <div class="locationContainer left">
+                  {% include 'single-place.html' %}
+                  <h4>
+                      {% if location.start.slang_date != location.end.slang_date %}
+                        {{location.start.slang_date}} - {{location.end.slang_date}}
+                      {% else %}
+                        {{location.start.slang_date}}
+                      {% endif %}
+                  </h4>
+              </div>
+
+
+                {% for summary in location.summaries %}
+                    <div class="daySummary right">{{summary|safe}}</div>
+                {% endfor %}
+                <div class="imagesContainer right">
+                    {% for image in location.images %}
+                        {% include "images/image-instance.html" %}
+                    {% endfor %}
+                </div>
+
+            {% endwith %}
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
