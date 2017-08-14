@@ -6,7 +6,7 @@
     {% endif %}
     </a>
     {% if include_meta %}
-      <div class="imageMeta {% if not media_object.appears_in_experience %}highlight{% endif %}">
+      <div class="imageMeta {% if not media_object.is_used %}highlight{% endif %}">
         {{ media_object.distinguisher }}
           <br/>
         {{media_object.date_and_time}}

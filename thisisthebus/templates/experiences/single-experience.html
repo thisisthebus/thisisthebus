@@ -10,8 +10,8 @@
         <h4 class="bigDate">{{experience.start_maya.slang_date}} - {{experience.end_maya.slang_date}}</h4>
     {% endif %}
     <div class="contentSection flex">
-        {% for location in experience.locations %}
-            {% with location.place_meta as place %}
+        {% for location in experience.unique_locations_by_place %}
+            {% with location.place as place %}
               <div class="locationContainer">{% include 'where/single-place.html' %}</div>
             {% endwith %}
         {% endfor %}
@@ -31,7 +31,9 @@
 
         <div class="imagesContainer">
             {% for image in experience.images %}
-              {% include image.instance_template %}
+              {% with image as media_object %}
+                {% include image.instance_template %}
+              {% endwith %}
             {% endfor %}
         </div>
     </div>

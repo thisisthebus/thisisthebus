@@ -328,6 +328,8 @@ margin-right:60px;
 
 .experiences .locationContainer {
     margin:auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 .sub-experience {
@@ -498,25 +500,6 @@ body #swipebox-top-bar.visible-bars
     float:left;
 }
 
-.era .gridWrapper .locationContainer h4 {
-    margin-top:10px;
-}
-
-.era .gridWrapper .locationContainer {
-    width: 200px;
-}
-
-.era .gridWrapper .locationContainer a img {
-    width: 200px;
-}
-
-.era .gridWrapper .locationContainer .locationNameMask {
-    width: 200px;
-}
-
-.era .gridWrapper .locationContainer .locationNameCaption {
-    width: 200px;
-}
 
 .imageMeta {
     font-size:15px;
@@ -528,6 +511,9 @@ body #swipebox-top-bar.visible-bars
 
 .bigAss .gridWrapper {
     grid-template-columns: repeat(5, 1fr);
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
 }
 
 .bigAss .image-instance {
@@ -561,31 +547,148 @@ body #swipebox-top-bar.visible-bars
     color: yellow;
 }
 
+.era .gridWrapper {
+  width: 100%;
+}
+
 .groupName {
-  display:inline;
+	float: left;
+	font-size: 1.1em;
+	position: relative;
+	color: white;
+	right: 7px;
+	font-weight: bold;
 }
 
 .gridGrouping {
-  border: 1px solid white;
-  float: left;
+border: 1px solid white;
+float: left;
+height: 200px;
+margin: 10px;
 }
 
-.gridGrouping .gridItem {
-    float: left;
+.era .gridWrapper .locationContainer h4 {
+    margin-top:10px;
 }
 
-.gridGrouping img {
+.era .gridWrapper .locationContainer {
+    width: 250px;
+    margin-top: auto;
+    margin-bottom: 23px;
+}
+
+.era .gridWrapper .locationContainer img {
+    width: 250px;
+}
+
+.era .gridWrapper .locationContainer .locationNameMask {
+    width: 250px;
+    height: 25px;
+    margin-top: -45px;
+}
+
+.era .gridWrapper .locationContainer .locationNameCaption {
+    width: 250px;
+    margin-top: -27px;
+
+}
+
+.era .gridWrapper .locationContainer .locationNameCaption div {
+    font-size: 1.1em;
+}
+
+.era .gridWrapper .gridItem {
     float: left;
+	width: 250px;
+	white-space: nowrap;
+    padding: 20px;
+    padding-top: 10px;
+}
+
+
+.era .gridWrapper .gridItem.first {
+    padding-top: 3px;
+    border-top: 2px solid white;
+	border-left: 2px solid white;
+	border-top-left-radius: 10px;
+	margin-top: 10px;
+}
+
+.era .gridWrapper .gridItem.last {
+	margin-right: 5px;
+    padding-bottom: 18px;
+    border-bottom: 2px solid white;
+	border-right: 2px solid white;
+	border-bottom-right-radius: 10px;
+}
+
+.era .gridWrapper .gridItem.pos-1 {
+    border-left: 2px solid white;
+}
+
+.era .gridWrapper .gridItem.pos-3 {
+    border-right: 2px solid white;
+}
+
+.era .gridWrapper .gridItem.pos-2.count-2 {
+    padding-top: 3px;
+    border-top: 2px solid white;
+    margin-top: 10px;
+}
+
+.era .gridWrapper .gridItem.pos-3.count-3, .era .gridWrapper .gridItem.pos-3.count-2 {
+    padding-top: 3px;
+    border-top: 2px solid white;
+    border-top-right-radius: 10px;
+    margin-top: 10px;
+}
+
+.era .gridWrapper .gridItem.first.pos-2, .era .gridWrapper .gridItem.first.pos-3 {
+    margin-left: 10px;
+}
+
+.era .gridWrapper .gridItem.last3 {
+    padding-bottom: 18px;
+    border-bottom: 2px solid white;
+}
+
+.era .gridWrapper .gridItem.pos-1.last3 {
+    border-bottom-left-radius: 10px;
+}
+
+.era .gridWrapper .gridItem.pos-3.last3 {
+    border-bottom-right-radius: 10px;
+}
+
+.era .gridWrapper .gridItem.last.first3 {
+    border-top-right-radius: 10px;
+    padding-right: 10px;
+}
+
+.era .gridWrapper .gridItem.first.last3 {
+    border-bottom-left-radius: 10px;
+    padding-left: 10px;
+}
+
+.topNote {
+   height: 28px;
+   position:relative;
+}
+
+.gridContent {
+float: left;
+clear: left;
+margin: 10px;
 }
 
 .contrast-1 {
-  background-color: red;
+  background-color: #370f53;
 }
 
 .contrast-2 {
-  background-color: blue;
+  background-color: #654018;
 }
 
 .contrast-3 {
-  background-color: green;
+  background-color: black;
 }

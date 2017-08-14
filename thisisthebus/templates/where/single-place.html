@@ -1,6 +1,10 @@
-<a href="{% if use_experience %}/experiences/{{ location.most_significant_experience.slug }}.html{% else %}{{place.map_uri}}{% endif %}">
+{% if no_link %}
+<img src="/apps/places/img/{{place.thumb_filename}}" />
+{% else %}
+<a href="{{place.map_uri}}">
   <img src="/apps/places/img/{{place.thumb_filename}}" />
 </a>
+{% endif %}
   <div class="locationNameMask"></div>
     <div class="locationNameCaption">
       {% if not omit_small_name %}
