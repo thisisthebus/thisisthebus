@@ -39,7 +39,7 @@ PAGINATE_ON_MEDIA_COUNT = 75
 
 DAYS_OF_NOTE = sorted(set(list(SUMMARIES.keys()) + list(LOCATIONS.keys()) + list(INTERTWINED_MEDIA.by_date().keys())))
 
-def build_daily_log(summaries, locations, images, clips, places):
+def build_daily_log(summaries, locations, multimedia):
 
     days_of_note = sorted(DAYS_OF_NOTE, reverse=True)
 
@@ -49,16 +49,14 @@ def build_daily_log(summaries, locations, images, clips, places):
         this_day_meta = {}
         days.append((day_nice, this_day_meta))
         this_day_meta['summary'] = summaries.get(day, "")
-        if images.by_date().get(day_nice):
-            this_day_meta['images'] = images.by_date()[day_nice]
+        if multimedia.by_date().get(day_nice):
+            this_day_meta['multimedia'] = multimedia.by_date()[day_nice]
         if locations.get(day_nice):
-            # For now, take the first location.  TODO: Allow multiple lcoations for day.
-            first_location_of_day = min(locations[day_nice].items())[1]
-            this_day_meta['place'] = first_location_of_day.place
+            this_day_meta['locations'] = locations[day_nice]
 
     t = get_template('daily/daily-log-main-page.html')
     d = {"days": days, "include_swipebox": True, "slicey": True, "page_name": "Our Travels",
-         "sub_nav": [('/travels-by-experience.html', "By Experience", False), ('/travels.html', "By Date", True)]}
+         "sub_nav": [('/experiences.html', "By Experience", False), ('/travels.html', "By Date", True)]}
     daily_log_html = t.render(d)
 
     with open("%s/travels.html" % FRONTEND_DIR, "w+") as f:
@@ -177,6 +175,8 @@ def complete_build(django_setup=False):
         with open("{frontend}/eras/{slug}.html".format(frontend=FRONTEND_DIR, slug=era.slug), "w+") as f:
             f.write(era_html)
 
+    ########## All Images
+
     t = get_template('images/all-images.html')
     d = {"all_images": INTERTWINED_MEDIA, "include_swipebox": True, "slicey": True}
     all_images_html = t.render(d)
@@ -185,7 +185,7 @@ def complete_build(django_setup=False):
         f.write(all_images_html)
 
 
-    build_daily_log(SUMMARIES, LOCATIONS, IMAGES, CLIPS, PLACES)
+    build_daily_log(SUMMARIES, LOCATIONS, INTERTWINED_MEDIA)
 
 
     ###### Wanted experiences

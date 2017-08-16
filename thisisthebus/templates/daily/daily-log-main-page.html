@@ -9,16 +9,20 @@ By Experience
             <div class="dayContainer">
                 <h3>{{day}}</h3>
                 <div class="left">
-                    {% with day_meta.place as place %}
+                    {% for location in day_meta.locations.values %}
+                    {% with location.place as place %}
                         <div class="locationContainer">{% include 'where/single-place.html' %}</div>
                     {% endwith %}
+                    {% endfor %}
                 </div>
                 <div class="right">
                     <div class="daySummary">{{day_meta.summary|safe}}</div>
-                    <div class="imagesContainer">
-                        {% for image in day_meta.images %}
-                            {% include "images/image-instance.html" %}
-                        {% endfor %}
+                    <div class="imageGrid">
+                        <div class="imagesContainer">
+                            {% for media_object in day_meta.multimedia %}
+                                {% include media_object.instance_template %}
+                            {% endfor %}
+                        </div>
                     </div>
                 </div>
             </div>
