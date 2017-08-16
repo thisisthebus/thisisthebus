@@ -15,7 +15,8 @@ from thisisthesitebuilder.experiences.build import EraBuilder
 from thisisthesitebuilder.pages.build import PageBuilder
 from thisisthesitebuilder.images.templatetags.multimedia_tags import register_image_tags
 from thisisthesitebuilder.images.models import Image, Multimedia, Clip
-from thisisthesitebuilder.experiences.models import Eras
+from thisisthesitebuilder.experiences.models import Eras, Experience
+
 # Set multimedia storage and template values.
 Multimedia.set_storage_url_path("apps/multimedia")
 Image.set_instance_template("images/image-instance.html")
@@ -36,10 +37,11 @@ from thisisthebus.settings.constants import FRONTEND_DIR, DATA_DIR, PYTHON_APP_D
 SUMMARY_PREVIEW_LENGTH = 140
 PAGINATE_ON_MEDIA_COUNT = 75
 
+DAYS_OF_NOTE = sorted(set(list(SUMMARIES.keys()) + list(LOCATIONS.keys()) + list(INTERTWINED_MEDIA.by_date().keys())))
 
 def build_daily_log(summaries, locations, images, clips, places):
-    days_of_note = set(list(summaries.keys()) + list(locations.keys()) + list(images.by_date().keys()))
-    days_of_note = sorted(days_of_note, reverse=True)
+
+    days_of_note = sorted(DAYS_OF_NOTE, reverse=True)
 
     days = []
     for day in days_of_note:
@@ -184,6 +186,44 @@ def complete_build(django_setup=False):
 
 
     build_daily_log(SUMMARIES, LOCATIONS, IMAGES, CLIPS, PLACES)
+
+
+    ###### Wanted experiences
+
+    betweens = []
+    between_end = maya.now()
+    for experience in experiences:
+        between_start = experience.end_maya
+        if between_start < between_end:
+            betweens.append((between_start, between_end))
+        between_end = experience.start_maya
+    between_start = maya.MayaDT.from_iso8601(DAYS_OF_NOTE[0])
+    if between_start < between_end:
+        betweens.append((between_start, between_end))
+
+    wanted_experiences = []
+    for counter, (between_start, between_end) in enumerate(betweens):
+        for day in DAYS_OF_NOTE:
+            if between_start < maya.MayaDT.from_iso8601(day) < between_end:
+                experience = Experience(start=between_start.datetime("America/New_York"),
+                                        end=between_end.datetime("America/New_York"),
+                                        slug="wanted-experience-{}".format(counter),
+                                        name="Wanted Experience {}".format(counter),
+                                       )
+                experience.absorb_happenings()
+                wanted_experiences.append(experience)
+                break
+        else:
+            print("Experience gap from {} to {}".format(between_start.slang_date(), between_end.slang_date()))
+
+    t = get_template('experiences/experiences.html')
+    d = {"experiences": wanted_experiences, "include_swipebox": True, "slicey": True, "page_name": "Wanted Experiences",
+         "sub_nav": [('/experiences.html', "By Experience", True),
+                     ('/travels.html', "By Date", False)],
+         }
+    experiences_html = t.render(d)
+    with open("{frontend}/experiences/wanted-experiences.html".format(frontend=FRONTEND_DIR), "w+") as f:
+        f.write(experiences_html)
 
     print("-------------  Building Pages  -------------")
 

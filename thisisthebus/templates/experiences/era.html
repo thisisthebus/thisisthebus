@@ -29,12 +29,11 @@
             </div>
 
             <div class="contentSection gridWrapper">
-                {% for experience in era.intersection %}
-                        {% cycle '1' '2' '3' as colorcycle silent %}
-                        {% for location in experience.unique_locations_by_big_name %}
-                        {% cycle 1 2 3 as pos silent %}
-                        <a href="/experiences/{{ experience.slug }}.html">
-                        <div class="gridItem contrast-{{colorcycle}} {% if forloop.first %}first{%endif%} {%if forloop.last %}last{%endif%} pos-{{pos}} count-{{ forloop.counter }} end-{{ forloop.revcounter0}} {% if forloop.revcounter0 < 3 %}last3{% endif %} {% if forloop.counter0 < 3 %}first3{% endif %}">
+                {% for experience, location_stuff in era.locations_from_intersecting_experiences %}
+                    {% cycle '1' '2' '3' as colorcycle silent %}
+                    {% for location, position, must_clear in location_stuff %}
+                    <a href="/experiences/{{ experience.slug }}.html">
+                        <div class="gridItem contrast-{{colorcycle}} {% if forloop.first %}first{%endif%} {%if forloop.last %}last{%endif%} pos-{{position}} count-{{ forloop.counter }} end-{{ forloop.revcounter0}} {% if forloop.revcounter0 < 3 %}last3{% endif %} {% if forloop.counter0 < 3 %}first3{% endif %} groupOf-{{locations|length}}" {% if must_clear %}style="clear:left"{% endif %}>
                             <div class="topNote">
                                 {% if forloop.first %}
                                     <div class="groupName">{{experience}}</div>
@@ -48,9 +47,8 @@
                               </div>
                             {% endwith %}
                         </div>
-                        </a>
-                        {% endfor %}
-
+                    </a>
+                    {% endfor %}
                 {% endfor %}
             </div>
 
