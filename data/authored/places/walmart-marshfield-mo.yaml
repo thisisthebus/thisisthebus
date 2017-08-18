@@ -1,0 +1,11 @@
+lat: 37.336691
+lon: -92.939310
+thumb_zoom: 15
+pitch: 60
+bearing: 180
+thumb_style: "streets-v9"
+link_zoom: 18
+small_name: "Walmart Parking Lot"
+big_name: "Marshfield, Missouri"
+use_both_names_for_slug: True
+show_on_top_level_experience: False

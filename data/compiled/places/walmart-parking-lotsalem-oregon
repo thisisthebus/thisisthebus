@@ -1,0 +1,19 @@
+{
+  "bearing": 110,
+  "big_name": "Salem, Oregon",
+  "is_used_in_location": false,
+  "lat": 44.913991,
+  "link_zoom": 18,
+  "lon": -122.997715,
+  "map_uri": "https://www.openstreetmap.org/?mlat=44.913991&mlon=-122.997715#map=18/44.913991/-122.997715",
+  "pitch": 60,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "small_link": null,
+  "small_name": "Walmart Parking Lot",
+  "thumb_filename": "walmart-parking-lotsalem-oregon.jpeg",
+  "thumb_style": "satellite-streets-v9",
+  "thumb_zoom": 18,
+  "use_both_names_for_slug": true,
+  "yaml_checksum": "432d2acd7286ce17f1077b3c1924f7e6"
+}

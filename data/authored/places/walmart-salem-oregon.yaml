@@ -1,0 +1,11 @@
+lat: 44.913991
+lon: -122.997715
+thumb_zoom: 18
+pitch: 60
+bearing: 110
+thumb_style: "satellite-streets-v9"
+link_zoom: 18
+small_name: "Walmart Parking Lot"
+big_name: "Salem, Oregon"
+use_both_names_for_slug: True
+show_on_top_level_experience: False

@@ -643,7 +643,7 @@ margin: 10px;
 }
 
 .era .gridWrapper .gridItem.first.pos-2, .era .gridWrapper .gridItem.first.pos-3 {
-    margin-left: 10px;
+    margin-left: 6px;
 }
 
 .era .gridWrapper .gridItem.last3 {
@@ -661,12 +661,12 @@ margin: 10px;
 
 .era .gridWrapper .gridItem.last.first3 {
     border-top-right-radius: 10px;
-    padding-right: 10px;
+    padding-right: 12px;
 }
 
 .era .gridWrapper .gridItem.first.last3 {
     border-bottom-left-radius: 10px;
-    padding-left: 10px;
+    padding-left: 12px;
 }
 
 .topNote {
