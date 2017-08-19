@@ -384,9 +384,9 @@ margin-right:60px;
 
 .locationContainer .locationNameCaption div {
 	color: #fcc65c;
-	text-align: center;
+	text-align: center; 
 	font-size: 1.2em;
-	text-shadow: 2px 2px 1px black;
+	text-shadow: 2px 2px 1px black, 0px 0px 15px black, 0px 0px 3px black;
 }
 
 .locationContainer .locationNameCaption a {
