@@ -1,8 +1,8 @@
 {% extends "shared/base.html" %}
 
 {% block banner %}
-    {% if slicey %}
-        {% include "shared/slicey.html" %}
+    {% if compact %}
+        {% include "shared/compact.html" %}
     {% else %}
         {% include "shared/bigger-banner.html" %}
     {% endif %}
@@ -12,7 +12,7 @@
     {% block between %}{% endblock %}
     {% block main %}
 
-    <div id="main" class="page {% if slicey %}underSlice{% endif %}">
+    <div id="main" class="page {% if compact %}underSlice{% endif %}">
         <div id="between">
         {% if author %}
             <div class="author">by {{author}}</div>

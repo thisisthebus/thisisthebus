@@ -8,8 +8,8 @@ add_project_dir_to_path()
 
 if __name__ == "__main__":
     import django
-    django.setup()
 
+    django.setup()
 
 from thisisthesitebuilder.experiences.build import EraBuilder
 from thisisthesitebuilder.pages.build import PageBuilder
@@ -23,6 +23,7 @@ Image.set_instance_template("images/image-instance.html")
 Clip.set_instance_template("images/clip-instance.html")
 
 from build.built_fundamentals import SUMMARIES, LOCATIONS, IMAGES, CLIPS, PLACES, INTERTWINED_MEDIA
+
 register_image_tags("images/image-instance.html", media_collection=INTERTWINED_MEDIA)
 
 import json
@@ -37,10 +38,11 @@ from thisisthebus.settings.constants import FRONTEND_DIR, DATA_DIR, PYTHON_APP_D
 SUMMARY_PREVIEW_LENGTH = 140
 PAGINATE_ON_MEDIA_COUNT = 75
 
-DAYS_OF_NOTE = sorted(set(list(SUMMARIES.keys()) + list(LOCATIONS.keys()) + list(INTERTWINED_MEDIA.by_date().keys())))
+DAYS_OF_NOTE = sorted(
+    set(list(SUMMARIES.keys()) + list(LOCATIONS.keys()) + list(INTERTWINED_MEDIA.by_date().keys())))
+
 
 def build_daily_log(summaries, locations, multimedia):
-
     days_of_note = sorted(DAYS_OF_NOTE, reverse=True)
 
     days = []
@@ -55,8 +57,9 @@ def build_daily_log(summaries, locations, multimedia):
             this_day_meta['locations'] = locations[day_nice]
 
     t = get_template('daily/daily-log-main-page.html')
-    d = {"days": days, "include_swipebox": True, "slicey": True, "page_name": "Our Travels",
-         "sub_nav": [('/experiences.html', "By Experience", False), ('/travels.html', "By Date", True)]}
+    d = {"days": days, "include_swipebox": True, "compact": True, "page_name": "Our Travels",
+         "sub_nav": [('/experiences.html', "By Experience", False),
+                     ('/travels.html', "By Date", True)]}
     daily_log_html = t.render(d)
 
     with open("%s/travels.html" % FRONTEND_DIR, "w+") as f:
@@ -84,13 +87,18 @@ def complete_build(django_setup=False):
     latest_place = latest_location.place
 
     hashes = get_hashes()
-    build_time = maya.now().datetime(to_timezone='US/Eastern', naive=True)
+    build_time = maya.now()
+    build_meta = {'data_checksum': hashes['data'],
+                  'datetime': build_time,
+                  'frontend_dir': FRONTEND_DIR,
+                  'python_app_dir': PYTHON_APP_DIR,
+                  'data_dir': DATA_DIR,
+                  }
 
     print("-------------  Building Eras and Experiences  -------------")
 
-    era_builder = EraBuilder(SUMMARIES, LOCATIONS, IMAGES, PLACES)
+    era_builder = EraBuilder(build_meta, SUMMARIES, LOCATIONS, IMAGES, PLACES)
     experiences = era_builder.build_experiences("%s/authored/experiences" % DATA_DIR)
-
 
     unused_images = [image for image in IMAGES if not image.is_used]
     if unused_images:
@@ -99,7 +107,6 @@ def complete_build(django_setup=False):
     unused_clips = [clip for clip in CLIPS if not clip.is_used]
     if unused_clips:
         print("***{} Clips are unused***".format(len(unused_clips)))
-
 
     unused_locations = []
     for location_days in LOCATIONS.values():
@@ -127,16 +134,21 @@ def complete_build(django_setup=False):
         cummulative_media_count += images + (clips * 5)
 
     for group in experience_pages:
-        html_output_file = "{path}/{filename}.html".format(path=FRONTEND_DIR, filename=experience_pages.output_filename_for_group(group))
+        html_output_file = "{path}/{filename}.html".format(path=FRONTEND_DIR,
+                                                           filename=experience_pages.output_filename_for_group(
+                                                               group))
         previous_group, previous_page = experience_pages.output_filename_and_previous_group(group)
         next_group, next_page = experience_pages.output_filename_and_next_group(group)
 
-        previous_path = "/{filename}.html".format(filename=previous_page) if previous_group else None
+        previous_path = "/{filename}.html".format(
+            filename=previous_page) if previous_group else None
         next_path = "/{filename}.html".format(filename=next_page) if next_group else None
 
         t = get_template('experiences/experiences.html')
-        d = {"experiences": group, "include_swipebox": True, "slicey": True, "page_name": "Our Travels",
-             "sub_nav": [('/experiences.html', "By Experience", True), ('/travels.html', "By Date", False)],
+        d = {"experiences": group, "include_swipebox": True, "compact": True,
+             "page_name": "Our Travels",
+             "sub_nav": [('/experiences.html', "By Experience", True),
+                         ('/travels.html', "By Date", False)],
              "next_page": next_path, "previous_page": previous_path,
              }
         experiences_html = t.render(d)
@@ -147,7 +159,7 @@ def complete_build(django_setup=False):
 
     for experience in experiences:
         t = get_template('experiences/experiences.html')
-        d = {"experiences": [experience], "include_swipebox": True, "slicey": True,
+        d = {"experiences": [experience], "include_swipebox": True, "compact": True,
              "page_name": "Our Travels",
              "page_title": experience.name,
              "sub_nav": [('/experiences.html', "By Experience", False),
@@ -155,7 +167,8 @@ def complete_build(django_setup=False):
              }
         experiences_html = t.render(d)
 
-        with open("{frontend}/experiences/{slug}.html".format(frontend=FRONTEND_DIR, slug=experience.slug), "w+") as f:
+        with open("{frontend}/experiences/{slug}.html".format(frontend=FRONTEND_DIR,
+                                                              slug=experience.slug), "w+") as f:
             f.write(experiences_html)
 
     print("Rendered {count} Experiences.".format(count=len(experiences)))
@@ -164,7 +177,7 @@ def complete_build(django_setup=False):
 
     for era in bigger_eras:
         t = get_template('experiences/era.html')
-        d = {"era": era, "include_swipebox": True, "slicey": True,
+        d = {"era": era, "include_swipebox": True, "compact": True,
              "page_name": "Our Travels",
              "page_title": era.name,
              "sub_nav": [('/experiences.html', "By Experience", False),
@@ -172,21 +185,20 @@ def complete_build(django_setup=False):
              }
         era_html = t.render(d)
 
-        with open("{frontend}/eras/{slug}.html".format(frontend=FRONTEND_DIR, slug=era.slug), "w+") as f:
+        with open("{frontend}/eras/{slug}.html".format(frontend=FRONTEND_DIR, slug=era.slug),
+                  "w+") as f:
             f.write(era_html)
 
     ########## All Images
 
     t = get_template('images/all-images.html')
-    d = {"all_images": INTERTWINED_MEDIA, "include_swipebox": True, "slicey": True}
+    d = {"all_images": INTERTWINED_MEDIA, "include_swipebox": True, "compact": True}
     all_images_html = t.render(d)
 
     with open("{frontend}/all-images.html".format(frontend=FRONTEND_DIR), "w+") as f:
         f.write(all_images_html)
 
-
     build_daily_log(SUMMARIES, LOCATIONS, INTERTWINED_MEDIA)
-
 
     ###### Wanted experiences
 
@@ -209,39 +221,43 @@ def complete_build(django_setup=False):
                                         end=between_end.datetime("America/New_York"),
                                         slug="wanted-experience-{}".format(counter),
                                         name="Wanted Experience {}".format(counter),
-                                       )
+                                        build_meta=build_meta
+                                        )
                 experience.absorb_happenings()
                 wanted_experiences.append(experience)
                 break
         else:
-            print("Experience gap from {} to {}".format(between_start.slang_date(), between_end.slang_date()))
+            print("Experience gap from {} to {}".format(between_start.slang_date(),
+                                                        between_end.slang_date()))
 
     t = get_template('experiences/experiences.html')
-    d = {"experiences": wanted_experiences, "include_swipebox": True, "slicey": True, "page_name": "Wanted Experiences",
+    d = {"experiences": wanted_experiences, "include_swipebox": True, "compact": True,
+         "page_name": "Wanted Experiences",
          "sub_nav": [('/experiences.html', "By Experience", True),
                      ('/travels.html', "By Date", False)],
          }
     experiences_html = t.render(d)
-    with open("{frontend}/experiences/wanted-experiences.html".format(frontend=FRONTEND_DIR), "w+") as f:
+    with open("{frontend}/experiences/wanted-experiences.html".format(frontend=FRONTEND_DIR),
+              "w+") as f:
         f.write(experiences_html)
 
     print("-------------  Building Pages  -------------")
 
-    page_builder = PageBuilder(DATA_DIR, FRONTEND_DIR)
+    page_builder = PageBuilder(build_meta, force_rebuild=True)
 
     pages = []
 
     pages.append(page_builder.build_page("index", root=True,
-               context={'place': latest_place,
-                        'update_date': latest_location_date,
-                        'build_hashes': hashes,
-                        'build_time': build_time}
-               ))
+                                         active_context={'place': latest_place,
+                                                         'update_date': latest_location_date,
+                                                         },
+                                         passive_context={'build_hashes': hashes,
+                                                          'build_time': build_time}
+                                         ))
 
-    pages.append(page_builder.build_page("about", root=True, slicey=True))
-    pages.append(page_builder.build_page("our-tech-stack", root=True, slicey=True))
-    pages.append(page_builder.build_page("4th-amendment-missing", slicey=True))
-
+    pages.append(page_builder.build_page("about", root=True, compact=True))
+    pages.append(page_builder.build_page("our-tech-stack", root=True, compact=True))
+    pages.append(page_builder.build_page("4th-amendment-missing", compact=True))
 
     with open("%s/last_build.json" % BUILD_PATH, "w") as f:
         f.write(json.dumps(hashes))
