@@ -13,8 +13,8 @@ LOCATIONS = process_locations(PLACES)
 
 
 print("-------------  Processing Multimedia  -------------")
-IMAGES = MultimediaCollection(data_dir="%s/compiled/images" % DATA_DIR, multimedia_class=Image)
-CLIPS = MultimediaCollection(data_dir="%s/compiled/clips" % DATA_DIR, multimedia_class=Clip)
+IMAGES = MultimediaCollection(data_dir="%s/authored/images" % DATA_DIR, multimedia_class=Image)
+CLIPS = MultimediaCollection(data_dir="%s/authored/clips" % DATA_DIR, multimedia_class=Clip)
 
 INTERTWINED_MEDIA = MultimediaCollection.intertwine(IMAGES, CLIPS)
 

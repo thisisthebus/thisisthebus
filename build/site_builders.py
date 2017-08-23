@@ -67,10 +67,10 @@ def build_daily_log(summaries, locations, multimedia):
 
 
 def get_hashes():
-    data_hash = dirhash(DATA_DIR, 'md5')
+    data_hash = dirhash("{}/authored".format(DATA_DIR), 'md5')
     app_hash = dirhash(PYTHON_APP_DIR, 'md5')
-    hashes = {"data": data_hash,
-              "app": app_hash}
+    hashes = {"data": data_hash}
+              # "app": app_hash}
 
     return hashes
 
@@ -221,7 +221,8 @@ def complete_build(django_setup=False):
                                         end=between_end.datetime("America/New_York"),
                                         slug="wanted-experience-{}".format(counter),
                                         name="Wanted Experience {}".format(counter),
-                                        build_meta=build_meta
+                                        build_meta=build_meta,
+                                        persist=False
                                         )
                 experience.absorb_happenings()
                 wanted_experiences.append(experience)
@@ -243,7 +244,7 @@ def complete_build(django_setup=False):
 
     print("-------------  Building Pages  -------------")
 
-    page_builder = PageBuilder(build_meta, force_rebuild=True)
+    page_builder = PageBuilder(build_meta, force_rebuild=False)
 
     pages = []
 
@@ -260,11 +261,11 @@ def complete_build(django_setup=False):
     pages.append(page_builder.build_page("4th-amendment-missing", compact=True))
 
     with open("%s/last_build.json" % BUILD_PATH, "w") as f:
-        f.write(json.dumps(hashes))
+        f.write(json.dumps(hashes, indent=2, sort_keys=True))
 
     print("\n=====================  DONE  ========================")
     print("Data: %s" % hashes['data'])
-    print("App: %s" % hashes['app'])
+    # print("App: %s" % hashes['app'])
     print("=====================================================")
     print("Everything went, you know, OK.")
 
