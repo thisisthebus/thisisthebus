@@ -14,6 +14,13 @@ body {
     clear: right;
 }
 
+.center {
+    margin: auto;
+    text-align: center;
+}
+
+/* basic elements */
+
 h1 {
     font-size:10em;
 }
@@ -28,22 +35,35 @@ h3 {
 
 h1, h2, h3, .cabin {
 	font-family: 'Cabin Sketch', cursive;
-	text-shadow: 3px 6px 2px #000;
+	color: #727272;
+}
+h1, h2, h3{
 	font-weight: 200;
-	color: #e7ca8d;
 	z-index:100;
+}
+
+h1 {
+    text-shadow: 3px 6px 2px #000;
+}
+
+h2 {
+    text-shadow: 2px 2px 1px #000;
+}
+
+h3 {
+    text-shadow: 1px 2px 0px #000;
 }
 
 h4 {
 	margin: 0;
 	font-size: 1.3em;
-	color: #848b95;
+	color: #727272;
 }
 
 h5 {
-margin: 0;
-font-size: 1em;
-color: #848b95;
+    margin: 0;
+    font-size: 1em;
+    color: #727272;
 }
 
 
@@ -74,9 +94,16 @@ h1#pageName {
     top:-26px;
 }
 
+.atopBanner {
+    color: #e7ca8d;
+}
+
 #banner h2 {
-    top:104px;
-    left:13px;
+    top:111px;
+}
+
+.banner h2 {
+    text-shadow: 1px 1px 5px black, 2px 2px 1px black;
 }
 
 #banner-image {
@@ -101,6 +128,11 @@ h1#pageName {
 	margin: 0;
 	border: 1px solid #e7ca8d;
 	box-shadow: -2px -2px 5px black;
+}
+
+h3.brandLabel {
+    color: #e7ca8d;
+    text-shadow: 3px 2px 2px #000;
 }
 
 #updateDate {
@@ -165,6 +197,8 @@ nav a {
     text-decoration: none;
 }
 
+/* pagination */
+
 .pagination {
     float: left;
     width: 820px;
@@ -177,6 +211,8 @@ nav a {
     color: #7b5200;
     font-size: 1.8em;
 }
+
+/* between */
 
 #between {
     width: 1200px;
@@ -196,6 +232,8 @@ nav a {
 margin-right:60px;
 }
 
+
+/* main area, underslice, blackMainInfo, etc */
 
 #main.underSlice {
 	margin-top: 133px;
@@ -227,14 +265,15 @@ margin-right:60px;
 }
 
 .blackMainInfo h3 {
-	color: #848b95;
+	color: #727272;
 	margin: 0;
 	text-align: center;
 }
 
 .blackMainInfo h3 a {
-    color: #848b95;
+    color: #727272;
     text-decoration: none;
+    text-shadow: 1px 1px 1px #dca9ff;
 }
 
 .blackMainInfo h3 a:hover {
@@ -384,9 +423,10 @@ margin-right:60px;
 
 .locationContainer .locationNameCaption div {
 	color: #fcc65c;
-	text-align: center; 
+	text-align: center;
 	font-size: 1.2em;
-	text-shadow: 2px 2px 1px black, 0px 0px 15px black, 0px 0px 3px black;
+	/* text-shadow: 2px 2px 1px black, 0px 0px 4px black, 1px 1px 3px black; */
+	text-shadow: -1px -1px 2px black, 0px 0px 2px black, 1px 1px 2px black, 2px 2px 1px black, 1px 1px 5px black;
 }
 
 .locationContainer .locationNameCaption a {
@@ -545,6 +585,19 @@ body #swipebox-top-bar.visible-bars
     font-weight: bold;
     color: yellow;
 }
+
+.orangeZone a {
+	color: #727272;
+	text-shadow: 2px 2px 3px #dca9ff, 0px 0px 1px #dca9ff;
+	text-decoration: none;
+}
+
+.orangeZone a:hover {
+	text-shadow: none;
+	text-decoration: underline;
+}
+
+/* Eras, Experiences, Images */
 
 .era .gridWrapper {
   width: 100%;

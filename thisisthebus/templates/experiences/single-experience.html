@@ -3,7 +3,7 @@
         {% if no_experience_links %}
             {{experience.name}}
         {% else %}
-            <a href="/experiences/{{experience.slug}}.html">{{experience.name}}</a>
+            <a href="{{experience.url}}">{{experience.name}}</a>
         {% endif %}
     </h3>
     {% if experience.show_dates %}

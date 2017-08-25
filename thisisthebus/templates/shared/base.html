@@ -8,7 +8,7 @@
 
     <title>{% if page_title %}{{page_title}} | {% endif %}this is the bus.</title>
 
-    <meta name="description" content="this is the bus">
+    <meta name="description" content="{% if meta_description %}{{meta_description}}{% else %}this is the bus{% endif %}">
     <meta name="author" content="Chelsea Kaye and Justin Myles">
 
     <link rel="stylesheet" href="/apps/internal/css/styles.css?v=1.0">
@@ -19,8 +19,6 @@
     <![endif]-->
     {% if include_swipebox %}
         <link rel="stylesheet" href="/apps/blueimp/css/blueimp-gallery.min.css">
-
-
     {% endif %}
 </head>
 
@@ -40,8 +38,7 @@
         {% if build_hashes %}
                 <ul class="verySmall">
                     <li>Build Time: {{build_time}}</li>
-                    <li>App: {{build_hashes.app}}</li>
-                    <li>Data: {{build_hashes.data}}</li>
+                    <li>Data Checksum: {{build_hashes.data}}</li>
                 </ul>
         {% endif %}
     </div>

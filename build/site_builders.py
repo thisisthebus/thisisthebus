@@ -1,4 +1,5 @@
 import sys
+from collections import OrderedDict
 
 from ensure_build_path import add_project_dir_to_path, BUILD_PATH
 
@@ -57,7 +58,7 @@ def build_daily_log(summaries, locations, multimedia):
             this_day_meta['locations'] = locations[day_nice]
 
     t = get_template('daily/daily-log-main-page.html')
-    d = {"days": days, "include_swipebox": True, "compact": True, "page_name": "Our Travels",
+    d = {"days": days, "include_swipebox": True, "compact": True, "name": "Our Travels",
          "sub_nav": [('/experiences.html', "By Experience", False),
                      ('/travels.html', "By Date", True)]}
     daily_log_html = t.render(d)
@@ -146,7 +147,7 @@ def complete_build(django_setup=False):
 
         t = get_template('experiences/experiences.html')
         d = {"experiences": group, "include_swipebox": True, "compact": True,
-             "page_name": "Our Travels",
+             "title": "Our Travels",
              "sub_nav": [('/experiences.html', "By Experience", True),
                          ('/travels.html', "By Date", False)],
              "next_page": next_path, "previous_page": previous_path,
@@ -160,7 +161,7 @@ def complete_build(django_setup=False):
     for experience in experiences:
         t = get_template('experiences/experiences.html')
         d = {"experiences": [experience], "include_swipebox": True, "compact": True,
-             "page_name": "Our Travels",
+             "title": "Our Travels",
              "page_title": experience.name,
              "sub_nav": [('/experiences.html', "By Experience", False),
                          ('/travels.html', "By Date", False)]
@@ -178,7 +179,7 @@ def complete_build(django_setup=False):
     for era in bigger_eras:
         t = get_template('experiences/era.html')
         d = {"era": era, "include_swipebox": True, "compact": True,
-             "page_name": "Our Travels",
+             "name": "Our Travels",
              "page_title": era.name,
              "sub_nav": [('/experiences.html', "By Experience", False),
                          ('/travels.html', "By Date", False)]
@@ -233,7 +234,7 @@ def complete_build(django_setup=False):
 
     t = get_template('experiences/experiences.html')
     d = {"experiences": wanted_experiences, "include_swipebox": True, "compact": True,
-         "page_name": "Wanted Experiences",
+         "name": "Wanted Experiences",
          "sub_nav": [('/experiences.html', "By Experience", True),
                      ('/travels.html', "By Date", False)],
          }
@@ -244,21 +245,43 @@ def complete_build(django_setup=False):
 
     print("-------------  Building Pages  -------------")
 
-    page_builder = PageBuilder(build_meta, force_rebuild=False)
+    page_builder = PageBuilder(build_meta, force_rebuild=True)
 
     pages = []
-
-    pages.append(page_builder.build_page("index", root=True,
-                                         active_context={'place': latest_place,
-                                                         'update_date': latest_location_date,
-                                                         },
-                                         passive_context={'build_hashes': hashes,
-                                                          'build_time': build_time}
-                                         ))
 
     pages.append(page_builder.build_page("about", root=True, compact=True))
     pages.append(page_builder.build_page("our-tech-stack", root=True, compact=True))
     pages.append(page_builder.build_page("4th-amendment-missing", compact=True))
+
+    print("       ----------- Last Updated ------------")
+    items_by_updated = {}
+
+    lastest_updated_items = sorted(pages + experiences, key=lambda i: i.last_updated(), reverse=True)
+
+    build_count = 0
+    for item in lastest_updated_items[:10]:
+        if build_time.epoch - item.last_updated().epoch > 60 * 60 * 24 * 28:  # more than 28 days.
+            continue
+
+        item_build_dt = item.last_updated().datetime("America/New_York")
+        if not item_build_dt in items_by_updated.keys():
+            build_count += 1
+            if build_count > 3:
+                break
+        items_for_this_build = items_by_updated.setdefault(item_build_dt, [])
+        items_for_this_build.append(item)
+
+    items_by_updated = OrderedDict(sorted(items_by_updated.items(), key=lambda i: i[0], reverse=True))
+
+    pages.append(page_builder.build_page("index", root=True,
+                                         active_context={'place': latest_place,
+                                                         'update_date': latest_location_date,
+                                                         'recently_updated_items': items_by_updated,
+                                                         'meta_description': "What was once a school bus is now a home, an engineering platform, and a learning experience.",
+                                                         },
+                                         passive_context={'build_hashes': hashes,
+                                                          'build_time': build_time}
+                                         ))
 
     with open("%s/last_build.json" % BUILD_PATH, "w") as f:
         f.write(json.dumps(hashes, indent=2, sort_keys=True))
