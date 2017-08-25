@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Salem, Oregon",
+  "is_used_in_location": false,
+  "lat": 44.915508,
+  "link_zoom": 15,
+  "lon": -123.045712,
+  "map_uri": "https://www.openstreetmap.org/?mlat=44.915508&mlon=-123.045712#map=15/44.915508/-123.045712",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "small_link": null,
+  "small_name": "LifeSource Natural Foods",
+  "thumb_filename": "lifesource-natural-foodssalem-oregon.png",
+  "thumb_style": "streets-v9",
+  "thumb_zoom": 12,
+  "use_both_names_for_slug": true,
+  "yaml_checksum": "60ac2383b0df3261237ade822b4ae11b"
+}
