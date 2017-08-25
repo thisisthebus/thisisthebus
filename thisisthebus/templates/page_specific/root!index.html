@@ -22,7 +22,9 @@
               {{ build_date }}
               <ul>
               {% for item in item_list %}
-                <li><a href="{{item.url}}">{{ item.pretty_name }}</a>{% if item.what_changed %}(new: {{item.what_changed}}){% endif %}</li>
+                <li>
+                    <a href="{{item.url}}">{{ item.pretty_name }}</a>
+                    {% if item.what_changed %}<span class="small">     (updated {{item.what_changed}})</span>{% endif %}</li>
               {% endfor %}
               </ul>
             {% endfor %}

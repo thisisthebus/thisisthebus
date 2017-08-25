@@ -19,6 +19,10 @@ body {
     text-align: center;
 }
 
+.small {
+    font-size: .7em;
+}
+
 /* basic elements */
 
 h1 {
