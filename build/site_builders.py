@@ -245,7 +245,7 @@ def complete_build(django_setup=False):
 
     print("-------------  Building Pages  -------------")
 
-    page_builder = PageBuilder(build_meta, force_rebuild=True)
+    page_builder = PageBuilder(build_meta, force_rebuild=False)
 
     pages = []
 

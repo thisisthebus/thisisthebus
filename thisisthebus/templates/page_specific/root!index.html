@@ -15,11 +15,11 @@
 
 {% block main %}
 <div id="main">
-    <div class="contentSection orangeZone">
+    <div id="majorUpdates" class="contentSection orangeZone">
         <h2 class="center">Latest Major Updates</h2>
 
             {% for build_date, item_list in recently_updated_items.items %}
-              {{ build_date }}
+              <h4>{{ build_date }}</h4>
               <ul>
               {% for item in item_list %}
                 <li>

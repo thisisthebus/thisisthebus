@@ -590,6 +590,14 @@ body #swipebox-top-bar.visible-bars
     color: yellow;
 }
 
+#majorUpdates {
+    margin-left: 50px;
+}
+
+.orangeZone {
+    box-shadow: 0px 1px 5px black;
+}
+
 .orangeZone a {
 	color: #727272;
 	text-shadow: 2px 2px 3px #dca9ff, 0px 0px 1px #dca9ff;
