@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Salem, Oregon",
+  "is_used_in_location": false,
+  "lat": 44.919986,
+  "link_zoom": 12,
+  "lon": -123.033721,
+  "map_uri": "https://www.openstreetmap.org/?mlat=44.919986&mlon=-123.033721#map=12/44.919986/-123.033721",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "small_link": null,
+  "small_name": "Joyce, Holland, and Ava's house",
+  "thumb_filename": "joyce,-holland,-and-ava's-house.jpeg",
+  "thumb_style": "satellite-streets-v9",
+  "thumb_zoom": 16,
+  "use_both_names_for_slug": false,
+  "yaml_checksum": "0d542b5d4cdc4b4f638abe4ab06217e6"
+}

@@ -275,9 +275,9 @@ margin-right:60px;
 }
 
 .blackMainInfo h3 a {
-    color: #727272;
+    color: #fcc65c;
     text-decoration: none;
-    text-shadow: 1px 1px 1px #dca9ff;
+    text-shadow: 1px 1px 1px black;
 }
 
 .blackMainInfo h3 a:hover {
