@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Tillamook, Oregon",
+  "is_used_in_location": false,
+  "lat": 45.467355,
+  "link_zoom": 12,
+  "lon": -123.84245,
+  "map_uri": "https://www.openstreetmap.org/?mlat=45.467355&mlon=-123.84245#map=12/45.467355/-123.84245",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "small_link": null,
+  "small_name": "Blue Heron Cheese Company",
+  "thumb_filename": "blue-heron-cheese-company.png",
+  "thumb_style": "streets-v9",
+  "thumb_zoom": 8,
+  "use_both_names_for_slug": false,
+  "yaml_checksum": "d53d45fb8a150b40628865857278531b"
+}
