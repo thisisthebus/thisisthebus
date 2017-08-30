@@ -37,7 +37,7 @@ from django.template.loader import get_template
 from thisisthebus.settings.constants import FRONTEND_DIR, DATA_DIR, PYTHON_APP_DIR
 
 SUMMARY_PREVIEW_LENGTH = 140
-PAGINATE_ON_MEDIA_COUNT = 75
+PAGINATE_ON_MEDIA_COUNT = 64
 
 DAYS_OF_NOTE = sorted(
     set(list(SUMMARIES.keys()) + list(LOCATIONS.keys()) + list(INTERTWINED_MEDIA.by_date().keys())))
@@ -127,7 +127,7 @@ def complete_build(django_setup=False):
     experience_pages = Eras(page_name="experiences")
 
     for experience in experiences:
-        if cummulative_media_count > PAGINATE_ON_MEDIA_COUNT:
+        if cummulative_media_count >= PAGINATE_ON_MEDIA_COUNT:
             experience_pages.next_group()
             cummulative_media_count = 0
         experience_pages.add_to_group(experience)

@@ -1,0 +1,10 @@
+lat: 45.739492
+lon: -123.946908
+pitch: 60
+bearing: 270
+thumb_zoom: 13
+thumb_style: "satellite-streets-v9"
+link_zoom: 12
+small_name: "Route 101 Ocean Lookout"
+big_name: "Manzanita, Oregon"
+use_both_names_for_slug: False
