@@ -1,0 +1,9 @@
+lat: 46.193056
+lon: -123.807358
+thumb_zoom: 13
+thumb_style: "satellite-streets-v9"
+link_zoom: 13
+small_name: "Safeway Parking Lot"
+big_name: "Astoria, Oregon"
+use_both_names_for_slug: True
+show_on_top_level_experience: False

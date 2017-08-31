@@ -1,0 +1,71 @@
+name: 71 days off the electrical grid
+start: 2017-05-03T00:00:00-05
+end: 2017-07-13T18:55:00-08
+summary: "Our new personal best: ten weeks and 2,500 miles without plugging into the power grid.<br/>At all times, we had cold beer and Star Trek."
+description: |
+  One of the motivating visions for our engineering work on the bus is a world of clean, distributed energy with much smaller points of power failure.  We have experienced a number of area blackouts during our travels, and there's something deeply liberating about having no cause to even notice that the power has gone out.
+
+  To this end, of course our goal is to create a system - and to publish all of the methods to help others create a system - which provides us with all the power we need in perpetuity, without connecting to the aging power grid and without releasing additional carbon into the atmosphere.  This 71-day stretch is our longest yet, and it seems we're getting closer each time to being ready to leave the grid forever.
+
+sections:
+  Dialing the system in:
+    multimedia:
+      - slug: here-is-justin-installing-our
+        width: 295
+      - slug: huge-improvement
+        width: 295
+    text: |
+     Achieving sustainble off-grid power consists of three different exercises:
+
+     * Measuring and budgeting power consumption
+     * Storing energy effectively
+     * Bringing in power from a green source (in our case, PV panels)
+
+     Our experience has suggested that this list is in order of importance.
+
+     If you are hemorrhaging electrons and not knowing it, it doesn't really matter how well you're storing energy.
+     If you can't store energy, or if you are loosing power idly from bat storage practices, your panels can't really help you.
+
+  Measuring Our Power:
+    multimedia:
+      - slug: we-recently-started-adding-a
+        width: 380
+        note: We use grafana to graph the results of our power readings.  Having both real-time and historical views is crucial for effective energy budgeting.
+      - slug: the-three-shunts-which-we-use
+    text: |
+
+     We keep nearly obsessive track over the electrons entering and leaving our bus.  For this purpose, we maintain and use the open source project <a href="github.com">stray_electrons</a>.  We run it on our Raspberry Pi
+
+  Budgeting:
+    text: |
+
+      One thing that distinguishes our build from most that we see is that we don't use an inverter for everyday household operations.
+      We only turn our inverter on to use AC motors (coffee grinder, blender, juicer).  Other than that, we convert DC voltage
+      locally to the voltage our devices need.
+
+      We cook with propane, but everything else in our school bus home is powered by electricity.
+
+      The device that consumes the most energy - and has the most variable power usage - is our refrigerator.  It has two independent zones.  It uses about 55 watts          when cooling a zone, and about 2w on idle.  We normally keep the fridge temperature set at 1 degree celsius.
+
+      Naturally, on hot days, it uses more power.  Of course, hot days are often quite productive for our solar panels as well.  Hot, muggy, humid, partly-cloudy days       are the most trying in terms of budgeting fridge power.  On such days - especially if we're running low on energy - we'll turn one or both zones up to about 4          degrees celsius.  We haven't hit a desperate enough situation to turn a zone off fully, but that's an option.
+
+      We light the bus using NeoPixel LED strips through 5v converters.  They are very energy efficient, but we have also created a set of presets which yield nice          color and lighting at reasonable power levels.  Our most consumptive preset, "Ice Cave," uses about 25 watts.  A more typical bustling-evening preset, "Papaya       Supper," uses about 20.  Our most common evening preset, a relaxing pinkish color through the bus, uses just 10.  We call it "blush."  Later at night we switch to "Lunar Berries" or "Barely Here," which use less than 5.
+
+
+
+  Storing Energy:
+    multimedia:
+      - slug:  the-new-battery-box-config
+        width: 450
+
+
+  Cold Beer and Star Trek:
+
+  The End:
+    text: |
+      llamas and dingos
+    images:
+      - slug: our-new-battery-bank-four-tro
+
+
+

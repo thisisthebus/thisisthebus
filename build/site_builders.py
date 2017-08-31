@@ -3,6 +3,8 @@ from collections import OrderedDict
 
 from ensure_build_path import add_project_dir_to_path, BUILD_PATH
 
+from thisisthesitebuilder.utils.file_utils import get_hashes
+
 sys.path.append("../../thisisthesitebuilder")
 
 add_project_dir_to_path()
@@ -29,7 +31,6 @@ register_image_tags("images/image-instance.html", media_collection=INTERTWINED_M
 
 import json
 
-from checksumdir import dirhash
 import maya
 
 from django.template.loader import get_template
@@ -67,15 +68,6 @@ def build_daily_log(summaries, locations, multimedia):
         f.write(daily_log_html)
 
 
-def get_hashes():
-    data_hash = dirhash("{}/authored".format(DATA_DIR), 'md5')
-    app_hash = dirhash(PYTHON_APP_DIR, 'md5')
-    hashes = {"data": data_hash}
-              # "app": app_hash}
-
-    return hashes
-
-
 def complete_build(django_setup=False):
     if django_setup:
         import django
@@ -87,7 +79,7 @@ def complete_build(django_setup=False):
     latest_location_time, latest_location = max(latest_location_dict.items())
     latest_place = latest_location.place
 
-    hashes = get_hashes()
+    hashes = get_hashes(DATA_DIR)
     build_time = maya.now()
     build_meta = {'data_checksum': hashes['data'],
                   'datetime': build_time,
@@ -173,6 +165,7 @@ def complete_build(django_setup=False):
             f.write(experiences_html)
 
     print("Rendered {count} Experiences.".format(count=len(experiences)))
+
 
     bigger_eras = era_builder.build_eras("%s/authored/eras" % DATA_DIR, experiences=experiences)
 
