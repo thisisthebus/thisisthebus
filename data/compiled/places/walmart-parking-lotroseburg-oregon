@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Roseburg, Oregon",
+  "is_used_in_location": false,
+  "lat": 43.234395,
+  "link_zoom": 13,
+  "lon": -123.367693,
+  "map_uri": "https://www.openstreetmap.org/?mlat=43.234395&mlon=-123.367693#map=13/43.234395/-123.367693",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "small_link": null,
+  "small_name": "Walmart Parking Lot",
+  "thumb_filename": "walmart-parking-lotroseburg-oregon.png",
+  "thumb_style": "streets-v9",
+  "thumb_zoom": 13,
+  "use_both_names_for_slug": true,
+  "yaml_checksum": "1c82af8f373e7d5bc04385cdc7554ee6"
+}

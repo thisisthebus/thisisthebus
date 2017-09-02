@@ -249,7 +249,7 @@ def complete_build(django_setup=False):
     print("       ----------- Last Updated ------------")
     items_by_updated = {}
 
-    lastest_updated_items = sorted(pages + experiences, key=lambda i: i.last_updated(), reverse=True)
+    lastest_updated_items = sorted(experiences, key=lambda i: i.last_updated(), reverse=True)
 
     build_count = 0
     for item in lastest_updated_items[:10]:

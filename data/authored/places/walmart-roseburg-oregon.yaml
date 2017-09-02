@@ -1,0 +1,9 @@
+lat: 43.234395
+lon: -123.367693
+thumb_zoom: 13
+thumb_style: "streets-v9"
+link_zoom: 13
+small_name: "Walmart Parking Lot"
+big_name: "Roseburg, Oregon"
+use_both_names_for_slug: True
+show_on_top_level_experience: False
