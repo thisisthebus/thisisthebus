@@ -3,9 +3,11 @@ from collections import OrderedDict
 
 from ensure_build_path import add_project_dir_to_path, BUILD_PATH
 
+sys.path.append("../../thisisthesitebuilder")
+
 from thisisthesitebuilder.utils.file_utils import get_hashes
 
-sys.path.append("../../thisisthesitebuilder")
+
 
 add_project_dir_to_path()
 
