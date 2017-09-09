@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "San Jose, California",
+  "is_used_in_location": false,
+  "lat": 37.372532,
+  "link_zoom": 15,
+  "lon": -121.929724,
+  "map_uri": "https://www.openstreetmap.org/?mlat=37.372532&mlon=-121.929724#map=15/37.372532/-121.929724",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "small_link": null,
+  "small_name": "Airport Economy Lot",
+  "thumb_filename": "airport-economy-lot.png",
+  "thumb_style": "streets-v9",
+  "thumb_zoom": 11,
+  "use_both_names_for_slug": false,
+  "yaml_checksum": "b18426e63950e4cf5842fa16270579ce"
+}
