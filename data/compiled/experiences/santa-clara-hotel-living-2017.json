@@ -1,16 +1,16 @@
 {
   "build": "9420cb7da785d27d79b3aec831e28d85",
-  "datetime": "2017-09-09T18:14:29.412002Z",
-  "locations": "516ec32e98857ca54ccdf795889dd81b",
-  "multimedia": "fd9fc9fa91612c9d84890d84c8af1169",
+  "datetime": "2017-09-09T18:13:19.088185Z",
+  "locations": "c8e71e93db0f31a538fd51fb8044fa05",
+  "multimedia": "8fe973bf4d0c830152ac1e9886d21e8e",
   "subs": "d751713988987e9331980363e24189ce",
   "summaries": "99914b932bd37a50b983c5e7c90ae93b",
-  "text": "981a565c177b2e060ab700e2a2704dc6",
+  "text": "1bef23b9a7d79de4af21b3d7085d3349",
   "what_changed": [
-    false,
-    false,
-    false,
     true,
+    false,
+    false,
+    false,
     false
   ]
 }
