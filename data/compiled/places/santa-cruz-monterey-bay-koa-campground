@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Watsonville, CA",
+  "is_used_in_location": false,
+  "lat": 36.9268,
+  "link_zoom": 12,
+  "lon": -121.843778,
+  "map_uri": "https://www.openstreetmap.org/?mlat=36.9268&mlon=-121.843778#map=12/36.9268/-121.843778",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "small_link": null,
+  "small_name": "Santa Cruz Monterey Bay KOA Campground",
+  "thumb_filename": "santa-cruz-monterey-bay-koa-campground.png",
+  "thumb_style": "streets-v9",
+  "thumb_zoom": 8,
+  "use_both_names_for_slug": false,
+  "yaml_checksum": "489b04a7e0b798ef6df22056a844ec50"
+}
