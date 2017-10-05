@@ -1,13 +1,24 @@
 [
   {
-    "hash": "e06b8cb2",
-    "slug": "with-several-fires-occurring",
-    "caption": "With several fires occurring, we encountered extremely smokey environments as we drove south through Oregon then California.",
     "time": "14:32:45",
+    "ext": "JPG",
+    "caption": "With several fires occurring, we encountered extremely smokey environments as we drove south through Oregon then California.",
+    "hash": "e06b8cb2",
     "orig": "IMG_7060.JPG",
+    "slug": "with-several-fires-occurring",
     "tags": [
       ""
-    ],
-    "ext": "JPG"
+    ]
+  },
+  {
+    "time": "20:36:20",
+    "ext": "JPG",
+    "caption": "We drove through a hot & smokey route going from Oregon south to the bay area from the forest fires.",
+    "hash": "49695b9e",
+    "orig": "IMG_7050.JPG",
+    "slug": "we-drove-through-a-hot-smoke",
+    "tags": [
+      ""
+    ]
   }
 ]
