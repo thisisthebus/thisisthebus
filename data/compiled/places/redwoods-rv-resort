@@ -7,7 +7,7 @@
   "lon": -124.138593,
   "map_uri": "https://www.openstreetmap.org/?mlat=41.865013&mlon=-124.138593#map=12/41.865013/-124.138593",
   "pitch": 0,
-  "show_on_top_level_experience": false,
+  "show_on_top_level_experience": true,
   "significance": 0,
   "small_link": null,
   "small_name": "Redwoods RV Resort",
@@ -15,5 +15,5 @@
   "thumb_style": "streets-v9",
   "thumb_zoom": 8,
   "use_both_names_for_slug": false,
-  "yaml_checksum": "102c69927c392d4e3c346f08ff58d233"
+  "yaml_checksum": "7c4e0ccd8c183ce1b5fc5f5b990eaa07"
 }

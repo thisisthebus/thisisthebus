@@ -254,11 +254,14 @@ def complete_build(django_setup=False):
     lastest_updated_items = sorted(experiences, key=lambda i: i.last_updated(), reverse=True)
 
     build_count = 0
+    _28_DAYS = 60 * 60 * 24 * 28
     for item in lastest_updated_items[:10]:
-        if build_time.epoch - item.last_updated().epoch > 60 * 60 * 24 * 28:  # more than 28 days.
+        item_previously_updated = item.last_updated()
+        update_time_ago = build_time.epoch - item_previously_updated.epoch
+        if update_time_ago > _28_DAYS:  # more than 28 days.
             continue
 
-        item_build_dt = item.last_updated().datetime("America/New_York")
+        item_build_dt = item_previously_updated.datetime("America/New_York")
         if not item_build_dt in items_by_updated.keys():
             build_count += 1
             if build_count > 3:

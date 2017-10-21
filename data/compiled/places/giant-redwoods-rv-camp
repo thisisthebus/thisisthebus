@@ -7,7 +7,7 @@
   "lon": -123.878026,
   "map_uri": "https://www.openstreetmap.org/?mlat=40.261417&mlon=-123.878026#map=12/40.261417/-123.878026",
   "pitch": 0,
-  "show_on_top_level_experience": false,
+  "show_on_top_level_experience": true,
   "significance": 0,
   "small_link": null,
   "small_name": "Giant Redwoods RV Camp",
@@ -15,5 +15,5 @@
   "thumb_style": "streets-v9",
   "thumb_zoom": 8,
   "use_both_names_for_slug": false,
-  "yaml_checksum": "3b6a3334331f5d2aa69d8c11df545402"
+  "yaml_checksum": "4b8e7451c7b850de237e50579724e6f2"
 }

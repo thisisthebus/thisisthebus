@@ -6,3 +6,4 @@ link_zoom: 12
 small_name: "Redwoods RV Resort"
 big_name: "Crescent City, CA"
 use_both_names_for_slug: False
+show_on_top_level_experience: True
