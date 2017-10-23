@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Eatonton GA",
+  "is_used_in_location": false,
+  "lat": 33.380762,
+  "link_zoom": 15,
+  "lon": -83.335247,
+  "map_uri": "https://www.openstreetmap.org/?mlat=33.380762&mlon=-83.335247#map=15/33.380762/-83.335247",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "ga-tiny-house-festival-2017.yaml",
+  "small_link": null,
+  "small_name": "Georgia Tiny House Festival 2017",
+  "thumb_filename": "ga-tiny-house-festival-2017.yaml.png",
+  "thumb_style": "streets-v9",
+  "thumb_zoom": 7,
+  "yaml_checksum": "9b570b593b5d08b291e97a43ee3042de"
+}

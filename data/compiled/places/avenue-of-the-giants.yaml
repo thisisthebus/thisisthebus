@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Humboldt, California",
+  "is_used_in_location": false,
+  "lat": 40.348491,
+  "link_zoom": 12,
+  "lon": -123.927604,
+  "map_uri": "https://www.openstreetmap.org/?mlat=40.348491&mlon=-123.927604#map=12/40.348491/-123.927604",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "avenue-of-the-giants.yaml",
+  "small_link": null,
+  "small_name": "The Avenue of The Giants",
+  "thumb_filename": "avenue-of-the-giants.yaml.jpeg",
+  "thumb_style": "satellite-streets-v9",
+  "thumb_zoom": 16,
+  "yaml_checksum": "7855b5173b71b79352ce55251b2dc322"
+}

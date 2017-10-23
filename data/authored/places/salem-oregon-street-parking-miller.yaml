@@ -5,4 +5,4 @@ thumb_style: "satellite-streets-v9"
 link_zoom: 12
 small_name: "Street Parking"
 big_name: "Salem, Oregon"
-use_both_names_for_slug: False
+use_both_names_for_slug: True

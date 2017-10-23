@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Eastman, Georgia",
+  "is_used_in_location": false,
+  "lat": 32.178186,
+  "link_zoom": 15,
+  "lon": -83.179138,
+  "map_uri": "https://www.openstreetmap.org/?mlat=32.178186&mlon=-83.179138#map=15/32.178186/-83.179138",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "walmart-parking-loteastman-georgia.yaml",
+  "small_link": null,
+  "small_name": "Walmart Parking Lot",
+  "thumb_filename": "walmart-parking-loteastman-georgia.yaml.png",
+  "thumb_style": "streets-v9",
+  "thumb_zoom": 12,
+  "yaml_checksum": "062d79bc026143dc91ce36d1cf6cfb55"
+}

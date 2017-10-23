@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Lawrence, Kansas",
+  "is_used_in_location": false,
+  "lat": 38.970212,
+  "link_zoom": 15,
+  "lon": -95.236241,
+  "map_uri": "https://www.openstreetmap.org/?mlat=38.970212&mlon=-95.236241#map=15/38.970212/-95.236241",
+  "pitch": 60,
+  "show_on_top_level_experience": true,
+  "significance": 0,
+  "slug": "ladybird-diner-lawrence.yaml",
+  "small_link": null,
+  "small_name": "Ladybird Diner",
+  "thumb_filename": "ladybird-diner-lawrence.yaml.jpeg",
+  "thumb_style": "satellite-streets-v9",
+  "thumb_zoom": 17,
+  "yaml_checksum": "eb1b73646748f7ef7f9846ce82c23cd0"
+}

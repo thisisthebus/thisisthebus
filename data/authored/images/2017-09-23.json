@@ -1,24 +1,57 @@
 [
   {
-    "ext": "JPG",
-    "time": "18:11:27",
-    "orig": "IMG_7275.JPG",
-    "caption": "Notch looks into the Open Sea exhibit.",
-    "slug": "notch-looks-into-the-open-sea",
     "hash": "6857d8f2",
+    "caption": "Notch looks into the Open Sea exhibit.",
+    "orig": "IMG_7275.JPG",
+    "time": "18:11:27",
+    "slug": "notch-looks-into-the-open-sea",
+    "ext": "JPG",
     "tags": [
       ""
     ]
   },
   {
+    "hash": "e86d9e20",
+    "caption": "The octopus emerges!",
+    "orig": "IMG_7307.JPG",
+    "time": "19:28:44",
+    "slug": "the-octopus-emerges",
+    "ext": "JPG",
+    "tags": [
+      ""
+    ]
+  },
+  {
+    "hash": "f97b140f",
+    "caption": "The aquairium had a beautiful interactive display for kids that explained ocean lifecycles and sustainable fishing practices.",
+    "orig": "IMG_7280.JPG",
+    "time": "18:24:21",
+    "slug": "the-aquairium-had-a-beautiful",
+    "ext": "JPG",
+    "tags": [
+      ""
+    ]
+  },
+  {
+    "hash": "78fb5f27",
+    "caption": "",
+    "orig": "IMG_7286.JPG",
+    "time": "18:37:13",
+    "slug": "",
+    "ext": "JPG",
+    "tags": [
+      ""
+    ]
+  },
+  {
+    "hash": "eaaa8867",
+    "caption": "",
     "tags": [
       ""
     ],
-    "time": "19:28:44",
-    "orig": "IMG_7307.JPG",
-    "caption": "The octopus emerges!",
-    "slug": "the-octopus-emerges",
-    "hash": "e86d9e20",
-    "ext": "JPG"
+    "time": "19:20:55",
+    "slug": "",
+    "ext": "JPG",
+    "orig": "IMG_7301.JPG"
   }
 ]

@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Hammond, Oregon",
+  "is_used_in_location": false,
+  "lat": 46.186706,
+  "link_zoom": 12,
+  "lon": -123.955515,
+  "map_uri": "https://www.openstreetmap.org/?mlat=46.186706&mlon=-123.955515#map=12/46.186706/-123.955515",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "koa-astoria.yaml",
+  "small_link": null,
+  "small_name": "Astoria KOA Campground",
+  "thumb_filename": "koa-astoria.yaml.png",
+  "thumb_style": "streets-v9",
+  "thumb_zoom": 8,
+  "yaml_checksum": "acc99951697241cff4f1b895b85fc2da"
+}

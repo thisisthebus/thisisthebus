@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Flagler Beach, Florida",
+  "is_used_in_location": false,
+  "lat": 29.437355,
+  "link_zoom": 12,
+  "lon": -81.143208,
+  "map_uri": "https://www.openstreetmap.org/?mlat=29.437355&mlon=-81.143208#map=12/29.437355/-81.143208",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "bulow-rv-park.yaml",
+  "small_link": null,
+  "small_name": "Bulow RV Park",
+  "thumb_filename": "bulow-rv-park.yaml.png",
+  "thumb_style": "streets-v9",
+  "thumb_zoom": 7,
+  "yaml_checksum": "d1c6d9bcdd970c018658e99a5f9c1ed2"
+}

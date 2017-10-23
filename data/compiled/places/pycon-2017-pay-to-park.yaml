@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Portland, OR",
+  "is_used_in_location": false,
+  "lat": 45.530208,
+  "link_zoom": 15,
+  "lon": -122.663157,
+  "map_uri": "https://www.openstreetmap.org/?mlat=45.530208&mlon=-122.663157#map=15/45.530208/-122.663157",
+  "pitch": 60,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "pycon-2017-pay-to-park.yaml",
+  "small_link": null,
+  "small_name": "Oregon Convention Center",
+  "thumb_filename": "pycon-2017-pay-to-park.yaml.png",
+  "thumb_style": "streets-v9",
+  "thumb_zoom": 15,
+  "yaml_checksum": "7f99709f0de613bdebd1245a659fb89e"
+}

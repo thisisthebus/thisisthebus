@@ -1,13 +1,35 @@
 [
   {
-    "slug": "this-truck-had-a-street-fighte",
-    "orig": "IMG_7140.JPG",
-    "time": "20:30:29",
     "ext": "JPG",
+    "slug": "this-truck-had-a-street-fighte",
     "tags": [
       ""
     ],
     "caption": "This truck had a Street Fighter II arcade game strapped upon it.",
+    "orig": "IMG_7140.JPG",
+    "time": "20:30:29",
     "hash": "a65621f2"
+  },
+  {
+    "ext": "JPG",
+    "slug": "new-baby-wrap",
+    "tags": [
+      ""
+    ],
+    "caption": "New baby wrap!",
+    "orig": "IMG_7186.JPG",
+    "time": "16:10:19",
+    "hash": "e266c94c"
+  },
+  {
+    "ext": "JPG",
+    "orig": "IMG_7191.JPG",
+    "tags": [
+      ""
+    ],
+    "caption": "Visiting our friend Doug in Walnut Creek.",
+    "slug": "visiting-our-friend-doug-in-wa",
+    "time": "23:21:28",
+    "hash": "515d98d5"
   }
 ]

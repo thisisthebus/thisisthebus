@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Francis Marion National Forest, SC",
+  "is_used_in_location": false,
+  "lat": 33.041595,
+  "link_zoom": 12,
+  "lon": -79.563682,
+  "map_uri": "https://www.openstreetmap.org/?mlat=33.041595&mlon=-79.563682#map=12/33.041595/-79.563682",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "buck-hall-recreation-area.yaml",
+  "small_link": null,
+  "small_name": "Buck Hall Recreation Area",
+  "thumb_filename": "buck-hall-recreation-area.yaml.png",
+  "thumb_style": "streets-v9",
+  "thumb_zoom": 7,
+  "yaml_checksum": "11264a89561729146722e75f0081c7a9"
+}

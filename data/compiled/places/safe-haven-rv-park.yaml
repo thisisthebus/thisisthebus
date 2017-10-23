@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Macon, Georgia",
+  "is_used_in_location": false,
+  "lat": 32.788751,
+  "link_zoom": 15,
+  "lon": -83.664545,
+  "map_uri": "https://www.openstreetmap.org/?mlat=32.788751&mlon=-83.664545#map=15/32.788751/-83.664545",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "safe-haven-rv-park.yaml",
+  "small_link": null,
+  "small_name": "Safe Haven RV Park",
+  "thumb_filename": "safe-haven-rv-park.yaml.png",
+  "thumb_style": "streets-v9",
+  "thumb_zoom": 12,
+  "yaml_checksum": "f46b8828225b2e96f7108fe987122682"
+}

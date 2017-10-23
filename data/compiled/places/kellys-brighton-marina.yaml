@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Nehalem Bay, Oregon",
+  "is_used_in_location": false,
+  "lat": 45.669079,
+  "link_zoom": 12,
+  "lon": -123.924513,
+  "map_uri": "https://www.openstreetmap.org/?mlat=45.669079&mlon=-123.924513#map=12/45.669079/-123.924513",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "kellys-brighton-marina.yaml",
+  "small_link": null,
+  "small_name": "Kelly's Brighton Marina",
+  "thumb_filename": "kellys-brighton-marina.yaml.png",
+  "thumb_style": "streets-v9",
+  "thumb_zoom": 8,
+  "yaml_checksum": "095543419db4e66a500c5d2ae26f238b"
+}

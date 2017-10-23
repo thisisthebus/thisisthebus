@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Salem, Oregon",
+  "is_used_in_location": false,
+  "lat": 44.926394,
+  "link_zoom": 12,
+  "lon": -123.034023,
+  "map_uri": "https://www.openstreetmap.org/?mlat=44.926394&mlon=-123.034023#map=12/44.926394/-123.034023",
+  "pitch": 60,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "salem-oregon-bushs-pasture-park-se.yaml",
+  "small_link": null,
+  "small_name": "Bush's Pasture Park SE",
+  "thumb_filename": "salem-oregon-bushs-pasture-park-se.yaml.jpeg",
+  "thumb_style": "satellite-streets-v9",
+  "thumb_zoom": 18,
+  "yaml_checksum": "3e0325f4af589e986b38a20dd419d950"
+}

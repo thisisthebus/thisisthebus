@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Hiram, Georgia",
+  "is_used_in_location": false,
+  "lat": 33.889727,
+  "link_zoom": 15,
+  "lon": -84.757361,
+  "map_uri": "https://www.openstreetmap.org/?mlat=33.889727&mlon=-84.757361#map=15/33.889727/-84.757361",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "walmart-hiram-ga.yaml",
+  "small_link": null,
+  "small_name": "Walmart Parking Lot",
+  "thumb_filename": "walmart-hiram-ga.yaml.png",
+  "thumb_style": "streets-v9",
+  "thumb_zoom": 12,
+  "yaml_checksum": "4085ea80986aa5805130da337b2ed56e"
+}

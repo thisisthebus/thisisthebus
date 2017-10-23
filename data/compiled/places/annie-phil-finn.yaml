@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Kansas City, Missouri",
+  "is_used_in_location": false,
+  "lat": 38.960771,
+  "link_zoom": 12,
+  "lon": -94.603176,
+  "map_uri": "https://www.openstreetmap.org/?mlat=38.960771&mlon=-94.603176#map=12/38.960771/-94.603176",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "annie-phil-finn.yaml",
+  "small_link": null,
+  "small_name": "Annie, Phil, and Finn's place",
+  "thumb_filename": "annie-phil-finn.yaml.png",
+  "thumb_style": "streets-v9",
+  "thumb_zoom": 8,
+  "yaml_checksum": "9663eaaabb90013ff948643d7ce44020"
+}

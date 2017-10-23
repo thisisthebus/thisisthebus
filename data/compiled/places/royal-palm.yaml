@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Everglades National Park, Florida",
+  "is_used_in_location": false,
+  "lat": 25.382233,
+  "link_zoom": 12,
+  "lon": -80.606352,
+  "map_uri": "https://www.openstreetmap.org/?mlat=25.382233&mlon=-80.606352#map=12/25.382233/-80.606352",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "royal-palm.yaml",
+  "small_link": null,
+  "small_name": "Royal Palm",
+  "thumb_filename": "royal-palm.yaml.jpeg",
+  "thumb_style": "satellite-streets-v9",
+  "thumb_zoom": 18,
+  "yaml_checksum": "fd1909b0db88f339e4929e1f48e1b97e"
+}

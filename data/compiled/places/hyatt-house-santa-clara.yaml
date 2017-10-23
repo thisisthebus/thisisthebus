@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Santa Clara, California",
+  "is_used_in_location": false,
+  "lat": 37.394446,
+  "link_zoom": 12,
+  "lon": -121.944698,
+  "map_uri": "https://www.openstreetmap.org/?mlat=37.394446&mlon=-121.944698#map=12/37.394446/-121.944698",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "hyatt-house-santa-clara.yaml",
+  "small_link": null,
+  "small_name": "Hyatt House",
+  "thumb_filename": "hyatt-house-santa-clara.yaml.jpeg",
+  "thumb_style": "satellite-streets-v9",
+  "thumb_zoom": 8,
+  "yaml_checksum": "d8c1e5fa8fcfe87e49861715b2d1ff7b"
+}

@@ -1,0 +1,19 @@
+{
+  "bearing": 270,
+  "big_name": "Manzanita, Oregon",
+  "is_used_in_location": false,
+  "lat": 45.739492,
+  "link_zoom": 12,
+  "lon": -123.946908,
+  "map_uri": "https://www.openstreetmap.org/?mlat=45.739492&mlon=-123.946908#map=12/45.739492/-123.946908",
+  "pitch": 60,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "manzanita-101-lookout.yaml",
+  "small_link": null,
+  "small_name": "Route 101 Ocean Lookout",
+  "thumb_filename": "manzanita-101-lookout.yaml.jpeg",
+  "thumb_style": "satellite-streets-v9",
+  "thumb_zoom": 13,
+  "yaml_checksum": "88fe409b04ee54d6faef228a6748792b"
+}

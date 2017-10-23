@@ -7,8 +7,6 @@ sys.path.append("../../thisisthesitebuilder")
 
 from thisisthesitebuilder.utils.file_utils import get_hashes
 
-
-
 add_project_dir_to_path()
 
 if __name__ == "__main__":
@@ -95,9 +93,11 @@ def complete_build(django_setup=False):
     era_builder = EraBuilder(build_meta, SUMMARIES, LOCATIONS, IMAGES, PLACES)
     experiences = era_builder.build_experiences("%s/authored/experiences" % DATA_DIR)
 
+    print("-------------  Unused Objects  -------------")
+
     unused_images = [image for image in IMAGES if not image.is_used]
     if unused_images:
-        print("***{} Images are unused***".format(len(unused_images)))
+        print("***{} Images are unused*** (See yellow items in image gallery)".format(len(unused_images)))
 
     unused_clips = [clip for clip in CLIPS if not clip.is_used]
     if unused_clips:

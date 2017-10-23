@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Savannah, Georgia",
+  "is_used_in_location": false,
+  "lat": 31.949328,
+  "link_zoom": 12,
+  "lon": -81.05225,
+  "map_uri": "https://www.openstreetmap.org/?mlat=31.949328&mlon=-81.05225#map=12/31.949328/-81.05225",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "skidaway-island-state-park.yaml",
+  "small_link": null,
+  "small_name": "Skidaway Island State Park",
+  "thumb_filename": "skidaway-island-state-park.yaml.png",
+  "thumb_style": "streets-v9",
+  "thumb_zoom": 8,
+  "yaml_checksum": "8747838eb7b38181e0f1b9674833f91d"
+}

@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Ocala National Forest, Florida",
+  "is_used_in_location": false,
+  "lat": 29.0698012,
+  "link_zoom": 15,
+  "lon": -81.8351415,
+  "map_uri": "https://www.openstreetmap.org/?mlat=29.0698012&mlon=-81.8351415#map=15/29.0698012/-81.8351415",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "rainbow-lake-mary.yaml",
+  "small_link": null,
+  "small_name": "Rainbow Gathering at Lake Mary",
+  "thumb_filename": "rainbow-lake-mary.yaml.jpeg",
+  "thumb_style": "satellite-streets-v9",
+  "thumb_zoom": 12,
+  "yaml_checksum": "0fc30794eb79c4035ac7c92c41aa80eb"
+}

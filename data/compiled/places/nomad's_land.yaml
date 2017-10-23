@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Attalla, Alabama",
+  "is_used_in_location": false,
+  "lat": 34.015443,
+  "link_zoom": 12,
+  "lon": -86.146931,
+  "map_uri": "https://www.openstreetmap.org/?mlat=34.015443&mlon=-86.146931#map=12/34.015443/-86.146931",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "nomad's_land.yaml",
+  "small_link": "http://www.thenomadsland.org/",
+  "small_name": "Nomad's Land",
+  "thumb_filename": "nomad's_land.yaml.jpeg",
+  "thumb_style": "satellite-streets-v9",
+  "thumb_zoom": 4,
+  "yaml_checksum": "1b811652ee09a1c24a66439ae5f9865d"
+}

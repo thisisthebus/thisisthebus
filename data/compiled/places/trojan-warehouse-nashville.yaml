@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Nashville, TN",
+  "is_used_in_location": false,
+  "lat": 36.09523,
+  "link_zoom": 15,
+  "lon": -86.676423,
+  "map_uri": "https://www.openstreetmap.org/?mlat=36.09523&mlon=-86.676423#map=15/36.09523/-86.676423",
+  "pitch": 60,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "trojan-warehouse-nashville.yaml",
+  "small_link": null,
+  "small_name": "Trojan Battery Warehouse",
+  "thumb_filename": "trojan-warehouse-nashville.yaml.png",
+  "thumb_style": "streets-v9",
+  "thumb_zoom": 15,
+  "yaml_checksum": "e58940b2615235d6bbe9c61a1ad9e498"
+}

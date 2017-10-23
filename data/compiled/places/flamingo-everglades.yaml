@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Everglades National Park, Florida",
+  "is_used_in_location": false,
+  "lat": 25.139233,
+  "link_zoom": 12,
+  "lon": -80.942068,
+  "map_uri": "https://www.openstreetmap.org/?mlat=25.139233&mlon=-80.942068#map=12/25.139233/-80.942068",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "flamingo-everglades.yaml",
+  "small_link": null,
+  "small_name": "Flamingo",
+  "thumb_filename": "flamingo-everglades.yaml.png",
+  "thumb_style": "streets-v9",
+  "thumb_zoom": 4,
+  "yaml_checksum": "f8075cdbb31ea9c0f08297dd18ce80c7"
+}

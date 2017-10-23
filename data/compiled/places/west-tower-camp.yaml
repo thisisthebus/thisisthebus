@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Osceola National Forest, Florida",
+  "is_used_in_location": false,
+  "lat": 30.321883,
+  "link_zoom": 12,
+  "lon": -82.558409,
+  "map_uri": "https://www.openstreetmap.org/?mlat=30.321883&mlon=-82.558409#map=12/30.321883/-82.558409",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "west-tower-camp.yaml",
+  "small_link": null,
+  "small_name": "West Tower Camp",
+  "thumb_filename": "west-tower-camp.yaml.png",
+  "thumb_style": "streets-v9",
+  "thumb_zoom": 12,
+  "yaml_checksum": "5e85e4f506c6c21ef3130f534b4dc667"
+}

@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Malheur NF, Oregon",
+  "is_used_in_location": false,
+  "lat": 44.216946,
+  "link_zoom": 15,
+  "lon": -119.242997,
+  "map_uri": "https://www.openstreetmap.org/?mlat=44.216946&mlon=-119.242997#map=15/44.216946/-119.242997",
+  "pitch": 35,
+  "show_on_top_level_experience": true,
+  "significance": 0,
+  "slug": "rainbow-parking-2017.yaml",
+  "small_link": null,
+  "small_name": "Remote Parking, Wickiup Creek",
+  "thumb_filename": "rainbow-parking-2017.yaml.jpeg",
+  "thumb_style": "satellite-streets-v9",
+  "thumb_zoom": 16,
+  "yaml_checksum": "a71ad25025b09231b6031d8b073fca6a"
+}

@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Ocala National Forest, Florida",
+  "is_used_in_location": false,
+  "lat": 29.239298,
+  "link_zoom": 15,
+  "lon": -81.829311,
+  "map_uri": "https://www.openstreetmap.org/?mlat=29.239298&mlon=-81.829311#map=15/29.239298/-81.829311",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "flame-and-doughnut.yaml",
+  "small_link": null,
+  "small_name": "Flame and Doughnut Crossing",
+  "thumb_filename": "flame-and-doughnut.yaml.jpeg",
+  "thumb_style": "satellite-streets-v9",
+  "thumb_zoom": 12,
+  "yaml_checksum": "24dddd96c158932e5e12175964cc3e15"
+}

@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Portland, Oregon",
+  "is_used_in_location": false,
+  "lat": 45.5214908,
+  "link_zoom": 12,
+  "lon": -122.6274292,
+  "map_uri": "https://www.openstreetmap.org/?mlat=45.5214908&mlon=-122.6274292#map=12/45.5214908/-122.6274292",
+  "pitch": 60,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "laurelhurst-park.yaml",
+  "small_link": null,
+  "small_name": "Laurelhurst Park",
+  "thumb_filename": "laurelhurst-park.yaml.jpeg",
+  "thumb_style": "satellite-streets-v9",
+  "thumb_zoom": 16,
+  "yaml_checksum": "53e86827539183ba5ad653ed2a6b0a16"
+}

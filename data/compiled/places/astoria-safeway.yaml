@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Astoria, Oregon",
+  "is_used_in_location": false,
+  "lat": 46.193056,
+  "link_zoom": 13,
+  "lon": -123.807358,
+  "map_uri": "https://www.openstreetmap.org/?mlat=46.193056&mlon=-123.807358#map=13/46.193056/-123.807358",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "astoria-safeway.yaml",
+  "small_link": null,
+  "small_name": "Safeway Parking Lot",
+  "thumb_filename": "astoria-safeway.yaml.jpeg",
+  "thumb_style": "satellite-streets-v9",
+  "thumb_zoom": 13,
+  "yaml_checksum": "af35b7854ebeed40270d461edfdcba90"
+}

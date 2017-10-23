@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Huntsville, Alabama",
+  "is_used_in_location": false,
+  "lat": 34.646996,
+  "link_zoom": 15,
+  "lon": -86.542111,
+  "map_uri": "https://www.openstreetmap.org/?mlat=34.646996&mlon=-86.542111#map=15/34.646996/-86.542111",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "walmart-neighborhood-huntsville.yaml",
+  "small_link": null,
+  "small_name": "Walmart Neighborhood Market",
+  "thumb_filename": "walmart-neighborhood-huntsville.yaml.png",
+  "thumb_style": "streets-v9",
+  "thumb_zoom": 12,
+  "yaml_checksum": "a9d1d9f65336c014d194d95a94946f2f"
+}

@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Jackson, Georgia",
+  "is_used_in_location": false,
+  "lat": 33.172626,
+  "link_zoom": 12,
+  "lon": -84.012097,
+  "map_uri": "https://www.openstreetmap.org/?mlat=33.172626&mlon=-84.012097#map=12/33.172626/-84.012097",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "high-falls-state-park.yaml",
+  "small_link": null,
+  "small_name": "High Falls State Park",
+  "thumb_filename": "high-falls-state-park.yaml.png",
+  "thumb_style": "streets-v9",
+  "thumb_zoom": 8,
+  "yaml_checksum": "2725c3f8efc1bdd0f965eb54c8467dcf"
+}

@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Sisters, Oregon",
+  "is_used_in_location": false,
+  "lat": 44.305113,
+  "link_zoom": 15,
+  "lon": -121.558085,
+  "map_uri": "https://www.openstreetmap.org/?mlat=44.305113&mlon=-121.558085#map=15/44.305113/-121.558085",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "dispersed-camping-sisters.yaml",
+  "small_link": null,
+  "small_name": "Dispersed Camping, Deschutes NF",
+  "thumb_filename": "dispersed-camping-sisters.yaml.png",
+  "thumb_style": "streets-v9",
+  "thumb_zoom": 10,
+  "yaml_checksum": "babd2ec74ef5472db9e1ede4396c408e"
+}

@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Macon, Georgia",
+  "is_used_in_location": false,
+  "lat": 32.864383,
+  "link_zoom": 15,
+  "lon": -83.611602,
+  "map_uri": "https://www.openstreetmap.org/?mlat=32.864383&mlon=-83.611602#map=15/32.864383/-83.611602",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "walmart-macon-ga.yaml",
+  "small_link": null,
+  "small_name": "Walmart Parking Lot",
+  "thumb_filename": "walmart-macon-ga.yaml.png",
+  "thumb_style": "streets-v9",
+  "thumb_zoom": 12,
+  "yaml_checksum": "5caa160c02f718c1602644c029666060"
+}

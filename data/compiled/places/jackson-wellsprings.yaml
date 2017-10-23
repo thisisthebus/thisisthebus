@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Ashland, Oregon",
+  "is_used_in_location": false,
+  "lat": 42.221002,
+  "link_zoom": 12,
+  "lon": -122.74401,
+  "map_uri": "https://www.openstreetmap.org/?mlat=42.221002&mlon=-122.74401#map=12/42.221002/-122.74401",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "jackson-wellsprings.yaml",
+  "small_link": null,
+  "small_name": "Jackson WellSprings",
+  "thumb_filename": "jackson-wellsprings.yaml.jpeg",
+  "thumb_style": "satellite-streets-v9",
+  "thumb_zoom": 16,
+  "yaml_checksum": "0829621dbd854fcfa8ada7d438f31453"
+}

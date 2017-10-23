@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Land Between the Lakes, Kentucky",
+  "is_used_in_location": false,
+  "lat": 36.749851,
+  "link_zoom": 12,
+  "lon": -88.071976,
+  "map_uri": "https://www.openstreetmap.org/?mlat=36.749851&mlon=-88.071976#map=12/36.749851/-88.071976",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "land-between-the-lakes-turkey-bay.yaml",
+  "small_link": null,
+  "small_name": "Turkey Bay OHVA",
+  "thumb_filename": "land-between-the-lakes-turkey-bay.yaml.jpeg",
+  "thumb_style": "satellite-streets-v9",
+  "thumb_zoom": 16,
+  "yaml_checksum": "0286ef3888c6862f1f1fbe3afb1d4759"
+}

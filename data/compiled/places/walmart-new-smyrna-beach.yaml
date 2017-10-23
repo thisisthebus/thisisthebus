@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "New Smyrna Beach, FL",
+  "is_used_in_location": false,
+  "lat": 29.015283,
+  "link_zoom": 15,
+  "lon": -80.994588,
+  "map_uri": "https://www.openstreetmap.org/?mlat=29.015283&mlon=-80.994588#map=15/29.015283/-80.994588",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "walmart-new-smyrna-beach.yaml",
+  "small_link": null,
+  "small_name": "Walmart Parking Lot",
+  "thumb_filename": "walmart-new-smyrna-beach.yaml.png",
+  "thumb_style": "streets-v9",
+  "thumb_zoom": 12,
+  "yaml_checksum": "2001860410a0f7d80a90e403d779d5dc"
+}

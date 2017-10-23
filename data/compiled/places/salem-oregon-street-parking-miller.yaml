@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Salem, Oregon",
+  "is_used_in_location": false,
+  "lat": 44.929107,
+  "link_zoom": 12,
+  "lon": -123.042024,
+  "map_uri": "https://www.openstreetmap.org/?mlat=44.929107&mlon=-123.042024#map=12/44.929107/-123.042024",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "salem-oregon-street-parking-miller.yaml",
+  "small_link": null,
+  "small_name": "Street Parking",
+  "thumb_filename": "salem-oregon-street-parking-miller.yaml.jpeg",
+  "thumb_style": "satellite-streets-v9",
+  "thumb_zoom": 16,
+  "yaml_checksum": "baaec318f5d980351ecba5c3aaa02805"
+}

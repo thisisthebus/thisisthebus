@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Bethel Island, California",
+  "is_used_in_location": false,
+  "lat": 38.017056,
+  "link_zoom": 12,
+  "lon": -121.641,
+  "map_uri": "https://www.openstreetmap.org/?mlat=38.017056&mlon=-121.641#map=12/38.017056/-121.641",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "bethel-island-street-parking.yaml",
+  "small_link": null,
+  "small_name": "Street Parking",
+  "thumb_filename": "bethel-island-street-parking.yaml.png",
+  "thumb_style": "streets-v9",
+  "thumb_zoom": 7,
+  "yaml_checksum": "dca16bfac143e3a59b40d6f51ea6c1cb"
+}

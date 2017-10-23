@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "Atlanta, Georgia",
+  "is_used_in_location": false,
+  "lat": 33.707467,
+  "link_zoom": 15,
+  "lon": -84.3289,
+  "map_uri": "https://www.openstreetmap.org/?mlat=33.707467&mlon=-84.3289#map=15/33.707467/-84.3289",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "atlanta-airbnb.yaml",
+  "small_link": null,
+  "small_name": "Harry & Genise's Home",
+  "thumb_filename": "atlanta-airbnb.yaml.png",
+  "thumb_style": "streets-v9",
+  "thumb_zoom": 9,
+  "yaml_checksum": "c39b5476900db6337296e565966af50d"
+}
