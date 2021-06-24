@@ -1,0 +1,19 @@
+{
+  "bearing": 0,
+  "big_name": "White Mountains, New Hampshire",
+  "is_used_in_location": false,
+  "lat": 44.465798,
+  "link_zoom": 12,
+  "lon": -71.547231,
+  "map_uri": "https://www.openstreetmap.org/?mlat=44.465798&mlon=-71.547231#map=12/44.465798/-71.547231",
+  "pitch": 0,
+  "show_on_top_level_experience": false,
+  "significance": 0,
+  "slug": "rogers-campground.yaml",
+  "small_link": null,
+  "small_name": "Roger's Campground",
+  "thumb_filename": "rogers-campground.yaml.jpeg",
+  "thumb_style": "satellite-streets-v9",
+  "thumb_zoom": 18,
+  "yaml_checksum": "82ae134ce2526183f6f0944ba2141750"
+}
